@@ -1,0 +1,184 @@
+[
+  {
+    "dir": "",
+    "file": "dep-graph.ts",
+    "dependsOnCnt": 4,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "",
+    "file": "DependencyGraphGenerator.ts",
+    "dependsOnCnt": 16,
+    "usedByCnt": 1,
+    "exportCnt": 2
+  },
+  {
+    "dir": "",
+    "file": "DocumentationGenerator.ts",
+    "dependsOnCnt": 5,
+    "usedByCnt": 1,
+    "exportCnt": 4
+  },
+  {
+    "dir": "",
+    "file": "GraphvizProcessor.ts",
+    "dependsOnCnt": 2,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "",
+    "file": "index.ts",
+    "dependsOnCnt": 1,
+    "usedByCnt": 0,
+    "exportCnt": 0
+  },
+  {
+    "dir": "ast",
+    "file": "ASTProcessor.ts",
+    "dependsOnCnt": 13,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "ast",
+    "file": "BaseProcessor.ts",
+    "dependsOnCnt": 4,
+    "usedByCnt": 6,
+    "exportCnt": 1
+  },
+  {
+    "dir": "ast",
+    "file": "ClassProcessor.ts",
+    "dependsOnCnt": 3,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "ast",
+    "file": "ErrorCollector.ts",
+    "dependsOnCnt": 2,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "ast",
+    "file": "ExportProcessor.ts",
+    "dependsOnCnt": 4,
+    "usedByCnt": 1,
+    "exportCnt": 3
+  },
+  {
+    "dir": "ast",
+    "file": "ImportProcessor.ts",
+    "dependsOnCnt": 5,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "ast",
+    "file": "SharedInterfaces.ts",
+    "dependsOnCnt": 0,
+    "usedByCnt": 15,
+    "exportCnt": 8
+  },
+  {
+    "dir": "ast",
+    "file": "UsageProcessor.ts",
+    "dependsOnCnt": 1,
+    "usedByCnt": 0,
+    "exportCnt": 1
+  },
+  {
+    "dir": "generators",
+    "file": "DiagramsGenerator.ts",
+    "dependsOnCnt": 2,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "generators",
+    "file": "HtmlGenerator.ts",
+    "dependsOnCnt": 5,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "ClassDiagram.ts",
+    "dependsOnCnt": 3,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "ExportGraph.ts",
+    "dependsOnCnt": 6,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "GraphBase.ts",
+    "dependsOnCnt": 4,
+    "usedByCnt": 5,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "GraphGenerator.ts",
+    "dependsOnCnt": 0,
+    "usedByCnt": 3,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "NodeModulesGraph.ts",
+    "dependsOnCnt": 2,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "PackageGraph.ts",
+    "dependsOnCnt": 2,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "graphs",
+    "file": "RelationsGraph.ts",
+    "dependsOnCnt": 4,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "utils",
+    "file": "file-utils.ts",
+    "dependsOnCnt": 3,
+    "usedByCnt": 9,
+    "exportCnt": 10
+  },
+  {
+    "dir": "utils",
+    "file": "globals.ts",
+    "dependsOnCnt": 0,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "utils",
+    "file": "json.ts",
+    "dependsOnCnt": 2,
+    "usedByCnt": 1,
+    "exportCnt": 3
+  },
+  {
+    "dir": "utils",
+    "file": "list-utils.ts",
+    "dependsOnCnt": 1,
+    "usedByCnt": 4,
+    "exportCnt": 5
+  }
+]

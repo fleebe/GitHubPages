@@ -1,0 +1,378 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ASTProcessor | src</title><meta name="description" content="Documentation for src"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script async src="../assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base="..">
+<div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">src</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb">
+<li><a href="../modules.html">src</a></li>
+<li><a href="../modules/ast_ASTProcessor.html">ast/ASTProcessor</a></li>
+<li><a href="ast_ASTProcessor.ASTProcessor.html">ASTProcessor</a></li></ul>
+<h1>Class ASTProcessor</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography">
+<h3>Description</h3><p>Main orchestrator for AST processing using specialized processors</p>
+</div></section>
+<section class="tsd-panel tsd-hierarchy">
+<h4>Hierarchy</h4>
+<ul class="tsd-hierarchy">
+<li><a href="ast_BaseProcessor.BaseProcessor.html" class="tsd-signature-type" data-tsd-kind="Class">BaseProcessor</a>
+<ul class="tsd-hierarchy">
+<li><span class="target">ASTProcessor</span></li></ul></li></ul></section><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L20">ast/ASTProcessor.ts:20</a></li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
+<h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex=0><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z" fill="var(--color-text)"></path></svg> Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Constructors</h3>
+<div class="tsd-index-list"><a href="ast_ASTProcessor.ASTProcessor.html#constructor" class="tsd-index-link tsd-kind-constructor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Properties</h3>
+<div class="tsd-index-list"><a href="ast_ASTProcessor.ASTProcessor.html#baseLoc" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>base<wbr/>Loc</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#classProcessor" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>class<wbr/>Processor</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#errorCollector" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>error<wbr/>Collector</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#exportProcessor" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>export<wbr/>Processor</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#importProcessor" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>import<wbr/>Processor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Methods</h3>
+<div class="tsd-index-list"><a href="ast_ASTProcessor.ASTProcessor.html#calRelSrcFile" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>cal<wbr/>Rel<wbr/>Src<wbr/>File</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#countSubstrings" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>count<wbr/>Substrings</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#formatFunctionParams" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>format<wbr/>Function<wbr/>Params</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#getAbsolutePath" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Absolute<wbr/>Path</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#getParentNode" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Parent<wbr/>Node</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#processModules" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>process<wbr/>Modules</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#replaceWithReversedArray" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>replace<wbr/>With<wbr/>Reversed<wbr/>Array</span></a>
+<a href="ast_ASTProcessor.ASTProcessor.html#skipNode" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>skip<wbr/>Node</span></a>
+</div></section></div></details></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Constructors</h2>
+<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_ASTProcessor">new ASTProcessor<span class="tsd-signature-symbol">(</span>baseLoc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ast_ASTProcessor.ASTProcessor.html" class="tsd-signature-type" data-tsd-kind="Class">ASTProcessor</a><a href="#constructor.new_ASTProcessor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Creates a new ASTProcessor instance</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>baseLoc: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The base directory or file to create dependency graphs from</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="ast_ASTProcessor.ASTProcessor.html" class="tsd-signature-type" data-tsd-kind="Class">ASTProcessor</a></h4><aside class="tsd-sources">
+<p>Overrides <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#constructor">constructor</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L30">ast/ASTProcessor.ts:30</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Properties</h2>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited"><a id="baseLoc" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>base<wbr/>Loc</span><a href="#baseLoc" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">base<wbr/>Loc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#baseLoc">baseLoc</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L12">ast/BaseProcessor.ts:12</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="classProcessor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>class<wbr/>Processor</span><a href="#classProcessor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">class<wbr/>Processor<span class="tsd-signature-symbol">:</span> <a href="ast_ClassProcessor.ClassProcessor.html" class="tsd-signature-type" data-tsd-kind="Class">ClassProcessor</a></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L23">ast/ASTProcessor.ts:23</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="errorCollector" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>error<wbr/>Collector</span><a href="#errorCollector" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">error<wbr/>Collector<span class="tsd-signature-symbol">:</span> <a href="ast_ErrorCollector.ErrorCollector.html" class="tsd-signature-type" data-tsd-kind="Class">ErrorCollector</a></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L24">ast/ASTProcessor.ts:24</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="exportProcessor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>export<wbr/>Processor</span><a href="#exportProcessor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">export<wbr/>Processor<span class="tsd-signature-symbol">:</span> <a href="ast_ExportProcessor.ExportProcessor.html" class="tsd-signature-type" data-tsd-kind="Class">ExportProcessor</a></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L22">ast/ASTProcessor.ts:22</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="importProcessor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>import<wbr/>Processor</span><a href="#importProcessor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">import<wbr/>Processor<span class="tsd-signature-symbol">:</span> <a href="ast_ImportProcessor.ImportProcessor.html" class="tsd-signature-type" data-tsd-kind="Class">ImportProcessor</a></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L21">ast/ASTProcessor.ts:21</a></li></ul></aside></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="calRelSrcFile" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>cal<wbr/>Rel<wbr/>Src<wbr/>File</span><a href="#calRelSrcFile" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="calRelSrcFile.calRelSrcFile-1">cal<wbr/>Rel<wbr/>Src<wbr/>File<span class="tsd-signature-symbol">(</span>importingFilePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, importPathValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#calRelSrcFile.calRelSrcFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Calculates relative source file path for display or linking.
+This attempts to resolve <code>../</code> and <code>./</code> from an import path
+relative to the importing file&#39;s path.</p>
+
+<h3>Returns</h3><ul>
+<li>Calculated &quot;normalized&quot; path, often relative to project root or a base.
+              The original implementation had a specific logic for replacing &#39;../&#39;
+              which might need adjustment based on desired output.
+              This version simplifies to path.resolve and then makes it relative to baseLoc.</li>
+</ul>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>importingFilePath: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The full path of the file doing the import (e.g., /abs/path/to/module/importer.js)</p>
+</div></li>
+<li>
+<h5>importPathValue: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The raw value from the import statement (e.g., &#39;../util/helper&#39;, &#39;./service&#39;)</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#calRelSrcFile">calRelSrcFile</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L178">ast/BaseProcessor.ts:178</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="countSubstrings" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>count<wbr/>Substrings</span><a href="#countSubstrings" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="countSubstrings.countSubstrings-1">count<wbr/>Substrings<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subStr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#countSubstrings.countSubstrings-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Counts occurrences of a substring in a string</p>
+
+<h3>Returns</h3><ul>
+<li>Number of occurrences</li>
+</ul>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>str: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>String to search in</p>
+</div></li>
+<li>
+<h5>subStr: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Substring to count</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#countSubstrings">countSubstrings</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L202">ast/BaseProcessor.ts:202</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="formatFunctionParams" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>format<wbr/>Function<wbr/>Params</span><a href="#formatFunctionParams" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="formatFunctionParams.formatFunctionParams-1">format<wbr/>Function<wbr/>Params<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Parameter</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#formatFunctionParams.formatFunctionParams-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Formats function parameters for display</p>
+
+<h3>Returns</h3><ul>
+<li>Formatted parameter string</li>
+</ul>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>params: <span class="tsd-signature-type">Parameter</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>Array of parameter AST nodes</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#formatFunctionParams">formatFunctionParams</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L93">ast/BaseProcessor.ts:93</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="getAbsolutePath" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Absolute<wbr/>Path</span><a href="#getAbsolutePath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="getAbsolutePath.getAbsolutePath-1">get<wbr/>Absolute<wbr/>Path<span class="tsd-signature-symbol">(</span>currentFilePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, relativePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getAbsolutePath.getAbsolutePath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Gets the absolute path for a relative import</p>
+
+<h3>Returns</h3><p>Absolute path of the import</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>currentFilePath: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Absolute path of the current file (should be the file containing the import)</p>
+</div></li>
+<li>
+<h5>relativePath: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Relative import path</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#getAbsolutePath">getAbsolutePath</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L79">ast/BaseProcessor.ts:79</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="getParentNode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Parent<wbr/>Node</span><a href="#getParentNode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="getParentNode.getParentNode-1">get<wbr/>Parent<wbr/>Node<span class="tsd-signature-symbol">(</span>rootNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Node</span>, targetNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Node</span><a href="#getParentNode.getParentNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Gets the parent node of a given node in the AST</p>
+
+<h3>Returns</h3><ul>
+<li>The parent node or null if not found</li>
+</ul>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>rootNode: <span class="tsd-signature-type">Node</span></h5>
+<div class="tsd-comment tsd-typography"><p>The full AST (or a relevant root node)</p>
+</div></li>
+<li>
+<h5>targetNode: <span class="tsd-signature-type">Node</span></h5>
+<div class="tsd-comment tsd-typography"><p>The node to find parent for</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Node</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#getParentNode">getParentNode</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L29">ast/BaseProcessor.ts:29</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="processModules" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>process<wbr/>Modules</span><a href="#processModules" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="processModules.processModules-1">process<wbr/>Modules<span class="tsd-signature-symbol">(</span>moduleMap<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/ast_SharedInterfaces.ProcessedASTData.html" class="tsd-signature-type" data-tsd-kind="Type alias">ProcessedASTData</a><a href="#processModules.processModules-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Processes ASTs for all modules and creates dependency lists, export lists and import maps</p>
+
+<h3>Returns</h3><ul>
+<li>Arrays of [dependencyList, exportList, usedList, errors, classList]</li>
+</ul>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>moduleMap: <a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>Array of module objects with dir and file properties</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/ast_SharedInterfaces.ProcessedASTData.html" class="tsd-signature-type" data-tsd-kind="Type alias">ProcessedASTData</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/ASTProcessor.ts#L44">ast/ASTProcessor.ts:44</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="replaceWithReversedArray" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>replace<wbr/>With<wbr/>Reversed<wbr/>Array</span><a href="#replaceWithReversedArray" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="replaceWithReversedArray.replaceWithReversedArray-1">replace<wbr/>With<wbr/>Reversed<wbr/>Array<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subStr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, cnt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#replaceWithReversedArray.replaceWithReversedArray-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Replaces occurrences of a substring with elements from a reversed array.
+This was part of the original calRelSrcFile logic.</p>
+
+<h3>Returns</h3><ul>
+<li>Modified string</li>
+</ul>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>str: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>String to modify</p>
+</div></li>
+<li>
+<h5>subStr: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Substring to replace (e.g., &quot;../&quot;)</p>
+</div></li>
+<li>
+<h5>arr: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>Array of replacement values (e.g., directory names of the source path)</p>
+</div></li>
+<li>
+<h5>cnt: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>Count of <code>../</code> occurrences to process</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#replaceWithReversedArray">replaceWithReversedArray</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L224">ast/BaseProcessor.ts:224</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="skipNode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>skip<wbr/>Node</span><a href="#skipNode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="skipNode.skipNode-1">skip<wbr/>Node<span class="tsd-signature-symbol">(</span>nodeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">VisitorOption</span><a href="#skipNode.skipNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Determines if a node type should be skipped by estraverse.</p>
+
+<h3>Returns</h3><p>VisitorOption.Skip if the node should be skipped, otherwise null.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>nodeType: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The type of the AST node.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">VisitorOption</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="ast_BaseProcessor.BaseProcessor.html">BaseProcessor</a>.<a href="ast_BaseProcessor.BaseProcessor.html#skipNode">skipNode</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/71c322c/src/ast/BaseProcessor.ts#L51">ast/BaseProcessor.ts:51</a></li></ul></aside></li></ul></section></section></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current"><a href="../modules.html">src</a>
+<ul>
+<li class="tsd-kind-module"><a href="../modules/DependencyGraphGenerator.html">Dependency<wbr/>Graph<wbr/>Generator</a></li>
+<li class="tsd-kind-module"><a href="../modules/DocumentationGenerator.html">Documentation<wbr/>Generator</a></li>
+<li class="tsd-kind-module"><a href="../modules/GraphvizProcessor.html">Graphviz<wbr/>Processor</a></li>
+<li class="current tsd-kind-module"><a href="../modules/ast_ASTProcessor.html">ast/ASTProcessor</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_BaseProcessor.html">ast/<wbr/>Base<wbr/>Processor</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_ClassProcessor.html">ast/<wbr/>Class<wbr/>Processor</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_ErrorCollector.html">ast/<wbr/>Error<wbr/>Collector</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_ExportProcessor.html">ast/<wbr/>Export<wbr/>Processor</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_ImportProcessor.html">ast/<wbr/>Import<wbr/>Processor</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_SharedInterfaces.html">ast/<wbr/>Shared<wbr/>Interfaces</a></li>
+<li class="tsd-kind-module"><a href="../modules/ast_UsageProcessor.html">ast/<wbr/>Usage<wbr/>Processor</a></li>
+<li class="tsd-kind-module"><a href="../modules/dep_graph.html">dep-<wbr/>graph</a></li>
+<li class="tsd-kind-module"><a href="../modules/generators_DiagramsGenerator.html">generators/<wbr/>Diagrams<wbr/>Generator</a></li>
+<li class="tsd-kind-module"><a href="../modules/generators_HtmlGenerator.html">generators/<wbr/>Html<wbr/>Generator</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_ClassDiagram.html">graphs/<wbr/>Class<wbr/>Diagram</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_ExportGraph.html">graphs/<wbr/>Export<wbr/>Graph</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_GraphBase.html">graphs/<wbr/>Graph<wbr/>Base</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_GraphGenerator.html">graphs/<wbr/>Graph<wbr/>Generator</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_NodeModulesGraph.html">graphs/<wbr/>Node<wbr/>Modules<wbr/>Graph</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_PackageGraph.html">graphs/<wbr/>Package<wbr/>Graph</a></li>
+<li class="tsd-kind-module"><a href="../modules/graphs_RelationsGraph.html">graphs/<wbr/>Relations<wbr/>Graph</a></li>
+<li class="tsd-kind-module"><a href="../modules/index.html">index</a></li>
+<li class="tsd-kind-module"><a href="../modules/utils_file_utils.html">utils/file-<wbr/>utils</a></li>
+<li class="tsd-kind-module"><a href="../modules/utils_globals.html">utils/globals</a></li>
+<li class="tsd-kind-module"><a href="../modules/utils_json.html">utils/json</a></li>
+<li class="tsd-kind-module"><a href="../modules/utils_list_utils.html">utils/list-<wbr/>utils</a></li></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="current tsd-kind-class tsd-parent-kind-module"><a href="ast_ASTProcessor.ASTProcessor.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg><span>ASTProcessor</span></a>
+<ul>
+<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="ast_ASTProcessor.ASTProcessor.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-512-path"></use><use href="#icon-512-text"></use></svg>constructor</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#baseLoc" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>base<wbr/>Loc</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ast_ASTProcessor.ASTProcessor.html#classProcessor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>class<wbr/>Processor</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ast_ASTProcessor.ASTProcessor.html#errorCollector" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>error<wbr/>Collector</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ast_ASTProcessor.ASTProcessor.html#exportProcessor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>export<wbr/>Processor</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ast_ASTProcessor.ASTProcessor.html#importProcessor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>import<wbr/>Processor</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#calRelSrcFile" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>cal<wbr/>Rel<wbr/>Src<wbr/>File</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#countSubstrings" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>count<wbr/>Substrings</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#formatFunctionParams" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>format<wbr/>Function<wbr/>Params</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#getAbsolutePath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Absolute<wbr/>Path</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#getParentNode" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Parent<wbr/>Node</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="ast_ASTProcessor.ASTProcessor.html#processModules" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>process<wbr/>Modules</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#replaceWithReversedArray" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>replace<wbr/>With<wbr/>Reversed<wbr/>Array</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ast_ASTProcessor.ASTProcessor.html#skipNode" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>skip<wbr/>Node</a></li></ul></li></ul></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="../assets/main.js"></script></body></html>

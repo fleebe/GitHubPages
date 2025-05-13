@@ -1,0 +1,38 @@
+digraph {label="generators Class Diagram";
+labelloc="t";
+"DiagramsGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>DiagramsGenerator</B></TD></TR>
+<TR><TD align="left"><B>properties</B><BR/>
++ indexHTML: string<BR/>
++ diagramsHTML: string<BR/>
+</TD></TR>
+<TR><TD align="left"><B>methods</B><BR/>
++ constructor(indexHTML)<BR/>
++ createDiagramsHtml(outDir, dirArray)<BR/>
+- generateSvgSection(title, svgFileName, linkText)<BR/>
+</TD></TR>
+</TABLE>>];
+
+"HtmlGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>HtmlGenerator</B></TD></TR>
+<TR><TD align="left"><B>properties</B><BR/>
++ outputDir: string<BR/>
++ diagramHTML: string<BR/>
++ JSDocHTML: string<BR/>
++ TSDocHTML: string<BR/>
+</TD></TR>
+<TR><TD align="left"><B>methods</B><BR/>
++ constructor(outputDir, diagramHTML, JSDocHTML, TSDocHTML)<BR/>
++ createModuleHtml(symbol, moduleArray, dependencyList, exportList)<BR/>
+- generateSummarySection(moduleArray, dependencyList)<BR/>
+- generateModuleSummaryTable(moduleArray)<BR/>
+- generateUnusedModulesTable(unusedModules)<BR/>
+- generateModuleDetails(moduleArray, dependencyList, exportList)<BR/>
+- generateExportsTable(exportList, usedList, mod)<BR/>
+- generateDependsOnTable(dependencyList, mod)<BR/>
+- generateUsedByTable(usedList, modName)<BR/>
+- generateNodeModulesSection(dependencyList)<BR/>
+</TD></TR>
+</TABLE>>];
+
+}

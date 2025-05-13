@@ -1,0 +1,1866 @@
+[
+  {
+    "name": "PackageConfig",
+    "filePath": "dep-graph.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "version",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": false
+  },
+  {
+    "name": "ProgramOptions",
+    "filePath": "dep-graph.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "json",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "graph",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "class",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "jsdoc",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "output",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "jsdocConfig",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "typedocConfig",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "entryPoint",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "config",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": false
+  },
+  {
+    "name": "DggOptions",
+    "filePath": "DependencyGraphGenerator.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "json",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "graph",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "class",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "jsdoc",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "output",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "typedocConfig",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "jsdocConfig",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "ignore",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "DependencyGraphGenerator",
+    "filePath": "DependencyGraphGenerator.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLocInput, options)"
+      },
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "getModuleArray",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(stats)"
+      },
+      {
+        "name": "createDirGraph",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(graphName, dirArray, graphGenerator, svgPromises)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "baseLoc",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "options",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "DggOptions"
+      },
+      {
+        "name": "outputDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "diagramHTML",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": true,
+        "type": "string"
+      },
+      {
+        "name": "indexHTML",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": true,
+        "type": "string"
+      },
+      {
+        "name": "graphvizProcessor",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "GraphvizProcessor"
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "JSDocSourceConfig",
+    "filePath": "DocumentationGenerator.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "include",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "exclude",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "includePattern",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "excludePattern",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "JSDocOptsConfig",
+    "filePath": "DocumentationGenerator.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "destination",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "encoding",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "private",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "recurse",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "pedantic",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "readme",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "template",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "tutorials",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "verbose",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "debug",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "explain",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "sourcemap",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "package",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "JSDocConfig",
+    "filePath": "DocumentationGenerator.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "tags",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "object"
+      },
+      {
+        "name": "source",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "JSDocSourceConfig"
+      },
+      {
+        "name": "sourceType",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "unknown_type | unknown_type"
+      },
+      {
+        "name": "plugins",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "recurseDepth",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "number"
+      },
+      {
+        "name": "opts",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "JSDocOptsConfig"
+      },
+      {
+        "name": "markdown",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "object"
+      },
+      {
+        "name": "templates",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "object"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "DocumentationGenerator",
+    "filePath": "DocumentationGenerator.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLocInput, outputDir, moduleArray)"
+      },
+      {
+        "name": "generateTypeDoc",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(typedocConfig)"
+      },
+      {
+        "name": "generateJsDoc",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(userConfigPath)"
+      },
+      {
+        "name": "showJsdocPath",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "()"
+      },
+      {
+        "name": "createTempJsdocConfigObject",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(jsdocOutputDirAbsolute)"
+      },
+      {
+        "name": "spawnDocumentationProcess",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(command, args, logPrefix, toolDisplayName)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "outputDir",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "baseLoc",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "jsModules",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "tsModules",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "typeDocIndexRelativePath",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string | null"
+      },
+      {
+        "name": "jsDocIndexRelativePath",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string | null"
+      },
+      {
+        "name": "defaultTypeDocSubDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": true
+      },
+      {
+        "name": "defaultJsDocSubDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": true
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "GraphvizProcessor",
+    "filePath": "GraphvizProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "generateSvg",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dotFilePath, svgFilePath)"
+      }
+    ],
+    "properties": [],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ASTProcessor",
+    "filePath": "ast/ASTProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      },
+      {
+        "name": "processModules",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(moduleMap)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "importProcessor",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "ImportProcessor"
+      },
+      {
+        "name": "exportProcessor",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "ExportProcessor"
+      },
+      {
+        "name": "classProcessor",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "ClassProcessor"
+      },
+      {
+        "name": "errorCollector",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "ErrorCollector"
+      }
+    ],
+    "superClass": "BaseProcessor",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "BaseProcessor",
+    "filePath": "ast/BaseProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      },
+      {
+        "name": "getParentNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(rootNode, targetNode)"
+      },
+      {
+        "name": "skipNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(nodeType)"
+      },
+      {
+        "name": "getAbsolutePath",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(currentFilePath, relativePath)"
+      },
+      {
+        "name": "formatFunctionParams",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(params)"
+      },
+      {
+        "name": "calRelSrcFile",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(importingFilePath, importPathValue)"
+      },
+      {
+        "name": "countSubstrings",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(str, subStr)"
+      },
+      {
+        "name": "replaceWithReversedArray",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(str, subStr, arr, cnt)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "baseLoc",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ClassProcessor",
+    "filePath": "ast/ClassProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      },
+      {
+        "name": "extractTypeNameFromHeritageClause",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(clause)"
+      },
+      {
+        "name": "extractSuperClassName",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(superClassNode)"
+      },
+      {
+        "name": "extractMemberExpressionName",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(node)"
+      },
+      {
+        "name": "extractMethodInfo",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(methodNode)"
+      },
+      {
+        "name": "getMethodName",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(keyNode)"
+      },
+      {
+        "name": "extractPropertyInfo",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(propertyNode)"
+      },
+      {
+        "name": "extractPropertySignatureInfo",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(propertyNode)"
+      },
+      {
+        "name": "extractMethodSignatureInfo",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(methodNode)"
+      },
+      {
+        "name": "getPropertyName",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(keyNode)"
+      },
+      {
+        "name": "extractTypeAnnotation",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(typeAnnotationNode)"
+      },
+      {
+        "name": "isNodeExported",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(parent)"
+      },
+      {
+        "name": "processClassNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(node, parent, filePath)"
+      },
+      {
+        "name": "processInterfaceNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(node, parent, filePath)"
+      }
+    ],
+    "properties": [],
+    "superClass": "BaseProcessor",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ErrorCollector",
+    "filePath": "ast/ErrorCollector.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      },
+      {
+        "name": "addError",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(file, err)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "errors",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      }
+    ],
+    "superClass": "BaseProcessor",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "DeclarationInfo",
+    "filePath": "ast/ExportProcessor.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "type",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "AST_NODE_TYPES"
+      },
+      {
+        "name": "params",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ExportProcessor",
+    "filePath": "ast/ExportProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      },
+      {
+        "name": "extractNamesFromPattern",
+        "kind": "method",
+        "isStatic": true,
+        "isPrivate": true,
+        "parameters": "(idPattern, callback)"
+      },
+      {
+        "name": "processTopLevelDeclaration",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(ast)"
+      },
+      {
+        "name": "processExportAllDeclaration",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(node, srcFile, mod)"
+      },
+      {
+        "name": "processExportDeclaration",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(node, srcFile, mod, topLevelDeclarations)"
+      },
+      {
+        "name": "processDeclarationNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(decl, declarationDetailsCallback)"
+      }
+    ],
+    "properties": [],
+    "superClass": "BaseProcessor",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ImportProcessor",
+    "filePath": "ast/ImportProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      },
+      {
+        "name": "processImportDeclaration",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(node, fullSrcFilePath)"
+      },
+      {
+        "name": "normalizeDeps",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(deps)"
+      }
+    ],
+    "properties": [],
+    "superClass": "BaseProcessor",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ModuleInfo",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "dir",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "file",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "dependsOnCnt",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "number"
+      },
+      {
+        "name": "usedByCnt",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "number"
+      },
+      {
+        "name": "exportCnt",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "number"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ImportInfo",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "src",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "importSrc",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "relSrcName",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "import",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ExportInfo",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "src",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "exported",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "params",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ErrorInfo",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "file",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "err",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "Error"
+      },
+      {
+        "name": "msg",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "MethodInfo",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "name",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "kind",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "unknown_type | unknown_type | unknown_type | unknown_type"
+      },
+      {
+        "name": "isStatic",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "isPrivate",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "parameters",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "PropertyInfo",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "name",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "isStatic",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "isPrivate",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      },
+      {
+        "name": "type",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "hasDefaultValue",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ClassDetail",
+    "filePath": "ast/SharedInterfaces.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "name",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "filePath",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "declarationType",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "unknown_type | unknown_type"
+      },
+      {
+        "name": "methods",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "properties",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "superClass",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string | null"
+      },
+      {
+        "name": "implementsInterfaces",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "extendsInterfaces",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "isExported",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "boolean"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "UsageProcessor",
+    "filePath": "ast/UsageProcessor.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc)"
+      }
+    ],
+    "properties": [],
+    "superClass": "BaseProcessor",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "DiagramsGenerator",
+    "filePath": "generators/DiagramsGenerator.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(indexHTML)"
+      },
+      {
+        "name": "createDiagramsHtml",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(outDir, dirArray)"
+      },
+      {
+        "name": "generateSvgSection",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(title, svgFileName, linkText)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "indexHTML",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string"
+      },
+      {
+        "name": "diagramsHTML",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "HtmlGenerator",
+    "filePath": "generators/HtmlGenerator.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(outputDir, diagramHTML, JSDocHTML, TSDocHTML)"
+      },
+      {
+        "name": "createModuleHtml",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(symbol, moduleArray, dependencyList, exportList)"
+      },
+      {
+        "name": "generateSummarySection",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(moduleArray, dependencyList)"
+      },
+      {
+        "name": "generateModuleSummaryTable",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(moduleArray)"
+      },
+      {
+        "name": "generateUnusedModulesTable",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(unusedModules)"
+      },
+      {
+        "name": "generateModuleDetails",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(moduleArray, dependencyList, exportList)"
+      },
+      {
+        "name": "generateExportsTable",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(exportList, usedList, mod)"
+      },
+      {
+        "name": "generateDependsOnTable",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(dependencyList, mod)"
+      },
+      {
+        "name": "generateUsedByTable",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(usedList, modName)"
+      },
+      {
+        "name": "generateNodeModulesSection",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(dependencyList)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "outputDir",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "diagramHTML",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "JSDocHTML",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "TSDocHTML",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ClassDiagram",
+    "filePath": "graphs/ClassDiagram.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dependencyList, declarationList)"
+      },
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dir)"
+      },
+      {
+        "name": "createClassNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(classItem)"
+      },
+      {
+        "name": "createInterfaceNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(interfaceItem)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "declarationList",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      }
+    ],
+    "superClass": "GraphBase",
+    "implementsInterfaces": [
+      "IGraphFileGenerator"
+    ],
+    "isExported": true
+  },
+  {
+    "name": "ExportGraph",
+    "filePath": "graphs/ExportGraph.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dependencyList, exportList, moduleArray)"
+      },
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dir)"
+      },
+      {
+        "name": "createModuleNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(mod, exportList)"
+      },
+      {
+        "name": "createNodeModulesRelations",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(modName, nodeMods)"
+      },
+      {
+        "name": "createRelations",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(modules)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "exportList",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      }
+    ],
+    "superClass": "GraphBase",
+    "implementsInterfaces": [
+      "IGraphFileGenerator"
+    ],
+    "isExported": true
+  },
+  {
+    "name": "GraphBase",
+    "filePath": "graphs/GraphBase.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(depList, moduleArray)"
+      },
+      {
+        "name": "digraph",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(title)"
+      },
+      {
+        "name": "nodeStart",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(title)"
+      },
+      {
+        "name": "makeSafeTitle",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(title)"
+      },
+      {
+        "name": "nodeFinish",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "recordDigraph",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(title)"
+      },
+      {
+        "name": "getDependsOnMod",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(mod)"
+      },
+      {
+        "name": "getNodeModuleList",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "filterModulesForDir",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dir)"
+      },
+      {
+        "name": "uniqueDirs",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "isNodeModule",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dep)"
+      },
+      {
+        "name": "inSameDirectory",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dep)"
+      },
+      {
+        "name": "cleanDirPath",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(root)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "dependencyList",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "moduleArray",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "diagramsHTML",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "IGraphFileGenerator",
+    "filePath": "graphs/GraphGenerator.ts",
+    "declarationType": "interface",
+    "methods": [
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(filter)"
+      }
+    ],
+    "properties": [],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "NodeModulesGraph",
+    "filePath": "graphs/NodeModulesGraph.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dependencyList)"
+      },
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "createNodeModulesSection",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      }
+    ],
+    "properties": [],
+    "superClass": "GraphBase",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "PackageGraph",
+    "filePath": "graphs/PackageGraph.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(moduleArray, dependencyList)"
+      },
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "createPackageDependencies",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "()"
+      },
+      {
+        "name": "createPackageNodes",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "()"
+      }
+    ],
+    "properties": [],
+    "superClass": "GraphBase",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "RelationsGraph",
+    "filePath": "graphs/RelationsGraph.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(dependencyList, moduleArray)"
+      },
+      {
+        "name": "generate",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "()"
+      },
+      {
+        "name": "getUsedBy",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(mod)"
+      },
+      {
+        "name": "createModuleRelationNode",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(mod)"
+      },
+      {
+        "name": "createNodeModulesSection",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "()"
+      }
+    ],
+    "properties": [
+      {
+        "name": "nodeMods",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "array"
+      }
+    ],
+    "superClass": "GraphBase",
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "ModulePathInfo",
+    "filePath": "utils/file-utils.ts",
+    "declarationType": "interface",
+    "methods": [],
+    "properties": [
+      {
+        "name": "dir",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "file",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      }
+    ],
+    "superClass": null,
+    "extendsInterfaces": [],
+    "isExported": true
+  }
+]

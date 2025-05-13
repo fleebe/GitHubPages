@@ -1,0 +1,11 @@
+digraph {label="processors Class Diagram";
+labelloc="t";
+"GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="1" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>GraphvizProcessor</B></TD></TR>
+<TR><TD align="left"><B>methods</B><BR/>
++ constructor()<BR/>
++ generateSvg(dotFilePath, svgFilePath)<BR/>
+</TD></TR>
+</TABLE>>];
+
+}

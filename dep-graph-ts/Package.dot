@@ -1,0 +1,64 @@
+digraph {label="";
+labelloc="t";
+"" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="center" HREF="diagrams.html#base" TARGET="_top"><U><font color="blue">./</font></U></TD></TR>
+<TR><TD ALIGN="left">
+dep-graph.ts<BR/>
+DependencyGraphGenerator.ts<BR/>
+DocumentationGenerator.ts<BR/>
+GraphvizProcessor.ts<BR/>
+index.ts<BR/>
+</TD></TR>
+</TABLE>>];
+"ast" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="center" HREF="diagrams.html#ast" TARGET="_top"><U><font color="blue">ast</font></U></TD></TR>
+<TR><TD ALIGN="left">
+ASTProcessor.ts<BR/>
+BaseProcessor.ts<BR/>
+ClassProcessor.ts<BR/>
+ErrorCollector.ts<BR/>
+ExportProcessor.ts<BR/>
+ImportProcessor.ts<BR/>
+SharedInterfaces.ts<BR/>
+UsageProcessor.ts<BR/>
+</TD></TR>
+</TABLE>>];
+"generators" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="center" HREF="diagrams.html#generators" TARGET="_top"><U><font color="blue">generators</font></U></TD></TR>
+<TR><TD ALIGN="left">
+DiagramsGenerator.ts<BR/>
+HtmlGenerator.ts<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="center" HREF="diagrams.html#graphs" TARGET="_top"><U><font color="blue">graphs</font></U></TD></TR>
+<TR><TD ALIGN="left">
+ClassDiagram.ts<BR/>
+ExportGraph.ts<BR/>
+GraphBase.ts<BR/>
+GraphGenerator.ts<BR/>
+NodeModulesGraph.ts<BR/>
+PackageGraph.ts<BR/>
+RelationsGraph.ts<BR/>
+</TD></TR>
+</TABLE>>];
+"utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="center" HREF="diagrams.html#utils" TARGET="_top"><U><font color="blue">utils</font></U></TD></TR>
+<TR><TD ALIGN="left">
+file-utils.ts<BR/>
+globals.ts<BR/>
+json.ts<BR/>
+list-utils.ts<BR/>
+</TD></TR>
+</TABLE>>];
+""->"generators";
+""->"utils";
+""->"graphs";
+""->"ast";
+"ast"->"utils";
+"generators"->"ast";
+"generators"->"utils";
+"graphs"->"ast";
+"graphs"->"utils";
+"utils"->"ast";
+}

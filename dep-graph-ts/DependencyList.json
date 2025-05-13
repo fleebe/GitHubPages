@@ -1,0 +1,961 @@
+[
+  {
+    "src": "dep-graph.ts",
+    "name": "dep-graph",
+    "importSrc": "commander",
+    "relSrcName": "commander",
+    "import": "Command"
+  },
+  {
+    "src": "dep-graph.ts",
+    "name": "dep-graph",
+    "importSrc": "commander",
+    "relSrcName": "commander",
+    "import": "Option"
+  },
+  {
+    "src": "dep-graph.ts",
+    "name": "dep-graph",
+    "importSrc": "commander",
+    "relSrcName": "commander",
+    "import": "OptionValues"
+  },
+  {
+    "src": "dep-graph.ts",
+    "name": "dep-graph",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "dep-graph.ts",
+    "name": "dep-graph",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "dep-graph.ts",
+    "name": "dep-graph",
+    "importSrc": "./DependencyGraphGenerator",
+    "relSrcName": "DependencyGraphGenerator",
+    "import": "DependencyGraphGenerator"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./generators/HtmlGenerator",
+    "relSrcName": "generators/HtmlGenerator",
+    "import": "HtmlGenerator"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/json",
+    "relSrcName": "utils/json",
+    "import": "jsonOut"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "safeWriteFile"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getRelativePathParts"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getDirectoriesRecursive"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getFiles"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getFilename"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./generators/DiagramsGenerator",
+    "relSrcName": "generators/DiagramsGenerator",
+    "import": "DiagramsGenerator"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./graphs/ExportGraph",
+    "relSrcName": "graphs/ExportGraph",
+    "import": "ExportGraph"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./graphs/RelationsGraph",
+    "relSrcName": "graphs/RelationsGraph",
+    "import": "RelationsGraph"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./graphs/ClassDiagram",
+    "relSrcName": "graphs/ClassDiagram",
+    "import": "ClassDiagram"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./graphs/PackageGraph",
+    "relSrcName": "graphs/PackageGraph",
+    "import": "PackageGraph"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./graphs/NodeModulesGraph",
+    "relSrcName": "graphs/NodeModulesGraph",
+    "import": "NodeModulesGraph"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ProcessedASTData"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./ast/ASTProcessor",
+    "relSrcName": "ast/ASTProcessor",
+    "import": "ASTProcessor"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./graphs/GraphGenerator",
+    "relSrcName": "graphs/GraphGenerator",
+    "import": "IGraphFileGenerator"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./GraphvizProcessor",
+    "relSrcName": "GraphvizProcessor",
+    "import": "GraphvizProcessor"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./DocumentationGenerator",
+    "relSrcName": "DocumentationGenerator",
+    "import": "DocumentationGenerator"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "child_process",
+    "relSrcName": "child_process",
+    "import": "ChildProcess"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "child_process",
+    "relSrcName": "child_process",
+    "import": "spawn"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getFilename"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "./ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "GraphvizProcessor.ts",
+    "name": "GraphvizProcessor",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "GraphvizProcessor.ts",
+    "name": "GraphvizProcessor",
+    "importSrc": "child_process",
+    "relSrcName": "child_process",
+    "import": "spawn"
+  },
+  {
+    "src": "GraphvizProcessor.ts",
+    "name": "GraphvizProcessor",
+    "importSrc": "child_process",
+    "relSrcName": "child_process",
+    "import": "ChildProcess"
+  },
+  {
+    "src": "index.ts",
+    "name": "index",
+    "importSrc": "./dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "runProgram"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "readFileSync"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "@typescript-eslint/parser",
+    "relSrcName": "@typescript-eslint/parser",
+    "import": "parse"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "AST_NODE_TYPES"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "ParserOptions"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "TSESTree"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./ImportProcessor",
+    "relSrcName": "ast/ImportProcessor",
+    "import": "ImportProcessor"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./ExportProcessor",
+    "relSrcName": "ast/ExportProcessor",
+    "import": "ExportProcessor"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./ClassProcessor",
+    "relSrcName": "ast/ClassProcessor",
+    "import": "ClassProcessor"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./ErrorCollector",
+    "relSrcName": "ast/ErrorCollector",
+    "import": "ErrorCollector"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ClassDetail"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ExportInfo"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ProcessedASTData"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "cleanPath"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getModuleName"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "moduleFileName"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "removeExtension"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "estraverse",
+    "relSrcName": "estraverse",
+    "import": "estraverse"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "estree",
+    "relSrcName": "estree",
+    "import": "Node"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "name": "ast/ASTProcessor",
+    "importSrc": "./BaseProcessor",
+    "relSrcName": "ast/BaseProcessor",
+    "import": "BaseProcessor"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "estraverse",
+    "relSrcName": "estraverse",
+    "import": "estraverse"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "estraverse",
+    "relSrcName": "estraverse",
+    "import": "VisitorOption"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "estraverse",
+    "relSrcName": "estraverse",
+    "import": "Controller"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "AST_NODE_TYPES"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "TSESTree"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "name": "ast/BaseProcessor",
+    "importSrc": "estree",
+    "relSrcName": "estree",
+    "import": "Node"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "name": "ast/ClassProcessor",
+    "importSrc": "./BaseProcessor",
+    "relSrcName": "ast/BaseProcessor",
+    "import": "BaseProcessor"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "name": "ast/ClassProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "TSESTree"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "name": "ast/ClassProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "AST_NODE_TYPES"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "name": "ast/ClassProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ClassDetail"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "name": "ast/ClassProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "MethodInfo"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "name": "ast/ClassProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "PropertyInfo"
+  },
+  {
+    "src": "ast/ErrorCollector.ts",
+    "name": "ast/ErrorCollector",
+    "importSrc": "./BaseProcessor",
+    "relSrcName": "ast/BaseProcessor",
+    "import": "BaseProcessor"
+  },
+  {
+    "src": "ast/ErrorCollector.ts",
+    "name": "ast/ErrorCollector",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ErrorInfo"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "name": "ast/ExportProcessor",
+    "importSrc": "./BaseProcessor",
+    "relSrcName": "ast/BaseProcessor",
+    "import": "BaseProcessor"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "name": "ast/ExportProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "TSESTree"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "name": "ast/ExportProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "AST_NODE_TYPES"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "name": "ast/ExportProcessor",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "name": "ast/ExportProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ExportInfo"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "name": "ast/ExportProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "cleanPath"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "removeExtension"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "./BaseProcessor",
+    "relSrcName": "ast/BaseProcessor",
+    "import": "BaseProcessor"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "TSESTree"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "@typescript-eslint/types",
+    "relSrcName": "@typescript-eslint/types",
+    "import": "AST_NODE_TYPES"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "name": "ast/ImportProcessor",
+    "importSrc": "./SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "ast/UsageProcessor.ts",
+    "name": "ast/UsageProcessor",
+    "importSrc": "./BaseProcessor",
+    "relSrcName": "ast/BaseProcessor",
+    "import": "BaseProcessor"
+  },
+  {
+    "src": "generators/DiagramsGenerator.ts",
+    "name": "generators/DiagramsGenerator",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "generators/DiagramsGenerator.ts",
+    "name": "generators/DiagramsGenerator",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ExportInfo"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "moduleFileName"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getModuleName"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getUsedByList"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getDependsOn"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getUniqueNodeModules"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "name": "generators/HtmlGenerator",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getExportedList"
+  },
+  {
+    "src": "graphs/ClassDiagram.ts",
+    "name": "graphs/ClassDiagram",
+    "importSrc": "./GraphBase",
+    "relSrcName": "graphs/GraphBase",
+    "import": "GraphBase"
+  },
+  {
+    "src": "graphs/ClassDiagram.ts",
+    "name": "graphs/ClassDiagram",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ClassDetail"
+  },
+  {
+    "src": "graphs/ClassDiagram.ts",
+    "name": "graphs/ClassDiagram",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "graphs/ClassDiagram.ts",
+    "name": "graphs/ClassDiagram",
+    "importSrc": "./GraphGenerator",
+    "relSrcName": "graphs/GraphGenerator",
+    "import": "IGraphFileGenerator"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "./GraphBase",
+    "relSrcName": "graphs/GraphBase",
+    "import": "GraphBase"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "cleanPath"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getModuleName"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "moduleFileName"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getExportedList"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ExportInfo"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "./GraphGenerator",
+    "relSrcName": "graphs/GraphGenerator",
+    "import": "IGraphFileGenerator"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "graphs/GraphBase.ts",
+    "name": "graphs/GraphBase",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "graphs/GraphBase.ts",
+    "name": "graphs/GraphBase",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "graphs/GraphBase.ts",
+    "name": "graphs/GraphBase",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "graphs/GraphBase.ts",
+    "name": "graphs/GraphBase",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "cleanPath"
+  },
+  {
+    "src": "graphs/GraphBase.ts",
+    "name": "graphs/GraphBase",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getNodeModules"
+  },
+  {
+    "src": "graphs/NodeModulesGraph.ts",
+    "name": "graphs/NodeModulesGraph",
+    "importSrc": "./GraphBase",
+    "relSrcName": "graphs/GraphBase",
+    "import": "GraphBase"
+  },
+  {
+    "src": "graphs/NodeModulesGraph.ts",
+    "name": "graphs/NodeModulesGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "graphs/PackageGraph.ts",
+    "name": "graphs/PackageGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "graphs/PackageGraph.ts",
+    "name": "graphs/PackageGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "graphs/PackageGraph.ts",
+    "name": "graphs/PackageGraph",
+    "importSrc": "./GraphBase",
+    "relSrcName": "graphs/GraphBase",
+    "import": "GraphBase"
+  },
+  {
+    "src": "graphs/RelationsGraph.ts",
+    "name": "graphs/RelationsGraph",
+    "importSrc": "./GraphBase",
+    "relSrcName": "graphs/GraphBase",
+    "import": "GraphBase"
+  },
+  {
+    "src": "graphs/RelationsGraph.ts",
+    "name": "graphs/RelationsGraph",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getModuleName"
+  },
+  {
+    "src": "graphs/RelationsGraph.ts",
+    "name": "graphs/RelationsGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "graphs/RelationsGraph.ts",
+    "name": "graphs/RelationsGraph",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "graphs/RelationsGraph.ts",
+    "name": "graphs/RelationsGraph",
+    "importSrc": "../utils/list-utils",
+    "relSrcName": "utils/list-utils",
+    "import": "getUsedByList"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "name": "utils/file-utils",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "name": "utils/file-utils",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "name": "utils/file-utils",
+    "importSrc": "./globals",
+    "relSrcName": "utils/globals",
+    "import": "EXT_LIST"
+  },
+  {
+    "src": "utils/json.ts",
+    "name": "utils/json",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "utils/json.ts",
+    "name": "utils/json",
+    "importSrc": "./file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "safeWriteFile"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "name": "utils/list-utils",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ImportInfo"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "name": "utils/list-utils",
+    "importSrc": "../ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ExportInfo"
+  }
+]
