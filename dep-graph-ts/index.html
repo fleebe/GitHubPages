@@ -1,0 +1,1075 @@
+<html><head><style>body { font-family: Arial, sans-serif; margin: 20px; }.svg-container { max-width: 100%; overflow: auto; margin: 20px 0; border: 1px solid #ddd; padding: 10px; }h1, h2, h3 { color: #333; }table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }th { background-color: #f2f2f2; }td, th { border: 1px solid #ddd; padding: 8px; }</style></head><body>
+<h1>src</h1>
+<h2>Diagrams</h2>
+<p><a href="diagrams.html">View all module diagrams</a></p>
+<h2>TypeScript Docs</h2>
+<p><a href="tsdocs/index.html">View TypeScript Docs</a></p>
+<h1 id="mod_list">Module List</h1>
+<table border=1 cellpadding=5>
+	<tr><th>Type</th><th>Count</td></th></tr>
+	<tr><td><a href="#node_modules">Node Modules</a></td>	<td>8</td></tr>
+	<tr><td>Application Modules</td>	<td>26</td></tr>
+	<tr><td><a href="#unused">Unused Application Modules</a></td>	<td>2</td></tr>
+</table><br>
+<table border=1 cellpadding=5>
+	<tr><th>Directory</th><th>File</th><th>Depends On</th><th>Used By</th><th>Exported</th></tr>
+	<tr><td></td><td><a href="#dep-graph.ts">dep-graph.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
+	<tr><td></td><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator.ts</a></td><td>16</td><td>1</td><td>2</td></tr>
+	<tr><td></td><td><a href="#DocumentationGenerator.ts">DocumentationGenerator.ts</a></td><td>5</td><td>1</td><td>4</td></tr>
+	<tr><td></td><td><a href="#GraphvizProcessor.ts">GraphvizProcessor.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
+	<tr><td></td><td><a href="#index.ts">index.ts</a></td><td>1</td><td>0</td><td>0</td></tr>
+	<tr><td>ast</td><td><a href="#ASTProcessor.ts">ASTProcessor.ts</a></td><td>13</td><td>1</td><td>1</td></tr>
+	<tr><td>ast</td><td><a href="#BaseProcessor.ts">BaseProcessor.ts</a></td><td>4</td><td>6</td><td>1</td></tr>
+	<tr><td>ast</td><td><a href="#ClassProcessor.ts">ClassProcessor.ts</a></td><td>3</td><td>1</td><td>1</td></tr>
+	<tr><td>ast</td><td><a href="#ErrorCollector.ts">ErrorCollector.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
+	<tr><td>ast</td><td><a href="#ExportProcessor.ts">ExportProcessor.ts</a></td><td>4</td><td>1</td><td>3</td></tr>
+	<tr><td>ast</td><td><a href="#ImportProcessor.ts">ImportProcessor.ts</a></td><td>5</td><td>1</td><td>1</td></tr>
+	<tr><td>ast</td><td><a href="#SharedInterfaces.ts">SharedInterfaces.ts</a></td><td>0</td><td>15</td><td>8</td></tr>
+	<tr><td>ast</td><td><a href="#UsageProcessor.ts">UsageProcessor.ts</a></td><td>1</td><td>0</td><td>1</td></tr>
+	<tr><td>generators</td><td><a href="#DiagramsGenerator.ts">DiagramsGenerator.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
+	<tr><td>generators</td><td><a href="#HtmlGenerator.ts">HtmlGenerator.ts</a></td><td>5</td><td>1</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#ClassDiagram.ts">ClassDiagram.ts</a></td><td>3</td><td>1</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#ExportGraph.ts">ExportGraph.ts</a></td><td>6</td><td>1</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#GraphBase.ts">GraphBase.ts</a></td><td>4</td><td>5</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#GraphGenerator.ts">GraphGenerator.ts</a></td><td>0</td><td>3</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#NodeModulesGraph.ts">NodeModulesGraph.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#PackageGraph.ts">PackageGraph.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#RelationsGraph.ts">RelationsGraph.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
+	<tr><td>utils</td><td><a href="#file-utils.ts">file-utils.ts</a></td><td>3</td><td>9</td><td>10</td></tr>
+	<tr><td>utils</td><td><a href="#globals.ts">globals.ts</a></td><td>0</td><td>1</td><td>1</td></tr>
+	<tr><td>utils</td><td><a href="#json.ts">json.ts</a></td><td>2</td><td>1</td><td>3</td></tr>
+	<tr><td>utils</td><td><a href="#list-utils.ts">list-utils.ts</a></td><td>1</td><td>4</td><td>5</td></tr>
+</table>
+<h2 id="unused">Unused Application Modules</h2><a href="#mod_list">(top)</a>
+<table border=1 cellpadding=5>
+	<tr><th>Directory</th><th>File</th><th>Depends On</th><th>Used By</th><th>Exported</th></tr>
+	<tr><td></td><td><a href="#index.ts">index.ts</a></td><td>1</td><td>0</td><td>0</td></tr>
+	<tr><td>ast</td><td><a href="#UsageProcessor.ts">UsageProcessor.ts</a></td><td>1</td><td>0</td><td>1</td></tr>
+</table>
+<h2 id=dep-graph.ts>dep-graph.ts</h2> <a href="#mod_list">(top)</a>
+<h3>dep-graph.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>runProgram</td>
+	<td>FunctionDeclaration</td>
+	<td>()</td>
+	<td>1</td></tr>
+</table><br>
+<h3>dep-graph.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>DependencyGraphGenerator</td>
+	<td>DependencyGraphGenerator</td></tr>
+	<tr><td>commander</td>
+	<td>Command</td></tr>
+	<tr><td>commander</td>
+	<td>Option</td></tr>
+	<tr><td>commander</td>
+	<td>OptionValues</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>dep-graph.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#index.ts">index</a></td>
+	<td>runProgram</td></tr>
+</table><br>
+<h2 id=DependencyGraphGenerator.ts>DependencyGraphGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>DependencyGraphGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>DependencyGraphGenerator</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+	<tr><td>DggOptions</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+</table><br>
+<h3>DependencyGraphGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/ASTProcessor</td>
+	<td>ASTProcessor</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ProcessedASTData</td></tr>
+	<tr><td>DocumentationGenerator</td>
+	<td>DocumentationGenerator</td></tr>
+	<tr><td>generators/DiagramsGenerator</td>
+	<td>DiagramsGenerator</td></tr>
+	<tr><td>generators/HtmlGenerator</td>
+	<td>HtmlGenerator</td></tr>
+	<tr><td>graphs/ClassDiagram</td>
+	<td>ClassDiagram</td></tr>
+	<tr><td>graphs/ExportGraph</td>
+	<td>ExportGraph</td></tr>
+	<tr><td>graphs/GraphGenerator</td>
+	<td>IGraphFileGenerator</td></tr>
+	<tr><td>graphs/NodeModulesGraph</td>
+	<td>NodeModulesGraph</td></tr>
+	<tr><td>graphs/PackageGraph</td>
+	<td>PackageGraph</td></tr>
+	<tr><td>graphs/RelationsGraph</td>
+	<td>RelationsGraph</td></tr>
+	<tr><td>GraphvizProcessor</td>
+	<td>GraphvizProcessor</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>safeWriteFile</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getRelativePathParts</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getDirectoriesRecursive</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getFiles</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getFilename</td></tr>
+	<tr><td>utils/json</td>
+	<td>jsonOut</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>DependencyGraphGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#dep-graph.ts">dep-graph</a></td>
+	<td>DependencyGraphGenerator</td></tr>
+</table><br>
+<h2 id=DocumentationGenerator.ts>DocumentationGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>DocumentationGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>DocumentationGenerator</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+	<tr><td>JSDocConfig</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+	<tr><td>JSDocOptsConfig</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+	<tr><td>JSDocSourceConfig</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+</table><br>
+<h3>DocumentationGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getFilename</td></tr>
+	<tr><td>child_process</td>
+	<td>ChildProcess</td></tr>
+	<tr><td>child_process</td>
+	<td>spawn</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>DocumentationGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>DocumentationGenerator</td></tr>
+</table><br>
+<h2 id=GraphvizProcessor.ts>GraphvizProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>GraphvizProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>GraphvizProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>GraphvizProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>child_process</td>
+	<td>spawn</td></tr>
+	<tr><td>child_process</td>
+	<td>ChildProcess</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+</table><br>
+<h3>GraphvizProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>GraphvizProcessor</td></tr>
+</table><br>
+<h2 id=index.ts>index.ts</h2> <a href="#mod_list">(top)</a>
+<h3>index.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+</table><br>
+<h3>index.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>dep-graph</td>
+	<td>runProgram</td></tr>
+</table><br>
+<h3>index.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+</table><br>
+<h2 id=ASTProcessor.ts>ASTProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/ASTProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ASTProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>ast/ASTProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>utils/file-utils</td>
+	<td>cleanPath</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getModuleName</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>moduleFileName</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>removeExtension</td></tr>
+	<tr><td>ast/BaseProcessor</td>
+	<td>BaseProcessor</td></tr>
+	<tr><td>ast/ClassProcessor</td>
+	<td>ClassProcessor</td></tr>
+	<tr><td>ast/ErrorCollector</td>
+	<td>ErrorCollector</td></tr>
+	<tr><td>ast/ExportProcessor</td>
+	<td>ExportProcessor</td></tr>
+	<tr><td>ast/ImportProcessor</td>
+	<td>ImportProcessor</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ClassDetail</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ExportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ProcessedASTData</td></tr>
+	<tr><td>@typescript-eslint/parser</td>
+	<td>parse</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>AST_NODE_TYPES</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>ParserOptions</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>TSESTree</td></tr>
+	<tr><td>estraverse</td>
+	<td>estraverse</td></tr>
+	<tr><td>estree</td>
+	<td>Node</td></tr>
+	<tr><td>fs</td>
+	<td>readFileSync</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>ASTProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>ASTProcessor</td></tr>
+</table><br>
+<h2 id=BaseProcessor.ts>BaseProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/BaseProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>BaseProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>6</td></tr>
+</table><br>
+<h3>ast/BaseProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>AST_NODE_TYPES</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>TSESTree</td></tr>
+	<tr><td>estraverse</td>
+	<td>estraverse</td></tr>
+	<tr><td>estraverse</td>
+	<td>VisitorOption</td></tr>
+	<tr><td>estraverse</td>
+	<td>Controller</td></tr>
+	<tr><td>estree</td>
+	<td>Node</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>BaseProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>BaseProcessor</td></tr>
+	<tr><td><a href="#ast/ClassProcessor.ts">ast/ClassProcessor</a></td>
+	<td>BaseProcessor</td></tr>
+	<tr><td><a href="#ast/ErrorCollector.ts">ast/ErrorCollector</a></td>
+	<td>BaseProcessor</td></tr>
+	<tr><td><a href="#ast/ExportProcessor.ts">ast/ExportProcessor</a></td>
+	<td>BaseProcessor</td></tr>
+	<tr><td><a href="#ast/ImportProcessor.ts">ast/ImportProcessor</a></td>
+	<td>BaseProcessor</td></tr>
+	<tr><td><a href="#ast/UsageProcessor.ts">ast/UsageProcessor</a></td>
+	<td>BaseProcessor</td></tr>
+</table><br>
+<h2 id=ClassProcessor.ts>ClassProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/ClassProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ClassProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>ast/ClassProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/BaseProcessor</td>
+	<td>BaseProcessor</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ClassDetail</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>MethodInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>PropertyInfo</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>TSESTree</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>AST_NODE_TYPES</td></tr>
+</table><br>
+<h3>ClassProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ClassProcessor</td></tr>
+</table><br>
+<h2 id=ErrorCollector.ts>ErrorCollector.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/ErrorCollector.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ErrorCollector</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>ast/ErrorCollector.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/BaseProcessor</td>
+	<td>BaseProcessor</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ErrorInfo</td></tr>
+</table><br>
+<h3>ErrorCollector.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ErrorCollector</td></tr>
+</table><br>
+<h2 id=ExportProcessor.ts>ExportProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/ExportProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>DeclarationDetailsCallback</td>
+	<td>TSTypeAliasDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+	<tr><td>DeclarationInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+	<tr><td>ExportProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>ast/ExportProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/BaseProcessor</td>
+	<td>BaseProcessor</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ExportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>TSESTree</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>AST_NODE_TYPES</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>ExportProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ExportProcessor</td></tr>
+</table><br>
+<h2 id=ImportProcessor.ts>ImportProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/ImportProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ImportProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>ast/ImportProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>utils/file-utils</td>
+	<td>cleanPath</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>removeExtension</td></tr>
+	<tr><td>ast/BaseProcessor</td>
+	<td>BaseProcessor</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>TSESTree</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>AST_NODE_TYPES</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>ImportProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ImportProcessor</td></tr>
+</table><br>
+<h2 id=SharedInterfaces.ts>SharedInterfaces.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/SharedInterfaces.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ClassDetail</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>3</td></tr>
+	<tr><td>ErrorInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+	<tr><td>ExportInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>5</td></tr>
+	<tr><td>ImportInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>10</td></tr>
+	<tr><td>MethodInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+	<tr><td>ModuleInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>9</td></tr>
+	<tr><td>ProcessedASTData</td>
+	<td>TSTypeAliasDeclaration</td>
+	<td></td>
+	<td>2</td></tr>
+	<tr><td>PropertyInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>ast/SharedInterfaces.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+</table><br>
+<h3>SharedInterfaces.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ClassDetail</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ExportInfo</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>ProcessedASTData</td></tr>
+	<tr><td><a href="#ast/ClassProcessor.ts">ast/ClassProcessor</a></td>
+	<td>ClassDetail</td></tr>
+	<tr><td><a href="#ast/ClassProcessor.ts">ast/ClassProcessor</a></td>
+	<td>MethodInfo</td></tr>
+	<tr><td><a href="#ast/ClassProcessor.ts">ast/ClassProcessor</a></td>
+	<td>PropertyInfo</td></tr>
+	<tr><td><a href="#ast/ErrorCollector.ts">ast/ErrorCollector</a></td>
+	<td>ErrorInfo</td></tr>
+	<tr><td><a href="#ast/ExportProcessor.ts">ast/ExportProcessor</a></td>
+	<td>ExportInfo</td></tr>
+	<tr><td><a href="#ast/ExportProcessor.ts">ast/ExportProcessor</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#ast/ImportProcessor.ts">ast/ImportProcessor</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>ProcessedASTData</td></tr>
+	<tr><td><a href="#DocumentationGenerator.ts">DocumentationGenerator</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>ExportInfo</td></tr>
+	<tr><td><a href="#graphs/ClassDiagram.ts">graphs/ClassDiagram</a></td>
+	<td>ClassDetail</td></tr>
+	<tr><td><a href="#graphs/ClassDiagram.ts">graphs/ClassDiagram</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>ExportInfo</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#graphs/GraphBase.ts">graphs/GraphBase</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#graphs/GraphBase.ts">graphs/GraphBase</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#graphs/NodeModulesGraph.ts">graphs/NodeModulesGraph</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#graphs/PackageGraph.ts">graphs/PackageGraph</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#graphs/PackageGraph.ts">graphs/PackageGraph</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#utils/list-utils.ts">utils/list-utils</a></td>
+	<td>ImportInfo</td></tr>
+	<tr><td><a href="#utils/list-utils.ts">utils/list-utils</a></td>
+	<td>ExportInfo</td></tr>
+</table><br>
+<h2 id=UsageProcessor.ts>UsageProcessor.ts</h2> <a href="#mod_list">(top)</a>
+<h3>ast/UsageProcessor.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>UsageProcessor</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+</table><br>
+<h3>ast/UsageProcessor.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/BaseProcessor</td>
+	<td>BaseProcessor</td></tr>
+</table><br>
+<h3>UsageProcessor.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+</table><br>
+<h2 id=DiagramsGenerator.ts>DiagramsGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>generators/DiagramsGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>DiagramsGenerator</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>generators/DiagramsGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>DiagramsGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>DiagramsGenerator</td></tr>
+</table><br>
+<h2 id=HtmlGenerator.ts>HtmlGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>generators/HtmlGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>HtmlGenerator</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>generators/HtmlGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ExportInfo</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>moduleFileName</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getModuleName</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getUsedByList</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getDependsOn</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getUniqueNodeModules</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getExportedList</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>HtmlGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>HtmlGenerator</td></tr>
+</table><br>
+<h2 id=ClassDiagram.ts>ClassDiagram.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/ClassDiagram.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ClassDiagram</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>graphs/ClassDiagram.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ClassDetail</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>graphs/GraphBase</td>
+	<td>GraphBase</td></tr>
+	<tr><td>graphs/GraphGenerator</td>
+	<td>IGraphFileGenerator</td></tr>
+</table><br>
+<h3>ClassDiagram.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>ClassDiagram</td></tr>
+</table><br>
+<h2 id=ExportGraph.ts>ExportGraph.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/ExportGraph.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>ExportGraph</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>graphs/ExportGraph.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ExportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>cleanPath</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getModuleName</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>moduleFileName</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getExportedList</td></tr>
+	<tr><td>graphs/GraphBase</td>
+	<td>GraphBase</td></tr>
+	<tr><td>graphs/GraphGenerator</td>
+	<td>IGraphFileGenerator</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>ExportGraph.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>ExportGraph</td></tr>
+</table><br>
+<h2 id=GraphBase.ts>GraphBase.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/GraphBase.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>GraphBase</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>5</td></tr>
+</table><br>
+<h3>graphs/GraphBase.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>cleanPath</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getNodeModules</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>GraphBase.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#graphs/ClassDiagram.ts">graphs/ClassDiagram</a></td>
+	<td>GraphBase</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>GraphBase</td></tr>
+	<tr><td><a href="#graphs/NodeModulesGraph.ts">graphs/NodeModulesGraph</a></td>
+	<td>GraphBase</td></tr>
+	<tr><td><a href="#graphs/PackageGraph.ts">graphs/PackageGraph</a></td>
+	<td>GraphBase</td></tr>
+	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
+	<td>GraphBase</td></tr>
+</table><br>
+<h2 id=GraphGenerator.ts>GraphGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/GraphGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>IGraphFileGenerator</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>3</td></tr>
+</table><br>
+<h3>graphs/GraphGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+</table><br>
+<h3>GraphGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>IGraphFileGenerator</td></tr>
+	<tr><td><a href="#graphs/ClassDiagram.ts">graphs/ClassDiagram</a></td>
+	<td>IGraphFileGenerator</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>IGraphFileGenerator</td></tr>
+</table><br>
+<h2 id=NodeModulesGraph.ts>NodeModulesGraph.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/NodeModulesGraph.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>NodeModulesGraph</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>graphs/NodeModulesGraph.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>graphs/GraphBase</td>
+	<td>GraphBase</td></tr>
+</table><br>
+<h3>NodeModulesGraph.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>NodeModulesGraph</td></tr>
+</table><br>
+<h2 id=PackageGraph.ts>PackageGraph.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/PackageGraph.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>PackageGraph</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>graphs/PackageGraph.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>graphs/GraphBase</td>
+	<td>GraphBase</td></tr>
+</table><br>
+<h3>PackageGraph.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>PackageGraph</td></tr>
+</table><br>
+<h2 id=RelationsGraph.ts>RelationsGraph.ts</h2> <a href="#mod_list">(top)</a>
+<h3>graphs/RelationsGraph.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>RelationsGraph</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>graphs/RelationsGraph.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getModuleName</td></tr>
+	<tr><td>utils/list-utils</td>
+	<td>getUsedByList</td></tr>
+	<tr><td>graphs/GraphBase</td>
+	<td>GraphBase</td></tr>
+</table><br>
+<h3>RelationsGraph.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>RelationsGraph</td></tr>
+</table><br>
+<h2 id=file-utils.ts>file-utils.ts</h2> <a href="#mod_list">(top)</a>
+<h3>utils/file-utils.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>cleanPath</td>
+	<td>FunctionDeclaration</td>
+	<td>(rootPath, dirPath)</td>
+	<td>4</td></tr>
+	<tr><td>getDirectoriesRecursive</td>
+	<td>FunctionDeclaration</td>
+	<td>(srcpath, ignoredDirs)</td>
+	<td>1</td></tr>
+	<tr><td>getFilename</td>
+	<td>FunctionDeclaration</td>
+	<td>(fullPath)</td>
+	<td>2</td></tr>
+	<tr><td>getFiles</td>
+	<td>FunctionDeclaration</td>
+	<td>(srcpath)</td>
+	<td>1</td></tr>
+	<tr><td>getModuleName</td>
+	<td>FunctionDeclaration</td>
+	<td>(mod)</td>
+	<td>4</td></tr>
+	<tr><td>getRelativePathParts</td>
+	<td>FunctionDeclaration</td>
+	<td>(file, symbol)</td>
+	<td>1</td></tr>
+	<tr><td>moduleFileName</td>
+	<td>FunctionDeclaration</td>
+	<td>(mod)</td>
+	<td>3</td></tr>
+	<tr><td>ModulePathInfo</td>
+	<td>TSInterfaceDeclaration</td>
+	<td></td>
+	<td>0</td></tr>
+	<tr><td>removeExtension</td>
+	<td>VariableDeclaration</td>
+	<td>(filename)</td>
+	<td>2</td></tr>
+	<tr><td>safeWriteFile</td>
+	<td>FunctionDeclaration</td>
+	<td>(dirPath, fileName, content)</td>
+	<td>2</td></tr>
+</table><br>
+<h3>utils/file-utils.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>utils/globals</td>
+	<td>EXT_LIST</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>file-utils.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>cleanPath</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>getModuleName</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>moduleFileName</td></tr>
+	<tr><td><a href="#ast/ASTProcessor.ts">ast/ASTProcessor</a></td>
+	<td>removeExtension</td></tr>
+	<tr><td><a href="#ast/ImportProcessor.ts">ast/ImportProcessor</a></td>
+	<td>cleanPath</td></tr>
+	<tr><td><a href="#ast/ImportProcessor.ts">ast/ImportProcessor</a></td>
+	<td>removeExtension</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>safeWriteFile</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>getRelativePathParts</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>getDirectoriesRecursive</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>getFiles</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>getFilename</td></tr>
+	<tr><td><a href="#DocumentationGenerator.ts">DocumentationGenerator</a></td>
+	<td>getFilename</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>moduleFileName</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>getModuleName</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>cleanPath</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>getModuleName</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>moduleFileName</td></tr>
+	<tr><td><a href="#graphs/GraphBase.ts">graphs/GraphBase</a></td>
+	<td>cleanPath</td></tr>
+	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
+	<td>getModuleName</td></tr>
+	<tr><td><a href="#utils/json.ts">utils/json</a></td>
+	<td>safeWriteFile</td></tr>
+</table><br>
+<h2 id=globals.ts>globals.ts</h2> <a href="#mod_list">(top)</a>
+<h3>utils/globals.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>EXT_LIST</td>
+	<td>VariableDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>utils/globals.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+</table><br>
+<h3>globals.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#utils/file-utils.ts">utils/file-utils</a></td>
+	<td>EXT_LIST</td></tr>
+</table><br>
+<h2 id=json.ts>json.ts</h2> <a href="#mod_list">(top)</a>
+<h3>utils/json.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>default</td>
+	<td>ObjectExpression</td>
+	<td></td>
+	<td>0</td></tr>
+	<tr><td>jsonIn</td>
+	<td>FunctionDeclaration</td>
+	<td>(file)</td>
+	<td>0</td></tr>
+	<tr><td>jsonOut</td>
+	<td>FunctionDeclaration</td>
+	<td>(output, title, obj)</td>
+	<td>1</td></tr>
+</table><br>
+<h3>utils/json.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>utils/file-utils</td>
+	<td>safeWriteFile</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+</table><br>
+<h3>json.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>jsonOut</td></tr>
+</table><br>
+<h2 id=list-utils.ts>list-utils.ts</h2> <a href="#mod_list">(top)</a>
+<h3>utils/list-utils.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>getDependsOn</td>
+	<td>FunctionDeclaration</td>
+	<td>(dependencyList, file)</td>
+	<td>1</td></tr>
+	<tr><td>getExportedList</td>
+	<td>FunctionDeclaration</td>
+	<td>(exportList, fileName)</td>
+	<td>2</td></tr>
+	<tr><td>getNodeModules</td>
+	<td>FunctionDeclaration</td>
+	<td>(dependencyList)</td>
+	<td>1</td></tr>
+	<tr><td>getUniqueNodeModules</td>
+	<td>FunctionDeclaration</td>
+	<td>(dependencyList)</td>
+	<td>1</td></tr>
+	<tr><td>getUsedByList</td>
+	<td>FunctionDeclaration</td>
+	<td>(dependencyList, mod)</td>
+	<td>2</td></tr>
+</table><br>
+<h3>utils/list-utils.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ImportInfo</td></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ExportInfo</td></tr>
+</table><br>
+<h3>list-utils.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>getUsedByList</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>getDependsOn</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>getUniqueNodeModules</td></tr>
+	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
+	<td>getExportedList</td></tr>
+	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
+	<td>getExportedList</td></tr>
+	<tr><td><a href="#graphs/GraphBase.ts">graphs/GraphBase</a></td>
+	<td>getNodeModules</td></tr>
+	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
+	<td>getUsedByList</td></tr>
+</table><br>
+<h2 id="node_modules">Node Modules</h2>  <a href="#mod_list">(top)</a>
+<table border=1 cellpadding=5>
+	<tr><th>File</th><th>Node Module</th></tr>
+	<tr><td>@typescript-eslint/parser</td>
+	<td>parse</td></tr>
+	<tr><td>@typescript-eslint/types</td>
+	<td>AST_NODE_TYPES</td></tr>
+	<tr><td>child_process</td>
+	<td>ChildProcess</td></tr>
+	<tr><td>commander</td>
+	<td>Command</td></tr>
+	<tr><td>estraverse</td>
+	<td>estraverse</td></tr>
+	<tr><td>estree</td>
+	<td>Node</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+</body></html>

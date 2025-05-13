@@ -1,0 +1,209 @@
+digraph {label="ast Module Exports";
+labelloc="t";
+"ast/ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/ASTProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+ASTProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/ClassProcessor</I></font><BR/>
+ClassProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/ErrorCollector</I></font><BR/>
+ErrorCollector<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/ExportProcessor</I></font><BR/>
+ExportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/ImportProcessor</I></font><BR/>
+ImportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ClassDetail<BR/>
+ImportInfo<BR/>
+ExportInfo<BR/>
+ModuleInfo<BR/>
+ProcessedASTData<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
+<font color="red"><I>utils</I></font><BR/>
+<font color="red"><I>utils/file-utils</I></font><BR/>
+cleanPath<BR/>
+getModuleName<BR/>
+moduleFileName<BR/>
+removeExtension<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ASTProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>@typescript-eslint/parser</I></font> (parse)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (ParserOptions)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
+<font color="red"><I>estraverse</I></font> (estraverse)<BR/>
+<font color="red"><I>estree</I></font> (Node)<BR/>
+<font color="red"><I>fs</I></font> (readFileSync)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ASTProcessor"->"ast/ASTProcessor-node_modules";
+"ast/BaseProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+BaseProcessor<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/BaseProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
+<font color="red"><I>estraverse</I></font> (estraverse)<BR/>
+<font color="red"><I>estraverse</I></font> (VisitorOption)<BR/>
+<font color="red"><I>estraverse</I></font> (Controller)<BR/>
+<font color="red"><I>estree</I></font> (Node)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/BaseProcessor"->"ast/BaseProcessor-node_modules";
+"ast/ClassProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/ClassProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+ClassProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ClassDetail<BR/>
+MethodInfo<BR/>
+PropertyInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ClassProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ClassProcessor"->"ast/ClassProcessor-node_modules";
+"ast/ErrorCollector" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/ErrorCollector</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+ErrorCollector<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ErrorInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ExportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/ExportProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+DeclarationDetailsCallback<BR/>
+DeclarationInfo<BR/>
+ExportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ExportInfo<BR/>
+ModuleInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ExportProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ExportProcessor"->"ast/ExportProcessor-node_modules";
+"ast/ImportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/ImportProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+ImportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
+<font color="red"><I>utils</I></font><BR/>
+<font color="red"><I>utils/file-utils</I></font><BR/>
+cleanPath<BR/>
+removeExtension<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ImportProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ImportProcessor"->"ast/ImportProcessor-node_modules";
+"ast/SharedInterfaces" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/SharedInterfaces</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+ClassDetail<BR/>
+ErrorInfo<BR/>
+ExportInfo<BR/>
+ImportInfo<BR/>
+MethodInfo<BR/>
+ModuleInfo<BR/>
+ProcessedASTData<BR/>
+PropertyInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/UsageProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>ast/UsageProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+UsageProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ASTProcessor"->"ast/BaseProcessor";
+"ast/ASTProcessor"->"ast/ClassProcessor";
+"ast/ASTProcessor"->"ast/ErrorCollector";
+"ast/ASTProcessor"->"ast/ExportProcessor";
+"ast/ASTProcessor"->"ast/ImportProcessor";
+"ast/ASTProcessor"->"ast/SharedInterfaces";
+"ast/ClassProcessor"->"ast/BaseProcessor";
+"ast/ClassProcessor"->"ast/SharedInterfaces";
+"ast/ErrorCollector"->"ast/BaseProcessor";
+"ast/ErrorCollector"->"ast/SharedInterfaces";
+"ast/ExportProcessor"->"ast/BaseProcessor";
+"ast/ExportProcessor"->"ast/SharedInterfaces";
+"ast/ImportProcessor"->"ast/BaseProcessor";
+"ast/ImportProcessor"->"ast/SharedInterfaces";
+"ast/UsageProcessor"->"ast/BaseProcessor";
+}

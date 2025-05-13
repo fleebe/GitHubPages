@@ -1,0 +1,242 @@
+[
+  {
+    "file": "/C:/Code/dep-graph-ts/src/dep-graph.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\C:\\Code\\dep-graph-ts\\src\\dep-graph.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\C:\\Code\\dep-graph-ts\\src\\dep-graph.ts'"
+  },
+  {
+    "file": "/C:/Code/dep-graph-ts/src/DependencyGraphGenerator.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\C:\\Code\\dep-graph-ts\\src\\DependencyGraphGenerator.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\C:\\Code\\dep-graph-ts\\src\\DependencyGraphGenerator.ts'"
+  },
+  {
+    "file": "/C:/Code/dep-graph-ts/src/index.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\C:\\Code\\dep-graph-ts\\src\\index.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\C:\\Code\\dep-graph-ts\\src\\index.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/ASTProcessor.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ASTProcessor.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ASTProcessor.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/BaseProcessor.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\BaseProcessor.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\BaseProcessor.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/ClassProcessor.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ClassProcessor.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ClassProcessor.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/ErrorCollector.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ErrorCollector.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ErrorCollector.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/ExportProcessor.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ExportProcessor.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ExportProcessor.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/ImportProcessor.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ImportProcessor.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\ImportProcessor.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/SharedInterfaces.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\SharedInterfaces.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\SharedInterfaces.ts'"
+  },
+  {
+    "file": "ast/C:/Code/dep-graph-ts/src/ast/UsageProcessor.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\UsageProcessor.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\ast\\C:\\Code\\dep-graph-ts\\src\\ast\\UsageProcessor.ts'"
+  },
+  {
+    "file": "generators/C:/Code/dep-graph-ts/src/generators/DiagramsGenerator.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\generators\\C:\\Code\\dep-graph-ts\\src\\generators\\DiagramsGenerator.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\generators\\C:\\Code\\dep-graph-ts\\src\\generators\\DiagramsGenerator.ts'"
+  },
+  {
+    "file": "generators/C:/Code/dep-graph-ts/src/generators/HtmlGenerator.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\generators\\C:\\Code\\dep-graph-ts\\src\\generators\\HtmlGenerator.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\generators\\C:\\Code\\dep-graph-ts\\src\\generators\\HtmlGenerator.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/ClassDiagram.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\ClassDiagram.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\ClassDiagram.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/ExportGraph.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\ExportGraph.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\ExportGraph.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/GraphBase.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\GraphBase.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\GraphBase.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/GraphGenerator.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\GraphGenerator.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\GraphGenerator.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/NodeModulesGraph.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\NodeModulesGraph.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\NodeModulesGraph.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/PackageGraph.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\PackageGraph.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\PackageGraph.ts'"
+  },
+  {
+    "file": "graphs/C:/Code/dep-graph-ts/src/graphs/RelationsGraph.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\RelationsGraph.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\graphs\\C:\\Code\\dep-graph-ts\\src\\graphs\\RelationsGraph.ts'"
+  },
+  {
+    "file": "utils/C:/Code/dep-graph-ts/src/utils/file-utils.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\file-utils.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\file-utils.ts'"
+  },
+  {
+    "file": "utils/C:/Code/dep-graph-ts/src/utils/globals.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\globals.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\globals.ts'"
+  },
+  {
+    "file": "utils/C:/Code/dep-graph-ts/src/utils/json.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\json.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\json.ts'"
+  },
+  {
+    "file": "utils/C:/Code/dep-graph-ts/src/utils/list-utils.ts",
+    "err": {
+      "errno": -4058,
+      "code": "ENOENT",
+      "syscall": "open",
+      "path": "C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\list-utils.ts"
+    },
+    "msg": "ENOENT: no such file or directory, open 'C:\\Code\\dep-graph-ts\\src\\utils\\C:\\Code\\dep-graph-ts\\src\\utils\\list-utils.ts'"
+  }
+]

@@ -1,0 +1,284 @@
+[
+  {
+    "src": "dep-graph.ts",
+    "exported": "runProgram",
+    "type": "FunctionDeclaration",
+    "params": "()"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "exported": "DggOptions",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "DependencyGraphGenerator.ts",
+    "exported": "DependencyGraphGenerator",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "exported": "JSDocSourceConfig",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "exported": "JSDocOptsConfig",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "exported": "JSDocConfig",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "exported": "DocumentationGenerator",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "GraphvizProcessor.ts",
+    "exported": "GraphvizProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/ASTProcessor.ts",
+    "exported": "ASTProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/BaseProcessor.ts",
+    "exported": "BaseProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/ClassProcessor.ts",
+    "exported": "ClassProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/ErrorCollector.ts",
+    "exported": "ErrorCollector",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "exported": "DeclarationDetailsCallback",
+    "type": "TSTypeAliasDeclaration"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "exported": "DeclarationInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/ExportProcessor.ts",
+    "exported": "ExportProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/ImportProcessor.ts",
+    "exported": "ImportProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "ModuleInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "ImportInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "ExportInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "ErrorInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "MethodInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "PropertyInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "ClassDetail",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "ast/SharedInterfaces.ts",
+    "exported": "ProcessedASTData",
+    "type": "TSTypeAliasDeclaration"
+  },
+  {
+    "src": "ast/UsageProcessor.ts",
+    "exported": "UsageProcessor",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "generators/DiagramsGenerator.ts",
+    "exported": "DiagramsGenerator",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "generators/HtmlGenerator.ts",
+    "exported": "HtmlGenerator",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "graphs/ClassDiagram.ts",
+    "exported": "ClassDiagram",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "exported": "ExportGraph",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "graphs/GraphBase.ts",
+    "exported": "GraphBase",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "graphs/GraphGenerator.ts",
+    "exported": "IGraphFileGenerator",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "graphs/NodeModulesGraph.ts",
+    "exported": "NodeModulesGraph",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "graphs/PackageGraph.ts",
+    "exported": "PackageGraph",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "graphs/RelationsGraph.ts",
+    "exported": "RelationsGraph",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "ModulePathInfo",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "moduleFileName",
+    "type": "FunctionDeclaration",
+    "params": "(mod)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "getModuleName",
+    "type": "FunctionDeclaration",
+    "params": "(mod)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "removeExtension",
+    "type": "VariableDeclaration",
+    "params": "(filename)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "cleanPath",
+    "type": "FunctionDeclaration",
+    "params": "(rootPath, dirPath)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "getFilename",
+    "type": "FunctionDeclaration",
+    "params": "(fullPath)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "getFiles",
+    "type": "FunctionDeclaration",
+    "params": "(srcpath)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "getDirectoriesRecursive",
+    "type": "FunctionDeclaration",
+    "params": "(srcpath, ignoredDirs)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "getRelativePathParts",
+    "type": "FunctionDeclaration",
+    "params": "(file, symbol)"
+  },
+  {
+    "src": "utils/file-utils.ts",
+    "exported": "safeWriteFile",
+    "type": "FunctionDeclaration",
+    "params": "(dirPath, fileName, content)"
+  },
+  {
+    "src": "utils/globals.ts",
+    "exported": "EXT_LIST",
+    "type": "VariableDeclaration"
+  },
+  {
+    "src": "utils/json.ts",
+    "exported": "jsonOut",
+    "type": "FunctionDeclaration",
+    "params": "(output, title, obj)"
+  },
+  {
+    "src": "utils/json.ts",
+    "exported": "jsonIn",
+    "type": "FunctionDeclaration",
+    "params": "(file)"
+  },
+  {
+    "src": "utils/json.ts",
+    "exported": "default",
+    "type": "ObjectExpression"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "exported": "getUsedByList",
+    "type": "FunctionDeclaration",
+    "params": "(dependencyList, mod)"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "exported": "getDependsOn",
+    "type": "FunctionDeclaration",
+    "params": "(dependencyList, file)"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "exported": "getExportedList",
+    "type": "FunctionDeclaration",
+    "params": "(exportList, fileName)"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "exported": "getNodeModules",
+    "type": "FunctionDeclaration",
+    "params": "(dependencyList)"
+  },
+  {
+    "src": "utils/list-utils.ts",
+    "exported": "getUniqueNodeModules",
+    "type": "FunctionDeclaration",
+    "params": "(dependencyList)"
+  }
+]

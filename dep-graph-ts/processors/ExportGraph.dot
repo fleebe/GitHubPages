@@ -1,0 +1,20 @@
+digraph {label="processors Module Exports";
+labelloc="t";
+"processors/GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="1" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>processors/GraphvizProcessor</B></TD></TR>
+<TR><TD align="left">
+GraphvizProcessor<BR/>
+</TD></TR>
+<TR><TD align="center">
+</TD></TR>
+</TABLE>>];
+"processors/GraphvizProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="1" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>child_process</I></font> (spawn)<BR/>
+<font color="red"><I>child_process</I></font> (ChildProcess)<BR/>
+<font color="red"><I>fs</I></font> (fs)<BR/>
+</TD></TR>
+</TABLE>>];
+"processors/GraphvizProcessor"->"processors/GraphvizProcessor-node_modules";
+}
