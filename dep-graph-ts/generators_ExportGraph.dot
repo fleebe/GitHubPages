@@ -1,0 +1,47 @@
+digraph {label="generators Module Exports";
+labelloc="t";
+"generators/DiagramsGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>generators/DiagramsGenerator</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+DiagramsGenerator<BR/>
+</TD></TR>
+</TABLE>>];
+"generators/DiagramsGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>fs</I></font> (fs)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"generators/DiagramsGenerator"->"generators/DiagramsGenerator-node_modules";
+"generators/HtmlGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>generators/HtmlGenerator</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+HtmlGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ModuleInfo<BR/>
+ImportInfo<BR/>
+ExportInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+moduleFileName<BR/>
+getModuleName<BR/>
+<font color="red"><I>utils/list-utils</I></font><BR/>
+getUsedByList<BR/>
+getDependsOn<BR/>
+getUniqueNodeModules<BR/>
+getExportedList<BR/>
+</TD></TR>
+</TABLE>>];
+"generators/HtmlGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>fs</I></font> (fs)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"generators/HtmlGenerator"->"generators/HtmlGenerator-node_modules";
+}
