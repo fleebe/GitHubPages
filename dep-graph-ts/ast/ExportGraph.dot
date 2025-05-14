@@ -33,8 +33,7 @@ ExportInfo<BR/>
 ModuleInfo<BR/>
 ProcessedASTData<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
 <font color="red"><I>utils/file-utils</I></font><BR/>
 cleanPath<BR/>
 getModuleName<BR/>
@@ -152,8 +151,7 @@ BaseProcessor<BR/>
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ImportInfo<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
 <font color="red"><I>utils/file-utils</I></font><BR/>
 cleanPath<BR/>
 removeExtension<BR/>

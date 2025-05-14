@@ -1347,7 +1347,7 @@
       {
         "name": "diagramsHTML",
         "isStatic": false,
-        "isPrivate": false,
+        "isPrivate": true,
         "hasDefaultValue": true,
         "type": "string"
       }

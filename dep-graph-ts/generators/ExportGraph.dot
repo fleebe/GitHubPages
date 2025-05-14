@@ -19,15 +19,13 @@ DiagramsGenerator<BR/>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 HtmlGenerator<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#ast" TARGET="_top">
-<font color="red"><I>ast</I></font><BR/>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ModuleInfo<BR/>
 ImportInfo<BR/>
 ExportInfo<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
 <font color="red"><I>utils/file-utils</I></font><BR/>
 moduleFileName<BR/>
 getModuleName<BR/>
