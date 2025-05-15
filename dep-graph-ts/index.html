@@ -26,7 +26,7 @@
 	<tr><td>ast</td><td><a href="#ImportProcessor.ts">ImportProcessor.ts</a></td><td>5</td><td>1</td><td>1</td></tr>
 	<tr><td>ast</td><td><a href="#SharedInterfaces.ts">SharedInterfaces.ts</a></td><td>0</td><td>15</td><td>8</td></tr>
 	<tr><td>ast</td><td><a href="#UsageProcessor.ts">UsageProcessor.ts</a></td><td>1</td><td>0</td><td>1</td></tr>
-	<tr><td>generators</td><td><a href="#DiagramsGenerator.ts">DiagramsGenerator.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
+	<tr><td>generators</td><td><a href="#DiagramsGenerator.ts">DiagramsGenerator.ts</a></td><td>3</td><td>1</td><td>1</td></tr>
 	<tr><td>generators</td><td><a href="#HtmlGenerator.ts">HtmlGenerator.ts</a></td><td>5</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#ClassDiagram.ts">ClassDiagram.ts</a></td><td>3</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#ExportGraph.ts">ExportGraph.ts</a></td><td>6</td><td>1</td><td>1</td></tr>
@@ -35,7 +35,7 @@
 	<tr><td>graphs</td><td><a href="#NodeModulesGraph.ts">NodeModulesGraph.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#PackageGraph.ts">PackageGraph.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#RelationsGraph.ts">RelationsGraph.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
-	<tr><td>utils</td><td><a href="#file-utils.ts">file-utils.ts</a></td><td>3</td><td>9</td><td>10</td></tr>
+	<tr><td>utils</td><td><a href="#file-utils.ts">file-utils.ts</a></td><td>3</td><td>10</td><td>11</td></tr>
 	<tr><td>utils</td><td><a href="#globals.ts">globals.ts</a></td><td>0</td><td>1</td><td>1</td></tr>
 	<tr><td>utils</td><td><a href="#json.ts">json.ts</a></td><td>2</td><td>1</td><td>3</td></tr>
 	<tr><td>utils</td><td><a href="#list-utils.ts">list-utils.ts</a></td><td>1</td><td>4</td><td>5</td></tr>
@@ -129,6 +129,8 @@
 	<td>getFiles</td></tr>
 	<tr><td>utils/file-utils</td>
 	<td>getFilename</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getGraphFilename</td></tr>
 	<tr><td>utils/json</td>
 	<td>jsonOut</td></tr>
 	<tr><td>fs</td>
@@ -597,6 +599,8 @@
 <h3>generators/DiagramsGenerator.ts Depends On</h3>
 <table border=1 cellpadding=5>
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getGraphFilename</td></tr>
 	<tr><td>fs</td>
 	<td>fs</td></tr>
 	<tr><td>path</td>
@@ -870,6 +874,10 @@
 	<td>FunctionDeclaration</td>
 	<td>(srcpath)</td>
 	<td>1</td></tr>
+	<tr><td>getGraphFilename</td>
+	<td>FunctionDeclaration</td>
+	<td>(dir, graphName)</td>
+	<td>2</td></tr>
 	<tr><td>getModuleName</td>
 	<td>FunctionDeclaration</td>
 	<td>(mod)</td>
@@ -930,8 +938,12 @@
 	<td>getFiles</td></tr>
 	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
 	<td>getFilename</td></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>getGraphFilename</td></tr>
 	<tr><td><a href="#DocumentationGenerator.ts">DocumentationGenerator</a></td>
 	<td>getFilename</td></tr>
+	<tr><td><a href="#generators/DiagramsGenerator.ts">generators/DiagramsGenerator</a></td>
+	<td>getGraphFilename</td></tr>
 	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
 	<td>moduleFileName</td></tr>
 	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>

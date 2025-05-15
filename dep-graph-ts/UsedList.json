@@ -511,11 +511,25 @@
     "import": "getFilename"
   },
   {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getGraphFilename"
+  },
+  {
     "src": "DocumentationGenerator.ts",
     "name": "DocumentationGenerator",
     "importSrc": "./utils/file-utils",
     "relSrcName": "utils/file-utils",
     "import": "getFilename"
+  },
+  {
+    "src": "generators/DiagramsGenerator.ts",
+    "name": "generators/DiagramsGenerator",
+    "importSrc": "../utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getGraphFilename"
   },
   {
     "src": "generators/HtmlGenerator.ts",

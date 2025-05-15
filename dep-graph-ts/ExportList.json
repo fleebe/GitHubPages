@@ -230,6 +230,12 @@
     "params": "(dirPath, fileName, content)"
   },
   {
+    "src": "utils/file-utils.ts",
+    "exported": "getGraphFilename",
+    "type": "FunctionDeclaration",
+    "params": "(dir, graphName)"
+  },
+  {
     "src": "utils/globals.ts",
     "exported": "EXT_LIST",
     "type": "VariableDeclaration"

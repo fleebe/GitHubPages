@@ -93,7 +93,7 @@
   {
     "dir": "generators",
     "file": "DiagramsGenerator.ts",
-    "dependsOnCnt": 2,
+    "dependsOnCnt": 3,
     "usedByCnt": 1,
     "exportCnt": 1
   },
@@ -157,8 +157,8 @@
     "dir": "utils",
     "file": "file-utils.ts",
     "dependsOnCnt": 3,
-    "usedByCnt": 9,
-    "exportCnt": 10
+    "usedByCnt": 10,
+    "exportCnt": 11
   },
   {
     "dir": "utils",

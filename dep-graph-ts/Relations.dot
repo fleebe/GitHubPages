@@ -227,13 +227,14 @@ ast/BaseProcessor<BR/>
 </TABLE>>];
 "generators/DiagramsGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>generators/DiagramsGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 2<BR/>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
 <B>Used By Count:</B> 1</TD></TR>
 <TR><TD ALIGN="left">
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+utils/file-utils<BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
@@ -360,7 +361,7 @@ DependencyGraphGenerator<BR/>
 "utils/file-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>utils/file-utils</B></TD></TR>
 <TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
-<B>Used By Count:</B> 9</TD></TR>
+<B>Used By Count:</B> 10</TD></TR>
 <TR><TD ALIGN="left">
 <I>fs</I><BR/>
 <I>path</I><BR/>
@@ -373,6 +374,7 @@ ast/ASTProcessor<BR/>
 ast/ImportProcessor<BR/>
 DependencyGraphGenerator<BR/>
 DocumentationGenerator<BR/>
+generators/DiagramsGenerator<BR/>
 generators/HtmlGenerator<BR/>
 graphs/ExportGraph<BR/>
 graphs/GraphBase<BR/>
@@ -453,6 +455,7 @@ graphs/RelationsGraph<BR/>
 "ast/ImportProcessor"->"ast/BaseProcessor";
 "ast/ImportProcessor"->"ast/SharedInterfaces";
 "ast/UsageProcessor"->"ast/BaseProcessor";
+"generators/DiagramsGenerator"->"utils/file-utils";
 "generators/HtmlGenerator"->"ast/SharedInterfaces";
 "generators/HtmlGenerator"->"utils/file-utils";
 "generators/HtmlGenerator"->"utils/list-utils";

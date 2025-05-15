@@ -7,6 +7,7 @@ cleanPath<BR/>
 getDirectoriesRecursive<BR/>
 getFilename<BR/>
 getFiles<BR/>
+getGraphFilename<BR/>
 getModuleName<BR/>
 getRelativePathParts<BR/>
 moduleFileName<BR/>
@@ -61,7 +62,8 @@ getNodeModules<BR/>
 getUniqueNodeModules<BR/>
 getUsedByList<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#ast" TARGET="_top">
+<font color="red"><I><U>ast</U></I></font><BR/>
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ImportInfo<BR/>
 ExportInfo<BR/>

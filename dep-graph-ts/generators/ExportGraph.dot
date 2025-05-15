@@ -5,6 +5,11 @@ labelloc="t";
 <TR><TD BORDER="1" SIDES="TB" align="left">
 DiagramsGenerator<BR/>
 </TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
+<font color="red"><I><U>utils</U></I></font><BR/>
+<font color="red"><I>utils/file-utils</I></font><BR/>
+getGraphFilename<BR/>
+</TD></TR>
 </TABLE>>];
 "generators/DiagramsGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
@@ -19,13 +24,15 @@ DiagramsGenerator<BR/>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 HtmlGenerator<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#ast" TARGET="_top">
+<font color="red"><I><U>ast</U></I></font><BR/>
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ModuleInfo<BR/>
 ImportInfo<BR/>
 ExportInfo<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
+<font color="red"><I><U>utils</U></I></font><BR/>
 <font color="red"><I>utils/file-utils</I></font><BR/>
 moduleFileName<BR/>
 getModuleName<BR/>

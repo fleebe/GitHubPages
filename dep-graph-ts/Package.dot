@@ -56,8 +56,8 @@ list-utils.ts<BR/>
 ""->"graphs";
 ""->"ast";
 "ast"->"utils";
-"generators"->"ast";
 "generators"->"utils";
+"generators"->"ast";
 "graphs"->"ast";
 "graphs"->"utils";
 "utils"->"ast";
