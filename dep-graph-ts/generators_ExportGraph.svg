@@ -12,8 +12,11 @@
 <!-- generators/DiagramsGenerator -->
 <g id="node1" class="node">
 <title>generators/DiagramsGenerator</title>
+<g id="a_node1_0"><a xlink:href="docs/tsdocs/modules/_generators_DiagramsGenerator_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="9,-227 9,-246 207,-246 207,-227 9,-227"/>
 <text text-anchor="start" x="11" y="-233.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">generators/DiagramsGenerator</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="9,-206 207,-206 "/>
 <polyline fill="none" stroke="black" points="207,-227 9,-227 "/>
 <text text-anchor="start" x="12" y="-212.8" font-family="Times New Roman,serif" font-size="14.00">DiagramsGenerator</text>
@@ -43,8 +46,11 @@
 <!-- generators/HtmlGenerator -->
 <g id="node3" class="node">
 <title>generators/HtmlGenerator</title>
+<g id="a_node3_1"><a xlink:href="docs/tsdocs/modules/_generators_HtmlGenerator_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="243,-299 243,-318 411,-318 411,-299 243,-299"/>
 <text text-anchor="start" x="245" y="-305.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">generators/HtmlGenerator</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="243,-278 411,-278 "/>
 <polyline fill="none" stroke="black" points="411,-299 243,-299 "/>
 <text text-anchor="start" x="246" y="-284.8" font-family="Times New Roman,serif" font-size="14.00">HtmlGenerator</text>

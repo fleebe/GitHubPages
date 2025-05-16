@@ -16,23 +16,10 @@ class: boolean<BR/>
 jsdoc: boolean<BR/>
 output: string<BR/>
 jsdocConfig: string<BR/>
-typedocConfig: string<BR/>
+tsdocConfig: string<BR/>
+tsconfig: string<BR/>
 entryPoint: string<BR/>
 config: string<BR/>
-</TD></TR>
-</TABLE>>];
-
-"DggOptions" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>DggOptions</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
-json: boolean<BR/>
-graph: boolean<BR/>
-class: boolean<BR/>
-jsdoc: boolean<BR/>
-output: string<BR/>
-typedocConfig: string<BR/>
-jsdocConfig: string<BR/>
-ignore: array<BR/>
 </TD></TR>
 </TABLE>>];
 
@@ -40,7 +27,7 @@ ignore: array<BR/>
 <TR><TD align="left" bgcolor="lightblue"><B>DependencyGraphGenerator</B></TD></TR>
 <TR><TD align="left"><B>properties</B><BR/>
 - baseLoc: string<BR/>
-- options: DggOptions<BR/>
+- options: ProgramOptions<BR/>
 - outputDir: string<BR/>
 - diagramHTML: string<BR/>
 - indexHTML: string<BR/>
@@ -97,27 +84,6 @@ templates: object<BR/>
 </TD></TR>
 </TABLE>>];
 
-"DocumentationGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD align="left" bgcolor="lightblue"><B>DocumentationGenerator</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
-+ outputDir: string<BR/>
-+ baseLoc: string<BR/>
-+ jsModules: array<BR/>
-+ tsModules: array<BR/>
-+ typeDocIndexRelativePath: string | null<BR/>
-+ jsDocIndexRelativePath: string | null<BR/>
-- typeDocGenerator: TypeDocGenerator<BR/>
-- jsDocGenerator: JsDocGenerator<BR/>
-</TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
-+ constructor(baseLocInput, outputDir, moduleArray)<BR/>
-+ generateTypeDoc(typedocConfig, tsconfigPath)<BR/>
-+ generateTypeDocForEachModule(typedocConfig, tsconfigPath)<BR/>
-+ generateJsDoc(userConfigPath)<BR/>
-+ spawnDocumentationProcess(command, args, logPrefix, toolDisplayName)<BR/>
-</TD></TR>
-</TABLE>>];
-
 "GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>GraphvizProcessor</B></TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
@@ -133,11 +99,13 @@ templates: object<BR/>
 - outputDir: string<BR/>
 - defaultJsDocSubDir<BR/>
 - jsModules: array<BR/>
++ jsDocIndexRelativePath: string | null<BR/>
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor(baseLoc, outputDir, jsModules)<BR/>
-- createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
 + generateJsDoc(userConfigPath)<BR/>
+- createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
++ generateJsDoc1(userConfigPath)<BR/>
 </TD></TR>
 </TABLE>>];
 
@@ -147,16 +115,22 @@ templates: object<BR/>
 - baseLoc: string<BR/>
 - outputDir: string<BR/>
 - defaultTypeDocSubDir<BR/>
+- tsModules: array<BR/>
++ typeDocIndexRelativePath: string | null<BR/>
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
-+ constructor(baseLoc, outputDir)<BR/>
++ constructor(tsModules, baseLoc, outputDir)<BR/>
 - buildTypeDocArgs(entryPoints, docName, outDir, optionsPath, tsconfigPath)<BR/>
 - resolveTsConfigPath(baseLoc, typedocConfigPath, tsconfigPath)<BR/>
 - mergeTsConfig(tsConfigPath)<BR/>
 - loadAndResolveTsConfig(tsConfigPath, visited)<BR/>
 - resolveTypeDocOutputDir(configPath, defaultOut)<BR/>
-+ generateTypeDoc(tsModules, typedocConfig, tsconfigPath)<BR/>
-+ generateTypeDocForEachModule(tsModules, typedocConfig, tsconfigPath)<BR/>
+- canCompileWithTsc(filePath, tsconfigPath)<BR/>
++ generateTypeDoc(options)<BR/>
++ generateTypeDocForEachModule(typedocConfig, tsconfigPath)<BR/>
+- generateTypeDocAt(tsModules, typedocConfig, entryPoint, tsconfigPath)<BR/>
+- getTypeDocOutput(typedocConfig)<BR/>
++ generateTypeDocForEachModule1(tsModules, typedocConfig, tsconfigPath)<BR/>
 + generateTypeDocForModule(module, typedocConfig, tsconfigPath)<BR/>
 </TD></TR>
 </TABLE>>];

@@ -26,14 +26,13 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 <li>Call <a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForEachModule">generateTypeDocForEachModule</a> to generate documentation for each module separately.</li>
 <li>Call <a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForModule">generateTypeDocForModule</a> to generate documentation for a single module.</li>
 </ul>
-<p>This class is intended to be used by <a href="../modules/DocumentationGenerator.html">DocumentationGenerator</a>.</p>
 </div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
 <li><span class="target">TypeDocGenerator</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:24</li></ul></aside>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L24">TypeDocGenerator.ts:24</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -48,13 +47,19 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 <div class="tsd-index-list"><a href="TypeDocGenerator.TypeDocGenerator.html#baseLoc" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>base<wbr/>Loc</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#defaultTypeDocSubDir" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>default<wbr/>Type<wbr/>Doc<wbr/>Sub<wbr/>Dir</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#outputDir" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>output<wbr/>Dir</span></a>
+<a href="TypeDocGenerator.TypeDocGenerator.html#tsModules" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>ts<wbr/>Modules</span></a>
+<a href="TypeDocGenerator.TypeDocGenerator.html#typeDocIndexRelativePath" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>type<wbr/>Doc<wbr/>Index<wbr/>Relative<wbr/>Path</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="TypeDocGenerator.TypeDocGenerator.html#buildTypeDocArgs" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>build<wbr/>Type<wbr/>Doc<wbr/>Args</span></a>
+<a href="TypeDocGenerator.TypeDocGenerator.html#canCompileWithTsc" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>can<wbr/>Compile<wbr/>With<wbr/>Tsc</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDoc" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>generate<wbr/>Type<wbr/>Doc</span></a>
+<a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocAt" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>generate<wbr/>Type<wbr/>Doc<wbr/>At</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForEachModule" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module</span></a>
+<a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForEachModule1" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module1</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForModule" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Module</span></a>
+<a href="TypeDocGenerator.TypeDocGenerator.html#getTypeDocOutput" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Type<wbr/>Doc<wbr/>Output</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#loadAndResolveTsConfig" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>load<wbr/>And<wbr/>Resolve<wbr/>Ts<wbr/>Config</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#mergeTsConfig" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>merge<wbr/>Ts<wbr/>Config</span></a>
 <a href="TypeDocGenerator.TypeDocGenerator.html#resolveTsConfigPath" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>resolve<wbr/>Ts<wbr/>Config<wbr/>Path</span></a>
@@ -65,13 +70,15 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_TypeDocGenerator">new <wbr/>Type<wbr/>Doc<wbr/>Generator<span class="tsd-signature-symbol">(</span>baseLoc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, outputDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="TypeDocGenerator.TypeDocGenerator.html" class="tsd-signature-type" data-tsd-kind="Class">TypeDocGenerator</a><a href="#constructor.new_TypeDocGenerator" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_TypeDocGenerator">new <wbr/>Type<wbr/>Doc<wbr/>Generator<span class="tsd-signature-symbol">(</span>tsModules<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span>, baseLoc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, outputDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="TypeDocGenerator.TypeDocGenerator.html" class="tsd-signature-type" data-tsd-kind="Class">TypeDocGenerator</a><a href="#constructor.new_TypeDocGenerator" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Creates a new TypeDocGenerator.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
+<li>
+<h5>tsModules: <a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span></h5></li>
 <li>
 <h5>baseLoc: <span class="tsd-signature-type">string</span></h5>
 <div class="tsd-comment tsd-typography"><p>The base directory of the project.</p>
@@ -82,24 +89,36 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="TypeDocGenerator.TypeDocGenerator.html" class="tsd-signature-type" data-tsd-kind="Class">TypeDocGenerator</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:34</li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L39">TypeDocGenerator.ts:39</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="baseLoc" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>base<wbr/>Loc</span><a href="#baseLoc" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">base<wbr/>Loc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:25</li></ul></aside></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L25">TypeDocGenerator.ts:25</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="defaultTypeDocSubDir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>default<wbr/>Type<wbr/>Doc<wbr/>Sub<wbr/>Dir</span><a href="#defaultTypeDocSubDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">default<wbr/>Type<wbr/>Doc<wbr/>Sub<wbr/>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;typedoc_out&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:27</li></ul></aside></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L27">TypeDocGenerator.ts:27</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="outputDir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>output<wbr/>Dir</span><a href="#outputDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">output<wbr/>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:26</li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L26">TypeDocGenerator.ts:26</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="tsModules" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>ts<wbr/>Modules</span><a href="#tsModules" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">ts<wbr/>Modules<span class="tsd-signature-symbol">:</span> <a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L28">TypeDocGenerator.ts:28</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="typeDocIndexRelativePath" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>type<wbr/>Doc<wbr/>Index<wbr/>Relative<wbr/>Path</span><a href="#typeDocIndexRelativePath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">type<wbr/>Doc<wbr/>Index<wbr/>Relative<wbr/>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
+<div class="tsd-comment tsd-typography"><p>Relative path to the generated TypeDoc index file, or null if not generated yet.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L32">TypeDocGenerator.ts:32</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="buildTypeDocArgs" class="tsd-anchor"></a>
@@ -136,11 +155,49 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:48</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L54">TypeDocGenerator.ts:54</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="canCompileWithTsc" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>can<wbr/>Compile<wbr/>With<wbr/>Tsc</span><a href="#canCompileWithTsc" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="canCompileWithTsc.canCompileWithTsc-1">can<wbr/>Compile<wbr/>With<wbr/>Tsc<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tsconfigPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><a href="#canCompileWithTsc.canCompileWithTsc-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Checks if a TypeScript file compiles without errors using tsc --noEmit.</p>
+
+<h3>Returns</h3><p>true if the file compiles, false otherwise.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The absolute path to the TypeScript file.</p>
+</div></li>
+<li>
+<h5>tsconfigPath: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The path to the tsconfig file.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L179">TypeDocGenerator.ts:179</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="generateTypeDoc" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>generate<wbr/>Type<wbr/>Doc</span><a href="#generateTypeDoc" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="generateTypeDoc.generateTypeDoc-1">generate<wbr/>Type<wbr/>Doc<span class="tsd-signature-symbol">(</span>tsModules<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span>, typedocConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tsconfigPath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><a href="#generateTypeDoc.generateTypeDoc-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="generateTypeDoc.generateTypeDoc-1">generate<wbr/>Type<wbr/>Doc<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/dep_graph.ProgramOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProgramOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#generateTypeDoc.generateTypeDoc-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Generates TypeScript documentation for all modules at once using TypeDoc.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>options: <a href="../interfaces/dep_graph.ProgramOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProgramOptions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L196">TypeDocGenerator.ts:196</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="generateTypeDocAt" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>generate<wbr/>Type<wbr/>Doc<wbr/>At</span><a href="#generateTypeDocAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="generateTypeDocAt.generateTypeDocAt-1">generate<wbr/>Type<wbr/>Doc<wbr/>At<span class="tsd-signature-symbol">(</span>tsModules<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span>, typedocConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, entryPoint<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, tsconfigPath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><a href="#generateTypeDocAt.generateTypeDocAt-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Generates TypeScript documentation for all modules at once using TypeDoc.</p>
 
@@ -158,16 +215,39 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 <div class="tsd-comment tsd-typography"><p>Path to the TypeDoc configuration file.</p>
 </div></li>
 <li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> entryPoint: <span class="tsd-signature-type">string</span></h5></li>
+<li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> tsconfigPath: <span class="tsd-signature-type">string</span></h5>
 <div class="tsd-comment tsd-typography"><p>Optional path to the tsconfig file.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:174</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L216">TypeDocGenerator.ts:216</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="generateTypeDocForEachModule" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module</span><a href="#generateTypeDocForEachModule" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="generateTypeDocForEachModule.generateTypeDocForEachModule-1">generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module<span class="tsd-signature-symbol">(</span>tsModules<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span>, typedocConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tsconfigPath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#generateTypeDocForEachModule.generateTypeDocForEachModule-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="generateTypeDocForEachModule.generateTypeDocForEachModule-1">generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module<span class="tsd-signature-symbol">(</span>typedocConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tsconfigPath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#generateTypeDocForEachModule.generateTypeDocForEachModule-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Generates TypeScript documentation for each module individually using TypeDoc.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>typedocConfig: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Path to the TypeDoc configuration file.</p>
+</div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> tsconfigPath: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Optional path to the tsconfig file.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L205">TypeDocGenerator.ts:205</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="generateTypeDocForEachModule1" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module1</span><a href="#generateTypeDocForEachModule1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="generateTypeDocForEachModule1.generateTypeDocForEachModule1-1">generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module1<span class="tsd-signature-symbol">(</span>tsModules<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span>, typedocConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tsconfigPath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#generateTypeDocForEachModule1.generateTypeDocForEachModule1-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Generates TypeScript documentation for each module individually using TypeDoc.</p>
 </div>
@@ -188,7 +268,7 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:247</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L313">TypeDocGenerator.ts:313</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="generateTypeDocForModule" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Module</span><a href="#generateTypeDocForModule" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -213,7 +293,25 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:267</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L333">TypeDocGenerator.ts:333</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="getTypeDocOutput" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>get<wbr/>Type<wbr/>Doc<wbr/>Output</span><a href="#getTypeDocOutput" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="getTypeDocOutput.getTypeDocOutput-1">get<wbr/>Type<wbr/>Doc<wbr/>Output<span class="tsd-signature-symbol">(</span>typedocConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>resolvedTypedocConfigPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>typeDocOutputDirAbsolute<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><a href="#getTypeDocOutput.getTypeDocOutput-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>typedocConfig: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>resolvedTypedocConfigPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>typeDocOutputDirAbsolute<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5>resolved<wbr/>Typedoc<wbr/>Config<wbr/>Path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5>type<wbr/>Doc<wbr/>Output<wbr/>Dir<wbr/>Absolute<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li></ul><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L295">TypeDocGenerator.ts:295</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="loadAndResolveTsConfig" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>load<wbr/>And<wbr/>Resolve<wbr/>Ts<wbr/>Config</span><a href="#loadAndResolveTsConfig" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -236,7 +334,7 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:123</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L129">TypeDocGenerator.ts:129</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="mergeTsConfig" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>merge<wbr/>Ts<wbr/>Config</span><a href="#mergeTsConfig" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -255,7 +353,7 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:100</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L106">TypeDocGenerator.ts:106</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="resolveTsConfigPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>resolve<wbr/>Ts<wbr/>Config<wbr/>Path</span><a href="#resolveTsConfigPath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -282,7 +380,7 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:79</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L85">TypeDocGenerator.ts:85</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="resolveTypeDocOutputDir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>resolve<wbr/>Type<wbr/>Doc<wbr/>Output<wbr/>Dir</span><a href="#resolveTypeDocOutputDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -305,7 +403,7 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in TypeDocGenerator.ts:150</li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/TypeDocGenerator.ts#L156">TypeDocGenerator.ts:156</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -328,7 +426,7 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 <li class="current"><a href="../modules.html">dep-<wbr/>graph-<wbr/>ts</a>
 <ul>
 <li class="tsd-kind-module"><a href="../modules/DependencyGraphGenerator.html">Dependency<wbr/>Graph<wbr/>Generator</a></li>
-<li class="tsd-kind-module"><a href="../modules/DocumentationGenerator.html">Documentation<wbr/>Generator</a></li>
+<li class="tsd-kind-module"><a href="../modules/DocumentationProcessor.html">Documentation<wbr/>Processor</a></li>
 <li class="tsd-kind-module"><a href="../modules/GraphvizProcessor.html">Graphviz<wbr/>Processor</a></li>
 <li class="tsd-kind-module"><a href="../modules/JsDocGenerator.html">Js<wbr/>Doc<wbr/>Generator</a></li>
 <li class="current selected tsd-kind-module"><a href="../modules/TypeDocGenerator.html">Type<wbr/>Doc<wbr/>Generator</a></li>
@@ -363,10 +461,16 @@ resolution, output directory handling, and invokes the TypeDoc CLI via a child p
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#baseLoc" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>base<wbr/>Loc</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#defaultTypeDocSubDir" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>default<wbr/>Type<wbr/>Doc<wbr/>Sub<wbr/>Dir</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#outputDir" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>output<wbr/>Dir</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#tsModules" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>ts<wbr/>Modules</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="TypeDocGenerator.TypeDocGenerator.html#typeDocIndexRelativePath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>type<wbr/>Doc<wbr/>Index<wbr/>Relative<wbr/>Path</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#buildTypeDocArgs" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>build<wbr/>Type<wbr/>Doc<wbr/>Args</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#canCompileWithTsc" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>can<wbr/>Compile<wbr/>With<wbr/>Tsc</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDoc" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>generate<wbr/>Type<wbr/>Doc</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocAt" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>generate<wbr/>Type<wbr/>Doc<wbr/>At</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForEachModule" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForEachModule1" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Each<wbr/>Module1</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="TypeDocGenerator.TypeDocGenerator.html#generateTypeDocForModule" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>generate<wbr/>Type<wbr/>Doc<wbr/>For<wbr/>Module</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#getTypeDocOutput" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Type<wbr/>Doc<wbr/>Output</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#loadAndResolveTsConfig" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>load<wbr/>And<wbr/>Resolve<wbr/>Ts<wbr/>Config</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#mergeTsConfig" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>merge<wbr/>Ts<wbr/>Config</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="TypeDocGenerator.TypeDocGenerator.html#resolveTsConfigPath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>resolve<wbr/>Ts<wbr/>Config<wbr/>Path</a></li>

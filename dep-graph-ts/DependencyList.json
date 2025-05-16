@@ -191,44 +191,30 @@
   {
     "src": "DependencyGraphGenerator.ts",
     "name": "DependencyGraphGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "DocumentationGenerator"
+    "importSrc": "./dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
   },
   {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
-    "importSrc": "child_process",
-    "relSrcName": "child_process",
-    "import": "ChildProcess"
-  },
-  {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
-    "importSrc": "child_process",
-    "relSrcName": "child_process",
-    "import": "spawn"
-  },
-  {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
-    "importSrc": "./ast/SharedInterfaces",
-    "relSrcName": "ast/SharedInterfaces",
-    "import": "ModuleInfo"
-  },
-  {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
     "importSrc": "./JsDocGenerator",
     "relSrcName": "JsDocGenerator",
     "import": "JsDocGenerator"
   },
   {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
     "importSrc": "./TypeDocGenerator",
     "relSrcName": "TypeDocGenerator",
     "import": "TypeDocGenerator"
+  },
+  {
+    "src": "DocumentationProcessor.ts",
+    "name": "DocumentationProcessor",
+    "importSrc": "child_process",
+    "relSrcName": "child_process",
+    "import": "spawn"
   },
   {
     "src": "GraphvizProcessor.ts",
@@ -275,30 +261,23 @@
   {
     "src": "JsDocGenerator.ts",
     "name": "JsDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
+  },
+  {
+    "src": "JsDocGenerator.ts",
+    "name": "JsDocGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
     "import": "JSDocConfig"
   },
   {
     "src": "JsDocGenerator.ts",
     "name": "JsDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "JSDocOptsConfig"
-  },
-  {
-    "src": "JsDocGenerator.ts",
-    "name": "JsDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "DocumentationGenerator"
-  },
-  {
-    "src": "JsDocGenerator.ts",
-    "name": "JsDocGenerator",
-    "importSrc": "fs",
-    "relSrcName": "fs",
-    "import": "fs"
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "spawnDocumentationProcess"
   },
   {
     "src": "TypeDocGenerator.ts",
@@ -345,9 +324,16 @@
   {
     "src": "TypeDocGenerator.ts",
     "name": "TypeDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "DocumentationGenerator"
+    "importSrc": "./dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "spawnDocumentationProcess"
   },
   {
     "src": "ast/ASTProcessor.ts",
@@ -833,6 +819,13 @@
     "import": "IGraphFileGenerator"
   },
   {
+    "src": "graphs/ClassDiagram.ts",
+    "name": "graphs/ClassDiagram",
+    "importSrc": "@/dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
     "src": "graphs/ExportGraph.ts",
     "name": "graphs/ExportGraph",
     "importSrc": "./GraphBase",
@@ -896,6 +889,13 @@
     "import": "path"
   },
   {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "@/dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
     "src": "graphs/GraphBase.ts",
     "name": "graphs/GraphBase",
     "importSrc": "path",
@@ -929,6 +929,13 @@
     "importSrc": "../utils/list-utils",
     "relSrcName": "utils/list-utils",
     "import": "getNodeModules"
+  },
+  {
+    "src": "graphs/GraphGenerator.ts",
+    "name": "graphs/GraphGenerator",
+    "importSrc": "@/dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
   },
   {
     "src": "graphs/NodeModulesGraph.ts",

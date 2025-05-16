@@ -66,7 +66,14 @@
         "type": "string"
       },
       {
-        "name": "typedocConfig",
+        "name": "tsdocConfig",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "tsconfig",
         "isStatic": false,
         "isPrivate": false,
         "hasDefaultValue": false,
@@ -85,73 +92,6 @@
         "isPrivate": false,
         "hasDefaultValue": false,
         "type": "string"
-      }
-    ],
-    "superClass": null,
-    "extendsInterfaces": [],
-    "isExported": false
-  },
-  {
-    "name": "DggOptions",
-    "filePath": "DependencyGraphGenerator.ts",
-    "declarationType": "interface",
-    "methods": [],
-    "properties": [
-      {
-        "name": "json",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "boolean"
-      },
-      {
-        "name": "graph",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "boolean"
-      },
-      {
-        "name": "class",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "boolean"
-      },
-      {
-        "name": "jsdoc",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "boolean"
-      },
-      {
-        "name": "output",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "string"
-      },
-      {
-        "name": "typedocConfig",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "string"
-      },
-      {
-        "name": "jsdocConfig",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "string"
-      },
-      {
-        "name": "ignore",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "array"
       }
     ],
     "superClass": null,
@@ -205,7 +145,7 @@
         "isStatic": false,
         "isPrivate": true,
         "hasDefaultValue": false,
-        "type": "DggOptions"
+        "type": "ProgramOptions"
       },
       {
         "name": "outputDir",
@@ -242,7 +182,7 @@
   },
   {
     "name": "JSDocSourceConfig",
-    "filePath": "DocumentationGenerator.ts",
+    "filePath": "DocumentationProcessor.ts",
     "declarationType": "interface",
     "methods": [],
     "properties": [
@@ -281,7 +221,7 @@
   },
   {
     "name": "JSDocOptsConfig",
-    "filePath": "DocumentationGenerator.ts",
+    "filePath": "DocumentationProcessor.ts",
     "declarationType": "interface",
     "methods": [],
     "properties": [
@@ -383,7 +323,7 @@
   },
   {
     "name": "JSDocConfig",
-    "filePath": "DocumentationGenerator.ts",
+    "filePath": "DocumentationProcessor.ts",
     "declarationType": "interface",
     "methods": [],
     "properties": [
@@ -449,109 +389,6 @@
     "isExported": true
   },
   {
-    "name": "DocumentationGenerator",
-    "filePath": "DocumentationGenerator.ts",
-    "declarationType": "class",
-    "methods": [
-      {
-        "name": "constructor",
-        "kind": "constructor",
-        "isStatic": false,
-        "isPrivate": false,
-        "parameters": "(baseLocInput, outputDir, moduleArray)"
-      },
-      {
-        "name": "generateTypeDoc",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": false,
-        "parameters": "(typedocConfig, tsconfigPath)"
-      },
-      {
-        "name": "generateTypeDocForEachModule",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": false,
-        "parameters": "(typedocConfig, tsconfigPath)"
-      },
-      {
-        "name": "generateJsDoc",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": false,
-        "parameters": "(userConfigPath)"
-      },
-      {
-        "name": "spawnDocumentationProcess",
-        "kind": "method",
-        "isStatic": true,
-        "isPrivate": false,
-        "parameters": "(command, args, logPrefix, toolDisplayName)"
-      }
-    ],
-    "properties": [
-      {
-        "name": "outputDir",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "string"
-      },
-      {
-        "name": "baseLoc",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "string"
-      },
-      {
-        "name": "jsModules",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "array"
-      },
-      {
-        "name": "tsModules",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": false,
-        "type": "array"
-      },
-      {
-        "name": "typeDocIndexRelativePath",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": true,
-        "type": "string | null"
-      },
-      {
-        "name": "jsDocIndexRelativePath",
-        "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": true,
-        "type": "string | null"
-      },
-      {
-        "name": "typeDocGenerator",
-        "isStatic": false,
-        "isPrivate": true,
-        "hasDefaultValue": false,
-        "type": "TypeDocGenerator"
-      },
-      {
-        "name": "jsDocGenerator",
-        "isStatic": false,
-        "isPrivate": true,
-        "hasDefaultValue": false,
-        "type": "JsDocGenerator"
-      }
-    ],
-    "superClass": null,
-    "implementsInterfaces": [],
-    "isExported": true
-  },
-  {
     "name": "GraphvizProcessor",
     "filePath": "GraphvizProcessor.ts",
     "declarationType": "class",
@@ -589,6 +426,13 @@
         "parameters": "(baseLoc, outputDir, jsModules)"
       },
       {
+        "name": "generateJsDoc",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(userConfigPath)"
+      },
+      {
         "name": "createTempJsdocConfigObject",
         "kind": "method",
         "isStatic": false,
@@ -596,7 +440,7 @@
         "parameters": "(jsdocOutputDirAbsolute)"
       },
       {
-        "name": "generateJsDoc",
+        "name": "generateJsDoc1",
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
@@ -630,6 +474,13 @@
         "isPrivate": true,
         "hasDefaultValue": false,
         "type": "array"
+      },
+      {
+        "name": "jsDocIndexRelativePath",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string | null"
       }
     ],
     "superClass": null,
@@ -646,7 +497,7 @@
         "kind": "constructor",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(baseLoc, outputDir)"
+        "parameters": "(tsModules, baseLoc, outputDir)"
       },
       {
         "name": "buildTypeDocArgs",
@@ -684,14 +535,42 @@
         "parameters": "(configPath, defaultOut)"
       },
       {
+        "name": "canCompileWithTsc",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(filePath, tsconfigPath)"
+      },
+      {
         "name": "generateTypeDoc",
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(tsModules, typedocConfig, tsconfigPath)"
+        "parameters": "(options)"
       },
       {
         "name": "generateTypeDocForEachModule",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(typedocConfig, tsconfigPath)"
+      },
+      {
+        "name": "generateTypeDocAt",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(tsModules, typedocConfig, entryPoint, tsconfigPath)"
+      },
+      {
+        "name": "getTypeDocOutput",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(typedocConfig)"
+      },
+      {
+        "name": "generateTypeDocForEachModule1",
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
@@ -725,6 +604,20 @@
         "isStatic": false,
         "isPrivate": true,
         "hasDefaultValue": true
+      },
+      {
+        "name": "tsModules",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "array"
+      },
+      {
+        "name": "typeDocIndexRelativePath",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": true,
+        "type": "string | null"
       }
     ],
     "superClass": null,
@@ -1633,7 +1526,7 @@
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(dir)"
+        "parameters": "(dir, options)"
       },
       {
         "name": "createClassNode",
@@ -1682,7 +1575,7 @@
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(dir)"
+        "parameters": "(dir, options)"
       },
       {
         "name": "createModuleNode",
@@ -1855,7 +1748,7 @@
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(filter)"
+        "parameters": "(dir, options)"
       }
     ],
     "properties": [],

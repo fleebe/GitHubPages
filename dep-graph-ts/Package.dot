@@ -5,7 +5,7 @@ labelloc="t";
 <TR><TD ALIGN="left">
 dep-graph.ts<BR/>
 DependencyGraphGenerator.ts<BR/>
-DocumentationGenerator.ts<BR/>
+DocumentationProcessor.ts<BR/>
 GraphvizProcessor.ts<BR/>
 index.ts<BR/>
 JsDocGenerator.ts<BR/>
@@ -61,6 +61,7 @@ list-utils.ts<BR/>
 "generators"->"utils";
 "generators"->"ast";
 "graphs"->"ast";
+"graphs"->"";
 "graphs"->"utils";
 "utils"->"ast";
 }

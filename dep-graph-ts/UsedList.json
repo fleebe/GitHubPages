@@ -1,10 +1,45 @@
 [
   {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
+    "src": "graphs/ClassDiagram.ts",
+    "name": "graphs/ClassDiagram",
+    "importSrc": "@/dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
+    "src": "graphs/ExportGraph.ts",
+    "name": "graphs/ExportGraph",
+    "importSrc": "@/dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
+    "src": "graphs/GraphGenerator.ts",
+    "name": "graphs/GraphGenerator",
+    "importSrc": "@/dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
+  },
+  {
     "src": "index.ts",
     "name": "index",
     "importSrc": "./dep-graph",
     "relSrcName": "dep-graph",
     "import": "runProgram"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./dep-graph",
+    "relSrcName": "dep-graph",
+    "import": "ProgramOptions"
   },
   {
     "src": "dep-graph.ts",
@@ -14,39 +49,25 @@
     "import": "DependencyGraphGenerator"
   },
   {
-    "src": "DependencyGraphGenerator.ts",
-    "name": "DependencyGraphGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "DocumentationGenerator"
-  },
-  {
     "src": "JsDocGenerator.ts",
     "name": "JsDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
     "import": "JSDocConfig"
   },
   {
     "src": "JsDocGenerator.ts",
     "name": "JsDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "JSDocOptsConfig"
-  },
-  {
-    "src": "JsDocGenerator.ts",
-    "name": "JsDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "DocumentationGenerator"
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "spawnDocumentationProcess"
   },
   {
     "src": "TypeDocGenerator.ts",
     "name": "TypeDocGenerator",
-    "importSrc": "./DocumentationGenerator",
-    "relSrcName": "DocumentationGenerator",
-    "import": "DocumentationGenerator"
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "spawnDocumentationProcess"
   },
   {
     "src": "DependencyGraphGenerator.ts",
@@ -56,15 +77,15 @@
     "import": "GraphvizProcessor"
   },
   {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
     "importSrc": "./JsDocGenerator",
     "relSrcName": "JsDocGenerator",
     "import": "JsDocGenerator"
   },
   {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
     "importSrc": "./TypeDocGenerator",
     "relSrcName": "TypeDocGenerator",
     "import": "TypeDocGenerator"
@@ -243,13 +264,6 @@
     "importSrc": "./ast/SharedInterfaces",
     "relSrcName": "ast/SharedInterfaces",
     "import": "ProcessedASTData"
-  },
-  {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
-    "importSrc": "./ast/SharedInterfaces",
-    "relSrcName": "ast/SharedInterfaces",
-    "import": "ModuleInfo"
   },
   {
     "src": "generators/HtmlGenerator.ts",

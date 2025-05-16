@@ -7,7 +7,7 @@ labelloc="t";
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor(dependencyList, declarationList)<BR/>
-+ generate(dir)<BR/>
++ generate(dir, options)<BR/>
 + createClassNode(classItem)<BR/>
 + createInterfaceNode(interfaceItem)<BR/>
 </TD></TR>
@@ -22,7 +22,7 @@ labelloc="t";
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor(dependencyList, exportList, moduleArray)<BR/>
-+ generate(dir)<BR/>
++ generate(dir, options)<BR/>
 + createModuleNode(mod, exportList)<BR/>
 - createNodeModulesRelations(modName, nodeMods)<BR/>
 - createRelations(modules)<BR/>
@@ -58,7 +58,7 @@ labelloc="t";
 "IGraphFileGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>IGraphFileGenerator</B></TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
-generate(filter)<BR/>
+generate(dir, options)<BR/>
 </TD></TR>
 </TABLE>>];
 

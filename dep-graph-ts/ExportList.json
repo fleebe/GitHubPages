@@ -1,14 +1,14 @@
 [
   {
     "src": "dep-graph.ts",
+    "exported": "ProgramOptions",
+    "type": "TSInterfaceDeclaration"
+  },
+  {
+    "src": "dep-graph.ts",
     "exported": "runProgram",
     "type": "FunctionDeclaration",
     "params": "()"
-  },
-  {
-    "src": "DependencyGraphGenerator.ts",
-    "exported": "DggOptions",
-    "type": "TSInterfaceDeclaration"
   },
   {
     "src": "DependencyGraphGenerator.ts",
@@ -16,24 +16,25 @@
     "type": "ClassDeclaration"
   },
   {
-    "src": "DocumentationGenerator.ts",
+    "src": "DocumentationProcessor.ts",
     "exported": "JSDocSourceConfig",
     "type": "TSInterfaceDeclaration"
   },
   {
-    "src": "DocumentationGenerator.ts",
+    "src": "DocumentationProcessor.ts",
     "exported": "JSDocOptsConfig",
     "type": "TSInterfaceDeclaration"
   },
   {
-    "src": "DocumentationGenerator.ts",
+    "src": "DocumentationProcessor.ts",
     "exported": "JSDocConfig",
     "type": "TSInterfaceDeclaration"
   },
   {
-    "src": "DocumentationGenerator.ts",
-    "exported": "DocumentationGenerator",
-    "type": "ClassDeclaration"
+    "src": "DocumentationProcessor.ts",
+    "exported": "spawnDocumentationProcess",
+    "type": "FunctionDeclaration",
+    "params": "(cmd, args, logPrefix, toolName)"
   },
   {
     "src": "GraphvizProcessor.ts",

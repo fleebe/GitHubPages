@@ -3,21 +3,21 @@
     "dir": "",
     "file": "dep-graph.ts",
     "dependsOnCnt": 4,
+    "usedByCnt": 6,
+    "exportCnt": 2
+  },
+  {
+    "dir": "",
+    "file": "DependencyGraphGenerator.ts",
+    "dependsOnCnt": 18,
     "usedByCnt": 1,
     "exportCnt": 1
   },
   {
     "dir": "",
-    "file": "DependencyGraphGenerator.ts",
-    "dependsOnCnt": 16,
-    "usedByCnt": 1,
-    "exportCnt": 2
-  },
-  {
-    "dir": "",
-    "file": "DocumentationGenerator.ts",
-    "dependsOnCnt": 4,
-    "usedByCnt": 3,
+    "file": "DocumentationProcessor.ts",
+    "dependsOnCnt": 1,
+    "usedByCnt": 2,
     "exportCnt": 4
   },
   {
@@ -44,7 +44,7 @@
   {
     "dir": "",
     "file": "TypeDocGenerator.ts",
-    "dependsOnCnt": 7,
+    "dependsOnCnt": 8,
     "usedByCnt": 1,
     "exportCnt": 1
   },
@@ -94,7 +94,7 @@
     "dir": "ast",
     "file": "SharedInterfaces.ts",
     "dependsOnCnt": 0,
-    "usedByCnt": 17,
+    "usedByCnt": 16,
     "exportCnt": 8
   },
   {
@@ -121,14 +121,14 @@
   {
     "dir": "graphs",
     "file": "ClassDiagram.ts",
-    "dependsOnCnt": 3,
+    "dependsOnCnt": 4,
     "usedByCnt": 1,
     "exportCnt": 1
   },
   {
     "dir": "graphs",
     "file": "ExportGraph.ts",
-    "dependsOnCnt": 6,
+    "dependsOnCnt": 7,
     "usedByCnt": 1,
     "exportCnt": 1
   },
@@ -142,7 +142,7 @@
   {
     "dir": "graphs",
     "file": "GraphGenerator.ts",
-    "dependsOnCnt": 0,
+    "dependsOnCnt": 1,
     "usedByCnt": 3,
     "exportCnt": 1
   },

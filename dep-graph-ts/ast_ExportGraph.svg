@@ -12,8 +12,11 @@
 <!-- ast/ASTProcessor -->
 <g id="node1" class="node">
 <title>ast/ASTProcessor</title>
+<g id="a_node1_0"><a xlink:href="docs/tsdocs/modules/_ast_ASTProcessor_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="624,-918 624,-937 748,-937 748,-918 624,-918"/>
 <text text-anchor="start" x="630" y="-924.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/ASTProcessor</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="624,-897 748,-897 "/>
 <polyline fill="none" stroke="black" points="748,-918 624,-918 "/>
 <text text-anchor="start" x="627" y="-903.8" font-family="Times New Roman,serif" font-size="14.00">ASTProcessor</text>
@@ -86,8 +89,11 @@
 <!-- ast/BaseProcessor -->
 <g id="node3" class="node">
 <title>ast/BaseProcessor</title>
+<g id="a_node3_1"><a xlink:href="docs/tsdocs/modules/_ast_BaseProcessor_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="351,-245.5 351,-264.5 469,-264.5 469,-245.5 351,-245.5"/>
 <text text-anchor="start" x="353" y="-252.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/BaseProcessor</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="351,-224.5 469,-224.5 "/>
 <polyline fill="none" stroke="black" points="469,-245.5 351,-245.5 "/>
 <text text-anchor="start" x="354" y="-231.3" font-family="Times New Roman,serif" font-size="14.00">BaseProcessor</text>
@@ -102,8 +108,11 @@
 <!-- ast/ClassProcessor -->
 <g id="node5" class="node">
 <title>ast/ClassProcessor</title>
+<g id="a_node5_2"><a xlink:href="docs/tsdocs/modules/_ast_ClassProcessor_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="1150,-489 1150,-508 1274,-508 1274,-489 1150,-489"/>
 <text text-anchor="start" x="1153" y="-495.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/ClassProcessor</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="1150,-468 1274,-468 "/>
 <polyline fill="none" stroke="black" points="1274,-489 1150,-489 "/>
 <text text-anchor="start" x="1153" y="-474.8" font-family="Times New Roman,serif" font-size="14.00">ClassProcessor</text>
@@ -128,8 +137,11 @@
 <!-- ast/ErrorCollector -->
 <g id="node7" class="node">
 <title>ast/ErrorCollector</title>
+<g id="a_node7_3"><a xlink:href="docs/tsdocs/modules/_ast_ErrorCollector_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="448,-475 448,-494 572,-494 572,-475 448,-475"/>
 <text text-anchor="start" x="452.5" y="-481.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/ErrorCollector</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="448,-454 572,-454 "/>
 <polyline fill="none" stroke="black" points="572,-475 448,-475 "/>
 <text text-anchor="start" x="451" y="-460.8" font-family="Times New Roman,serif" font-size="14.00">ErrorCollector</text>
@@ -152,8 +164,11 @@
 <!-- ast/ExportProcessor -->
 <g id="node8" class="node">
 <title>ast/ExportProcessor</title>
+<g id="a_node8_4"><a xlink:href="docs/tsdocs/modules/_ast_ExportProcessor_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="608,-497 608,-516 764,-516 764,-497 608,-497"/>
 <text text-anchor="start" x="623" y="-503.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/ExportProcessor</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="608,-446 764,-446 "/>
 <polyline fill="none" stroke="black" points="764,-497 608,-497 "/>
 <text text-anchor="start" x="611" y="-482.8" font-family="Times New Roman,serif" font-size="14.00">DeclarationDetailsCallback</text>
@@ -179,8 +194,11 @@
 <!-- ast/ImportProcessor -->
 <g id="node10" class="node">
 <title>ast/ImportProcessor</title>
+<g id="a_node10_5"><a xlink:href="docs/tsdocs/modules/_ast_ImportProcessor_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="82,-498 82,-517 212,-517 212,-498 82,-498"/>
 <text text-anchor="start" x="84" y="-504.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/ImportProcessor</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="82,-477 212,-477 "/>
 <polyline fill="none" stroke="black" points="212,-498 82,-498 "/>
 <text text-anchor="start" x="85" y="-483.8" font-family="Times New Roman,serif" font-size="14.00">ImportProcessor</text>
@@ -208,8 +226,11 @@
 <!-- ast/SharedInterfaces -->
 <g id="node12" class="node">
 <title>ast/SharedInterfaces</title>
+<g id="a_node12_6"><a xlink:href="docs/tsdocs/modules/_ast_SharedInterfaces_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="565,-297.5 565,-316.5 696,-316.5 696,-297.5 565,-297.5"/>
 <text text-anchor="start" x="567" y="-304.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/SharedInterfaces</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="565,-171.5 696,-171.5 "/>
 <polyline fill="none" stroke="black" points="696,-297.5 565,-297.5 "/>
 <text text-anchor="start" x="592.5" y="-283.3" font-family="Times New Roman,serif" font-size="14.00">ClassDetail</text>
@@ -361,8 +382,11 @@
 <!-- ast/UsageProcessor -->
 <g id="node13" class="node">
 <title>ast/UsageProcessor</title>
+<g id="a_node13_7"><a xlink:href="docs/tsdocs/modules/_ast_UsageProcessor_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="287,-458 287,-477 412,-477 412,-458 287,-458"/>
 <text text-anchor="start" x="289" y="-464.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">ast/UsageProcessor</text>
+</a>
+</g>
 <polyline fill="none" stroke="black" points="287,-437 412,-437 "/>
 <polyline fill="none" stroke="black" points="412,-458 287,-458 "/>
 <text text-anchor="start" x="290" y="-443.8" font-family="Times New Roman,serif" font-size="14.00">UsageProcessor</text>

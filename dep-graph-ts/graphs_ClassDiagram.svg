@@ -18,7 +18,7 @@
 <text text-anchor="start" x="1207" y="-416.3" font-family="Times New Roman,serif" font-size="14.00">+ declarationList: array</text>
 <text text-anchor="start" x="1313" y="-398.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">methods</text>
 <text text-anchor="start" x="1207" y="-384.3" font-family="Times New Roman,serif" font-size="14.00">+ constructor(dependencyList, declarationList)</text>
-<text text-anchor="start" x="1298" y="-370.3" font-family="Times New Roman,serif" font-size="14.00">+ generate(dir)</text>
+<text text-anchor="start" x="1273" y="-370.3" font-family="Times New Roman,serif" font-size="14.00">+ generate(dir, options)</text>
 <text text-anchor="start" x="1254.5" y="-356.3" font-family="Times New Roman,serif" font-size="14.00">+ createClassNode(classItem)</text>
 <text text-anchor="start" x="1236" y="-342.3" font-family="Times New Roman,serif" font-size="14.00">+ createInterfaceNode(interfaceItem)</text>
 <polygon fill="none" stroke="black" points="1204,-336 1204,-463 1474,-463 1474,-336 1204,-336"/>
@@ -60,8 +60,8 @@
 <polygon fill="lightyellow" stroke="transparent" points="1105,-144.5 1105,-176.5 1242,-176.5 1242,-144.5 1105,-144.5"/>
 <text text-anchor="start" x="1129" y="-164.3" font-family="Times New Roman,serif" font-style="italic" font-size="14.00">&lt;&lt;interface&gt;&gt;</text>
 <text text-anchor="start" x="1107" y="-150.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">IGraphFileGenerator</text>
-<text text-anchor="start" x="1121" y="-132.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">methods</text>
-<text text-anchor="start" x="1107" y="-118.3" font-family="Times New Roman,serif" font-size="14.00">generate(filter)</text>
+<text text-anchor="start" x="1141" y="-132.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">methods</text>
+<text text-anchor="start" x="1107" y="-118.3" font-family="Times New Roman,serif" font-size="14.00">generate(dir, options)</text>
 <polygon fill="none" stroke="black" points="1103.5,-111.5 1103.5,-177.5 1242.5,-177.5 1242.5,-111.5 1103.5,-111.5"/>
 </g>
 <!-- ClassDiagram&#45;&gt;IGraphFileGenerator -->
@@ -79,7 +79,7 @@
 <text text-anchor="start" x="848" y="-423.3" font-family="Times New Roman,serif" font-size="14.00">+ exportList: array</text>
 <text text-anchor="start" x="981.5" y="-405.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">methods</text>
 <text text-anchor="start" x="848" y="-391.3" font-family="Times New Roman,serif" font-size="14.00">+ constructor(dependencyList, exportList, moduleArray)</text>
-<text text-anchor="start" x="966.5" y="-377.3" font-family="Times New Roman,serif" font-size="14.00">+ generate(dir)</text>
+<text text-anchor="start" x="941.5" y="-377.3" font-family="Times New Roman,serif" font-size="14.00">+ generate(dir, options)</text>
 <text text-anchor="start" x="898.5" y="-363.3" font-family="Times New Roman,serif" font-size="14.00">+ createModuleNode(mod, exportList)</text>
 <text text-anchor="start" x="853.5" y="-349.3" font-family="Times New Roman,serif" font-size="14.00">&#45; createNodeModulesRelations(modName, nodeMods)</text>
 <text text-anchor="start" x="932.5" y="-335.3" font-family="Times New Roman,serif" font-size="14.00">&#45; createRelations(modules)</text>
