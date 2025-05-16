@@ -46,19 +46,20 @@ dep-graph<BR/>
 </TABLE>>];
 "DocumentationGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>DocumentationGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 5<BR/>
-<B>Used By Count:</B> 1</TD></TR>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<B>Used By Count:</B> 3</TD></TR>
 <TR><TD ALIGN="left">
 <I>child_process</I><BR/>
-<I>fs</I><BR/>
-<I>path</I><BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
-utils/file-utils<BR/>
+JsDocGenerator<BR/>
+TypeDocGenerator<BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
+JsDocGenerator<BR/>
+TypeDocGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
@@ -83,6 +84,41 @@ DependencyGraphGenerator<BR/>
 dep-graph<BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Used By:</B><BR/>
+</TD></TR>
+</TABLE>>];
+"JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>JsDocGenerator</B></TD></TR>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<B>Used By Count:</B> 1</TD></TR>
+<TR><TD ALIGN="left">
+<I>fs</I><BR/>
+<I>path</I><BR/>
+</TD></TR>
+<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+ast/SharedInterfaces<BR/>
+DocumentationGenerator<BR/>
+</TD></TR>
+<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+DocumentationGenerator<BR/>
+</TD></TR>
+</TABLE>>];
+"TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>TypeDocGenerator</B></TD></TR>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 7<BR/>
+<B>Used By Count:</B> 1</TD></TR>
+<TR><TD ALIGN="left">
+<I>child_process</I><BR/>
+<I>deepmerge</I><BR/>
+<I>fs</I><BR/>
+<I>path</I><BR/>
+</TD></TR>
+<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+ast/SharedInterfaces<BR/>
+DocumentationGenerator<BR/>
+utils/file-utils<BR/>
+</TD></TR>
+<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+DocumentationGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
@@ -194,7 +230,7 @@ ast/ASTProcessor<BR/>
 "ast/SharedInterfaces" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/SharedInterfaces</B></TD></TR>
 <TR><TD ALIGN="left"><B>Depends On Count:</B> 0<BR/>
-<B>Used By Count:</B> 15</TD></TR>
+<B>Used By Count:</B> 17</TD></TR>
 <TR><TD ALIGN="left"><B>Depends On:</B><BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Used By:</B><BR/>
@@ -212,6 +248,8 @@ graphs/GraphBase<BR/>
 graphs/NodeModulesGraph<BR/>
 graphs/PackageGraph<BR/>
 graphs/RelationsGraph<BR/>
+JsDocGenerator<BR/>
+TypeDocGenerator<BR/>
 utils/list-utils<BR/>
 </TD></TR>
 </TABLE>>];
@@ -373,12 +411,12 @@ utils/globals<BR/>
 ast/ASTProcessor<BR/>
 ast/ImportProcessor<BR/>
 DependencyGraphGenerator<BR/>
-DocumentationGenerator<BR/>
 generators/DiagramsGenerator<BR/>
 generators/HtmlGenerator<BR/>
 graphs/ExportGraph<BR/>
 graphs/GraphBase<BR/>
 graphs/RelationsGraph<BR/>
+TypeDocGenerator<BR/>
 utils/json<BR/>
 </TD></TR>
 </TABLE>>];
@@ -436,8 +474,14 @@ graphs/RelationsGraph<BR/>
 "DependencyGraphGenerator"->"utils/file-utils";
 "DependencyGraphGenerator"->"utils/json";
 "DocumentationGenerator"->"ast/SharedInterfaces";
-"DocumentationGenerator"->"utils/file-utils";
+"DocumentationGenerator"->"JsDocGenerator";
+"DocumentationGenerator"->"TypeDocGenerator";
 "index"->"dep-graph";
+"JsDocGenerator"->"ast/SharedInterfaces";
+"JsDocGenerator"->"DocumentationGenerator";
+"TypeDocGenerator"->"ast/SharedInterfaces";
+"TypeDocGenerator"->"DocumentationGenerator";
+"TypeDocGenerator"->"utils/file-utils";
 "ast/ASTProcessor"->"utils/file-utils";
 "ast/ASTProcessor"->"ast/BaseProcessor";
 "ast/ASTProcessor"->"ast/ClassProcessor";
@@ -488,6 +532,7 @@ graphs/RelationsGraph<BR/>
 @typescript-eslint/types<BR/>
 child_process<BR/>
 commander<BR/>
+deepmerge<BR/>
 estraverse<BR/>
 estree<BR/>
 fs<BR/>

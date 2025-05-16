@@ -12,12 +12,16 @@
 <!-- generators/DiagramsGenerator -->
 <g id="node1" class="node">
 <title>generators/DiagramsGenerator</title>
-<polygon fill="lightblue" stroke="transparent" points="9,-211 9,-230 207,-230 207,-211 9,-211"/>
-<text text-anchor="start" x="11" y="-217.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">generators/DiagramsGenerator</text>
-<polyline fill="none" stroke="black" points="9,-190 207,-190 "/>
-<polyline fill="none" stroke="black" points="207,-211 9,-211 "/>
-<text text-anchor="start" x="12" y="-196.8" font-family="Times New Roman,serif" font-size="14.00">DiagramsGenerator</text>
-<polygon fill="none" stroke="black" points="8,-189 8,-231 208,-231 208,-189 8,-189"/>
+<polygon fill="lightblue" stroke="transparent" points="9,-227 9,-246 207,-246 207,-227 9,-227"/>
+<text text-anchor="start" x="11" y="-233.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">generators/DiagramsGenerator</text>
+<polyline fill="none" stroke="black" points="9,-206 207,-206 "/>
+<polyline fill="none" stroke="black" points="207,-227 9,-227 "/>
+<text text-anchor="start" x="12" y="-212.8" font-family="Times New Roman,serif" font-size="14.00">DiagramsGenerator</text>
+<polyline fill="none" stroke="black" points="9,-174 207,-174 "/>
+<polyline fill="none" stroke="black" points="207,-206 9,-206 "/>
+<text text-anchor="start" x="25" y="-193.8" font-family="Times New Roman,serif" font-style="italic" font-size="14.00" fill="red">utils/file&#45;utils</text>
+<text text-anchor="start" x="11" y="-179.8" font-family="Times New Roman,serif" font-size="14.00">getGraphFilename</text>
+<polygon fill="none" stroke="black" points="8,-173 8,-247 208,-247 208,-173 8,-173"/>
 </g>
 <!-- generators/DiagramsGenerator&#45;node_modules -->
 <g id="node2" class="node">
@@ -33,8 +37,8 @@
 <!-- generators/DiagramsGenerator&#45;&gt;generators/DiagramsGenerator&#45;node_modules -->
 <g id="edge1" class="edge">
 <title>generators/DiagramsGenerator&#45;&gt;generators/DiagramsGenerator&#45;node_modules</title>
-<path fill="none" stroke="black" d="M108,-184.69C108,-155.52 108,-106.2 108,-71.42"/>
-<polygon fill="black" stroke="black" points="111.5,-71.13 108,-61.13 104.5,-71.13 111.5,-71.13"/>
+<path fill="none" stroke="black" d="M108,-168.72C108,-139.57 108,-100.36 108,-71.31"/>
+<polygon fill="black" stroke="black" points="111.5,-71.11 108,-61.11 104.5,-71.11 111.5,-71.11"/>
 </g>
 <!-- generators/HtmlGenerator -->
 <g id="node3" class="node">

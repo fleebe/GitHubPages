@@ -16,8 +16,8 @@
   {
     "dir": "",
     "file": "DocumentationGenerator.ts",
-    "dependsOnCnt": 5,
-    "usedByCnt": 1,
+    "dependsOnCnt": 4,
+    "usedByCnt": 3,
     "exportCnt": 4
   },
   {
@@ -33,6 +33,20 @@
     "dependsOnCnt": 1,
     "usedByCnt": 0,
     "exportCnt": 0
+  },
+  {
+    "dir": "",
+    "file": "JsDocGenerator.ts",
+    "dependsOnCnt": 4,
+    "usedByCnt": 1,
+    "exportCnt": 1
+  },
+  {
+    "dir": "",
+    "file": "TypeDocGenerator.ts",
+    "dependsOnCnt": 7,
+    "usedByCnt": 1,
+    "exportCnt": 1
   },
   {
     "dir": "ast",
@@ -80,7 +94,7 @@
     "dir": "ast",
     "file": "SharedInterfaces.ts",
     "dependsOnCnt": 0,
-    "usedByCnt": 15,
+    "usedByCnt": 17,
     "exportCnt": 8
   },
   {

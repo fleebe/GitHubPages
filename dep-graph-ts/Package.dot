@@ -8,6 +8,8 @@ DependencyGraphGenerator.ts<BR/>
 DocumentationGenerator.ts<BR/>
 GraphvizProcessor.ts<BR/>
 index.ts<BR/>
+JsDocGenerator.ts<BR/>
+TypeDocGenerator.ts<BR/>
 </TD></TR>
 </TABLE>>];
 "ast" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">

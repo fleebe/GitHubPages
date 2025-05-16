@@ -7,24 +7,26 @@
 <h1 id="mod_list">Module List</h1>
 <table border=1 cellpadding=5>
 	<tr><th>Type</th><th>Count</td></th></tr>
-	<tr><td><a href="#node_modules">Node Modules</a></td>	<td>8</td></tr>
-	<tr><td>Application Modules</td>	<td>26</td></tr>
+	<tr><td><a href="#node_modules">Node Modules</a></td>	<td>9</td></tr>
+	<tr><td>Application Modules</td>	<td>28</td></tr>
 	<tr><td><a href="#unused">Unused Application Modules</a></td>	<td>2</td></tr>
 </table><br>
 <table border=1 cellpadding=5>
 	<tr><th>Directory</th><th>File</th><th>Depends On</th><th>Used By</th><th>Exported</th></tr>
 	<tr><td></td><td><a href="#dep-graph.ts">dep-graph.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
 	<tr><td></td><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator.ts</a></td><td>16</td><td>1</td><td>2</td></tr>
-	<tr><td></td><td><a href="#DocumentationGenerator.ts">DocumentationGenerator.ts</a></td><td>5</td><td>1</td><td>4</td></tr>
+	<tr><td></td><td><a href="#DocumentationGenerator.ts">DocumentationGenerator.ts</a></td><td>4</td><td>3</td><td>4</td></tr>
 	<tr><td></td><td><a href="#GraphvizProcessor.ts">GraphvizProcessor.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td></td><td><a href="#index.ts">index.ts</a></td><td>1</td><td>0</td><td>0</td></tr>
+	<tr><td></td><td><a href="#JsDocGenerator.ts">JsDocGenerator.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
+	<tr><td></td><td><a href="#TypeDocGenerator.ts">TypeDocGenerator.ts</a></td><td>7</td><td>1</td><td>1</td></tr>
 	<tr><td>ast</td><td><a href="#ASTProcessor.ts">ASTProcessor.ts</a></td><td>13</td><td>1</td><td>1</td></tr>
 	<tr><td>ast</td><td><a href="#BaseProcessor.ts">BaseProcessor.ts</a></td><td>4</td><td>6</td><td>1</td></tr>
 	<tr><td>ast</td><td><a href="#ClassProcessor.ts">ClassProcessor.ts</a></td><td>3</td><td>1</td><td>1</td></tr>
 	<tr><td>ast</td><td><a href="#ErrorCollector.ts">ErrorCollector.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td>ast</td><td><a href="#ExportProcessor.ts">ExportProcessor.ts</a></td><td>4</td><td>1</td><td>3</td></tr>
 	<tr><td>ast</td><td><a href="#ImportProcessor.ts">ImportProcessor.ts</a></td><td>5</td><td>1</td><td>1</td></tr>
-	<tr><td>ast</td><td><a href="#SharedInterfaces.ts">SharedInterfaces.ts</a></td><td>0</td><td>15</td><td>8</td></tr>
+	<tr><td>ast</td><td><a href="#SharedInterfaces.ts">SharedInterfaces.ts</a></td><td>0</td><td>17</td><td>8</td></tr>
 	<tr><td>ast</td><td><a href="#UsageProcessor.ts">UsageProcessor.ts</a></td><td>1</td><td>0</td><td>1</td></tr>
 	<tr><td>generators</td><td><a href="#DiagramsGenerator.ts">DiagramsGenerator.ts</a></td><td>3</td><td>1</td><td>1</td></tr>
 	<tr><td>generators</td><td><a href="#HtmlGenerator.ts">HtmlGenerator.ts</a></td><td>5</td><td>1</td><td>1</td></tr>
@@ -151,15 +153,15 @@
 	<tr><td>DocumentationGenerator</td>
 	<td>ClassDeclaration</td>
 	<td></td>
-	<td>1</td></tr>
+	<td>3</td></tr>
 	<tr><td>JSDocConfig</td>
 	<td>TSInterfaceDeclaration</td>
 	<td></td>
-	<td>0</td></tr>
+	<td>1</td></tr>
 	<tr><td>JSDocOptsConfig</td>
 	<td>TSInterfaceDeclaration</td>
 	<td></td>
-	<td>0</td></tr>
+	<td>1</td></tr>
 	<tr><td>JSDocSourceConfig</td>
 	<td>TSInterfaceDeclaration</td>
 	<td></td>
@@ -170,21 +172,27 @@
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
 	<tr><td>ast/SharedInterfaces</td>
 	<td>ModuleInfo</td></tr>
-	<tr><td>utils/file-utils</td>
-	<td>getFilename</td></tr>
+	<tr><td>JsDocGenerator</td>
+	<td>JsDocGenerator</td></tr>
+	<tr><td>TypeDocGenerator</td>
+	<td>TypeDocGenerator</td></tr>
 	<tr><td>child_process</td>
 	<td>ChildProcess</td></tr>
 	<tr><td>child_process</td>
 	<td>spawn</td></tr>
-	<tr><td>fs</td>
-	<td>fs</td></tr>
-	<tr><td>path</td>
-	<td>path</td></tr>
 </table><br>
 <h3>DocumentationGenerator.ts Used By</h3>
 <table border=1 cellpadding=5>
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
 	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>DocumentationGenerator</td></tr>
+	<tr><td><a href="#JsDocGenerator.ts">JsDocGenerator</a></td>
+	<td>JSDocConfig</td></tr>
+	<tr><td><a href="#JsDocGenerator.ts">JsDocGenerator</a></td>
+	<td>JSDocOptsConfig</td></tr>
+	<tr><td><a href="#JsDocGenerator.ts">JsDocGenerator</a></td>
+	<td>DocumentationGenerator</td></tr>
+	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
 	<td>DocumentationGenerator</td></tr>
 </table><br>
 <h2 id=GraphvizProcessor.ts>GraphvizProcessor.ts</h2> <a href="#mod_list">(top)</a>
@@ -226,6 +234,70 @@
 <h3>index.ts Used By</h3>
 <table border=1 cellpadding=5>
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+</table><br>
+<h2 id=JsDocGenerator.ts>JsDocGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>JsDocGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>JsDocGenerator</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>JsDocGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>DocumentationGenerator</td>
+	<td>JSDocConfig</td></tr>
+	<tr><td>DocumentationGenerator</td>
+	<td>JSDocOptsConfig</td></tr>
+	<tr><td>DocumentationGenerator</td>
+	<td>DocumentationGenerator</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>JsDocGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DocumentationGenerator.ts">DocumentationGenerator</a></td>
+	<td>JsDocGenerator</td></tr>
+</table><br>
+<h2 id=TypeDocGenerator.ts>TypeDocGenerator.ts</h2> <a href="#mod_list">(top)</a>
+<h3>TypeDocGenerator.ts Exports</h3>
+<table border=1 cellpadding=5>
+	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>TypeDocGenerator</td>
+	<td>ClassDeclaration</td>
+	<td></td>
+	<td>1</td></tr>
+</table><br>
+<h3>TypeDocGenerator.ts Depends On</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td>ast/SharedInterfaces</td>
+	<td>ModuleInfo</td></tr>
+	<tr><td>DocumentationGenerator</td>
+	<td>DocumentationGenerator</td></tr>
+	<tr><td>utils/file-utils</td>
+	<td>getFilename</td></tr>
+	<tr><td>child_process</td>
+	<td>spawn</td></tr>
+	<tr><td>deepmerge</td>
+	<td>deepmerge</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
+</table><br>
+<h3>TypeDocGenerator.ts Used By</h3>
+<table border=1 cellpadding=5>
+	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DocumentationGenerator.ts">DocumentationGenerator</a></td>
+	<td>TypeDocGenerator</td></tr>
 </table><br>
 <h2 id=ASTProcessor.ts>ASTProcessor.ts</h2> <a href="#mod_list">(top)</a>
 <h3>ast/ASTProcessor.ts Exports</h3>
@@ -486,7 +558,7 @@
 	<tr><td>ModuleInfo</td>
 	<td>TSInterfaceDeclaration</td>
 	<td></td>
-	<td>9</td></tr>
+	<td>11</td></tr>
 	<tr><td>ProcessedASTData</td>
 	<td>TSTypeAliasDeclaration</td>
 	<td></td>
@@ -562,6 +634,10 @@
 	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
 	<td>ImportInfo</td></tr>
 	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#JsDocGenerator.ts">JsDocGenerator</a></td>
+	<td>ModuleInfo</td></tr>
+	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
 	<td>ModuleInfo</td></tr>
 	<tr><td><a href="#utils/list-utils.ts">utils/list-utils</a></td>
 	<td>ImportInfo</td></tr>
@@ -940,8 +1016,6 @@
 	<td>getFilename</td></tr>
 	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
 	<td>getGraphFilename</td></tr>
-	<tr><td><a href="#DocumentationGenerator.ts">DocumentationGenerator</a></td>
-	<td>getFilename</td></tr>
 	<tr><td><a href="#generators/DiagramsGenerator.ts">generators/DiagramsGenerator</a></td>
 	<td>getGraphFilename</td></tr>
 	<tr><td><a href="#generators/HtmlGenerator.ts">generators/HtmlGenerator</a></td>
@@ -956,6 +1030,8 @@
 	<td>cleanPath</td></tr>
 	<tr><td><a href="#graphs/RelationsGraph.ts">graphs/RelationsGraph</a></td>
 	<td>getModuleName</td></tr>
+	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
+	<td>getFilename</td></tr>
 	<tr><td><a href="#utils/json.ts">utils/json</a></td>
 	<td>safeWriteFile</td></tr>
 </table><br>
@@ -1071,6 +1147,8 @@
 	<td>ChildProcess</td></tr>
 	<tr><td>commander</td>
 	<td>Command</td></tr>
+	<tr><td>deepmerge</td>
+	<td>deepmerge</td></tr>
 	<tr><td>estraverse</td>
 	<td>estraverse</td></tr>
 	<tr><td>estree</td>

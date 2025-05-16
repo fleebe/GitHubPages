@@ -106,16 +106,15 @@ templates: object<BR/>
 + tsModules: array<BR/>
 + typeDocIndexRelativePath: string | null<BR/>
 + jsDocIndexRelativePath: string | null<BR/>
-- defaultTypeDocSubDir<BR/>
-- defaultJsDocSubDir<BR/>
+- typeDocGenerator: TypeDocGenerator<BR/>
+- jsDocGenerator: JsDocGenerator<BR/>
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor(baseLocInput, outputDir, moduleArray)<BR/>
-+ generateTypeDoc(typedocConfig)<BR/>
++ generateTypeDoc(typedocConfig, tsconfigPath)<BR/>
++ generateTypeDocForEachModule(typedocConfig, tsconfigPath)<BR/>
 + generateJsDoc(userConfigPath)<BR/>
-- showJsdocPath()<BR/>
-- createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
-- spawnDocumentationProcess(command, args, logPrefix, toolDisplayName)<BR/>
++ spawnDocumentationProcess(command, args, logPrefix, toolDisplayName)<BR/>
 </TD></TR>
 </TABLE>>];
 
@@ -124,6 +123,41 @@ templates: object<BR/>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor()<BR/>
 + generateSvg(dotFilePath, svgFilePath)<BR/>
+</TD></TR>
+</TABLE>>];
+
+"JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>JsDocGenerator</B></TD></TR>
+<TR><TD align="left"><B>properties</B><BR/>
+- baseLoc: string<BR/>
+- outputDir: string<BR/>
+- defaultJsDocSubDir<BR/>
+- jsModules: array<BR/>
+</TD></TR>
+<TR><TD align="left"><B>methods</B><BR/>
++ constructor(baseLoc, outputDir, jsModules)<BR/>
+- createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
++ generateJsDoc(userConfigPath)<BR/>
+</TD></TR>
+</TABLE>>];
+
+"TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>TypeDocGenerator</B></TD></TR>
+<TR><TD align="left"><B>properties</B><BR/>
+- baseLoc: string<BR/>
+- outputDir: string<BR/>
+- defaultTypeDocSubDir<BR/>
+</TD></TR>
+<TR><TD align="left"><B>methods</B><BR/>
++ constructor(baseLoc, outputDir)<BR/>
+- buildTypeDocArgs(entryPoints, docName, outDir, optionsPath, tsconfigPath)<BR/>
+- resolveTsConfigPath(baseLoc, typedocConfigPath, tsconfigPath)<BR/>
+- mergeTsConfig(tsConfigPath)<BR/>
+- loadAndResolveTsConfig(tsConfigPath, visited)<BR/>
+- resolveTypeDocOutputDir(configPath, defaultOut)<BR/>
++ generateTypeDoc(tsModules, typedocConfig, tsconfigPath)<BR/>
++ generateTypeDocForEachModule(tsModules, typedocConfig, tsconfigPath)<BR/>
++ generateTypeDocForModule(module, typedocConfig, tsconfigPath)<BR/>
 </TD></TR>
 </TABLE>>];
 

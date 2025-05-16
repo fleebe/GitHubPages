@@ -21,11 +21,53 @@
     "import": "DocumentationGenerator"
   },
   {
+    "src": "JsDocGenerator.ts",
+    "name": "JsDocGenerator",
+    "importSrc": "./DocumentationGenerator",
+    "relSrcName": "DocumentationGenerator",
+    "import": "JSDocConfig"
+  },
+  {
+    "src": "JsDocGenerator.ts",
+    "name": "JsDocGenerator",
+    "importSrc": "./DocumentationGenerator",
+    "relSrcName": "DocumentationGenerator",
+    "import": "JSDocOptsConfig"
+  },
+  {
+    "src": "JsDocGenerator.ts",
+    "name": "JsDocGenerator",
+    "importSrc": "./DocumentationGenerator",
+    "relSrcName": "DocumentationGenerator",
+    "import": "DocumentationGenerator"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./DocumentationGenerator",
+    "relSrcName": "DocumentationGenerator",
+    "import": "DocumentationGenerator"
+  },
+  {
     "src": "DependencyGraphGenerator.ts",
     "name": "DependencyGraphGenerator",
     "importSrc": "./GraphvizProcessor",
     "relSrcName": "GraphvizProcessor",
     "import": "GraphvizProcessor"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "./JsDocGenerator",
+    "relSrcName": "JsDocGenerator",
+    "import": "JsDocGenerator"
+  },
+  {
+    "src": "DocumentationGenerator.ts",
+    "name": "DocumentationGenerator",
+    "importSrc": "./TypeDocGenerator",
+    "relSrcName": "TypeDocGenerator",
+    "import": "TypeDocGenerator"
   },
   {
     "src": "DependencyGraphGenerator.ts",
@@ -315,6 +357,20 @@
     "import": "ModuleInfo"
   },
   {
+    "src": "JsDocGenerator.ts",
+    "name": "JsDocGenerator",
+    "importSrc": "./ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./ast/SharedInterfaces",
+    "relSrcName": "ast/SharedInterfaces",
+    "import": "ModuleInfo"
+  },
+  {
     "src": "utils/list-utils.ts",
     "name": "utils/list-utils",
     "importSrc": "../ast/SharedInterfaces",
@@ -518,13 +574,6 @@
     "import": "getGraphFilename"
   },
   {
-    "src": "DocumentationGenerator.ts",
-    "name": "DocumentationGenerator",
-    "importSrc": "./utils/file-utils",
-    "relSrcName": "utils/file-utils",
-    "import": "getFilename"
-  },
-  {
     "src": "generators/DiagramsGenerator.ts",
     "name": "generators/DiagramsGenerator",
     "importSrc": "../utils/file-utils",
@@ -572,6 +621,13 @@
     "importSrc": "../utils/file-utils",
     "relSrcName": "utils/file-utils",
     "import": "getModuleName"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./utils/file-utils",
+    "relSrcName": "utils/file-utils",
+    "import": "getFilename"
   },
   {
     "src": "utils/json.ts",

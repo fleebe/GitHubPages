@@ -69,6 +69,7 @@ getRelativePathParts<BR/>
 getDirectoriesRecursive<BR/>
 getFiles<BR/>
 getFilename<BR/>
+getGraphFilename<BR/>
 <font color="red"><I>utils/json</I></font><BR/>
 jsonOut<BR/>
 </TD></TR>
@@ -89,13 +90,17 @@ JSDocConfig<BR/>
 JSDocOptsConfig<BR/>
 JSDocSourceConfig<BR/>
 </TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>JsDocGenerator</I></font><BR/>
+JsDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>TypeDocGenerator</I></font><BR/>
+TypeDocGenerator<BR/>
+</TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ModuleInfo<BR/>
-</TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
-<font color="red"><I>utils/file-utils</I></font><BR/>
-getFilename<BR/>
 </TD></TR>
 </TABLE>>];
 "DocumentationGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
@@ -103,8 +108,6 @@ getFilename<BR/>
 <TR><TD align="left">
 <font color="red"><I>child_process</I></font> (ChildProcess)<BR/>
 <font color="red"><I>child_process</I></font> (spawn)<BR/>
-<font color="red"><I>fs</I></font> (fs)<BR/>
-<font color="red"><I>path</I></font> (path)<BR/>
 </TD></TR>
 </TABLE>>];
 "DocumentationGenerator"->"DocumentationGenerator-node_modules";
@@ -132,8 +135,64 @@ GraphvizProcessor<BR/>
 runProgram<BR/>
 </TD></TR>
 </TABLE>>];
+"JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>JsDocGenerator</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+JsDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>DocumentationGenerator</I></font><BR/>
+JSDocConfig<BR/>
+JSDocOptsConfig<BR/>
+DocumentationGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ModuleInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"JsDocGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>fs</I></font> (fs)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"JsDocGenerator"->"JsDocGenerator-node_modules";
+"TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" align="center"><B>TypeDocGenerator</B></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+TypeDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>DocumentationGenerator</I></font><BR/>
+DocumentationGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ModuleInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+getFilename<BR/>
+</TD></TR>
+</TABLE>>];
+"TypeDocGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD align="left">
+<font color="red"><I>child_process</I></font> (spawn)<BR/>
+<font color="red"><I>deepmerge</I></font> (deepmerge)<BR/>
+<font color="red"><I>fs</I></font> (fs)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"TypeDocGenerator"->"TypeDocGenerator-node_modules";
 "dep-graph"->"DependencyGraphGenerator";
 "DependencyGraphGenerator"->"DocumentationGenerator";
 "DependencyGraphGenerator"->"GraphvizProcessor";
+"DocumentationGenerator"->"JsDocGenerator";
+"DocumentationGenerator"->"TypeDocGenerator";
 "index"->"dep-graph";
+"JsDocGenerator"->"DocumentationGenerator";
+"TypeDocGenerator"->"DocumentationGenerator";
 }

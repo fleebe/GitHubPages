@@ -41,6 +41,16 @@
     "type": "ClassDeclaration"
   },
   {
+    "src": "JsDocGenerator.ts",
+    "exported": "JsDocGenerator",
+    "type": "ClassDeclaration"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "exported": "TypeDocGenerator",
+    "type": "ClassDeclaration"
+  },
+  {
     "src": "ast/ASTProcessor.ts",
     "exported": "ASTProcessor",
     "type": "ClassDeclaration"

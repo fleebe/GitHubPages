@@ -465,7 +465,14 @@
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(typedocConfig)"
+        "parameters": "(typedocConfig, tsconfigPath)"
+      },
+      {
+        "name": "generateTypeDocForEachModule",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(typedocConfig, tsconfigPath)"
       },
       {
         "name": "generateJsDoc",
@@ -475,24 +482,10 @@
         "parameters": "(userConfigPath)"
       },
       {
-        "name": "showJsdocPath",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": true,
-        "parameters": "()"
-      },
-      {
-        "name": "createTempJsdocConfigObject",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": true,
-        "parameters": "(jsdocOutputDirAbsolute)"
-      },
-      {
         "name": "spawnDocumentationProcess",
         "kind": "method",
-        "isStatic": false,
-        "isPrivate": true,
+        "isStatic": true,
+        "isPrivate": false,
         "parameters": "(command, args, logPrefix, toolDisplayName)"
       }
     ],
@@ -540,16 +533,18 @@
         "type": "string | null"
       },
       {
-        "name": "defaultTypeDocSubDir",
+        "name": "typeDocGenerator",
         "isStatic": false,
         "isPrivate": true,
-        "hasDefaultValue": true
+        "hasDefaultValue": false,
+        "type": "TypeDocGenerator"
       },
       {
-        "name": "defaultJsDocSubDir",
+        "name": "jsDocGenerator",
         "isStatic": false,
         "isPrivate": true,
-        "hasDefaultValue": true
+        "hasDefaultValue": false,
+        "type": "JsDocGenerator"
       }
     ],
     "superClass": null,
@@ -577,6 +572,161 @@
       }
     ],
     "properties": [],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "JsDocGenerator",
+    "filePath": "JsDocGenerator.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc, outputDir, jsModules)"
+      },
+      {
+        "name": "createTempJsdocConfigObject",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(jsdocOutputDirAbsolute)"
+      },
+      {
+        "name": "generateJsDoc",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(userConfigPath)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "baseLoc",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "outputDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "defaultJsDocSubDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": true
+      },
+      {
+        "name": "jsModules",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "array"
+      }
+    ],
+    "superClass": null,
+    "implementsInterfaces": [],
+    "isExported": true
+  },
+  {
+    "name": "TypeDocGenerator",
+    "filePath": "TypeDocGenerator.ts",
+    "declarationType": "class",
+    "methods": [
+      {
+        "name": "constructor",
+        "kind": "constructor",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(baseLoc, outputDir)"
+      },
+      {
+        "name": "buildTypeDocArgs",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(entryPoints, docName, outDir, optionsPath, tsconfigPath)"
+      },
+      {
+        "name": "resolveTsConfigPath",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(baseLoc, typedocConfigPath, tsconfigPath)"
+      },
+      {
+        "name": "mergeTsConfig",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(tsConfigPath)"
+      },
+      {
+        "name": "loadAndResolveTsConfig",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(tsConfigPath, visited)"
+      },
+      {
+        "name": "resolveTypeDocOutputDir",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "(configPath, defaultOut)"
+      },
+      {
+        "name": "generateTypeDoc",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(tsModules, typedocConfig, tsconfigPath)"
+      },
+      {
+        "name": "generateTypeDocForEachModule",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(tsModules, typedocConfig, tsconfigPath)"
+      },
+      {
+        "name": "generateTypeDocForModule",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": false,
+        "parameters": "(module, typedocConfig, tsconfigPath)"
+      }
+    ],
+    "properties": [
+      {
+        "name": "baseLoc",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "outputDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
+      },
+      {
+        "name": "defaultTypeDocSubDir",
+        "isStatic": false,
+        "isPrivate": true,
+        "hasDefaultValue": true
+      }
+    ],
     "superClass": null,
     "implementsInterfaces": [],
     "isExported": true

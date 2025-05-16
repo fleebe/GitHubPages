@@ -7,6 +7,7 @@ labelloc="t";
 @typescript-eslint/types<BR/>
 child_process<BR/>
 commander<BR/>
+deepmerge<BR/>
 estraverse<BR/>
 estree<BR/>
 fs<BR/>
@@ -20,6 +21,8 @@ dep-graph.ts<BR/>
 DependencyGraphGenerator.ts<BR/>
 DocumentationGenerator.ts<BR/>
 GraphvizProcessor.ts<BR/>
+JsDocGenerator.ts<BR/>
+TypeDocGenerator.ts<BR/>
 ast/ASTProcessor.ts<BR/>
 ast/BaseProcessor.ts<BR/>
 ast/ClassProcessor.ts<BR/>

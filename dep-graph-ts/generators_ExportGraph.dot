@@ -5,6 +5,10 @@ labelloc="t";
 <TR><TD BORDER="1" SIDES="TB" align="left">
 DiagramsGenerator<BR/>
 </TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+getGraphFilename<BR/>
+</TD></TR>
 </TABLE>>];
 "generators/DiagramsGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
