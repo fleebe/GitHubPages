@@ -1,7 +1,7 @@
 digraph {label="utils Module Exports";
 labelloc="t";
 "utils/file-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_utils_file-utils_.html" TARGET="_blank" align="center"><B>utils/file-utils</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_file-utils.html" TARGET="_blank" align="center"><U><B>utils/file-utils</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 cleanPath<BR/>
 getDirectoriesRecursive<BR/>
@@ -29,13 +29,13 @@ EXT_LIST<BR/>
 </TABLE>>];
 "utils/file-utils"->"utils/file-utils-node_modules";
 "utils/globals" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_utils_globals_.html" TARGET="_blank" align="center"><B>utils/globals</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_globals.html" TARGET="_blank" align="center"><U><B>utils/globals</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 EXT_LIST<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/json" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_utils_json_.html" TARGET="_blank" align="center"><B>utils/json</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_json.html" TARGET="_blank" align="center"><U><B>utils/json</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 default<BR/>
 jsonIn<BR/>
@@ -54,7 +54,7 @@ safeWriteFile<BR/>
 </TABLE>>];
 "utils/json"->"utils/json-node_modules";
 "utils/list-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_utils_list-utils_.html" TARGET="_blank" align="center"><B>utils/list-utils</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_list-utils.html" TARGET="_blank" align="center"><U><B>utils/list-utils</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 getDependsOn<BR/>
 getExportedList<BR/>

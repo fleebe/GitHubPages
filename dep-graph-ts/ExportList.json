@@ -32,6 +32,18 @@
   },
   {
     "src": "DocumentationProcessor.ts",
+    "exported": "getTypedocConfigPath",
+    "type": "FunctionDeclaration",
+    "params": "(baseLoc, typedocConfig)"
+  },
+  {
+    "src": "DocumentationProcessor.ts",
+    "exported": "getTypeDocOutputDir",
+    "type": "FunctionDeclaration",
+    "params": "(baseLoc, myConfigPath, defaultOut)"
+  },
+  {
+    "src": "DocumentationProcessor.ts",
     "exported": "spawnDocumentationProcess",
     "type": "FunctionDeclaration",
     "params": "(cmd, args, logPrefix, toolName)"

@@ -13,9 +13,9 @@
 </table><br>
 <table border=1 cellpadding=5>
 	<tr><th>Directory</th><th>File</th><th>Depends On</th><th>Used By</th><th>Exported</th></tr>
-	<tr><td></td><td><a href="#dep-graph.ts">dep-graph.ts</a></td><td>4</td><td>6</td><td>2</td></tr>
-	<tr><td></td><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator.ts</a></td><td>18</td><td>1</td><td>1</td></tr>
-	<tr><td></td><td><a href="#DocumentationProcessor.ts">DocumentationProcessor.ts</a></td><td>1</td><td>2</td><td>4</td></tr>
+	<tr><td></td><td><a href="#dep-graph.ts">dep-graph.ts</a></td><td>4</td><td>5</td><td>2</td></tr>
+	<tr><td></td><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator.ts</a></td><td>19</td><td>1</td><td>1</td></tr>
+	<tr><td></td><td><a href="#DocumentationProcessor.ts">DocumentationProcessor.ts</a></td><td>3</td><td>3</td><td>6</td></tr>
 	<tr><td></td><td><a href="#GraphvizProcessor.ts">GraphvizProcessor.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td></td><td><a href="#index.ts">index.ts</a></td><td>1</td><td>0</td><td>0</td></tr>
 	<tr><td></td><td><a href="#JsDocGenerator.ts">JsDocGenerator.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
@@ -33,7 +33,7 @@
 	<tr><td>graphs</td><td><a href="#ClassDiagram.ts">ClassDiagram.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#ExportGraph.ts">ExportGraph.ts</a></td><td>7</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#GraphBase.ts">GraphBase.ts</a></td><td>4</td><td>5</td><td>1</td></tr>
-	<tr><td>graphs</td><td><a href="#GraphGenerator.ts">GraphGenerator.ts</a></td><td>1</td><td>3</td><td>1</td></tr>
+	<tr><td>graphs</td><td><a href="#GraphGenerator.ts">GraphGenerator.ts</a></td><td>0</td><td>3</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#NodeModulesGraph.ts">NodeModulesGraph.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#PackageGraph.ts">PackageGraph.ts</a></td><td>2</td><td>1</td><td>1</td></tr>
 	<tr><td>graphs</td><td><a href="#RelationsGraph.ts">RelationsGraph.ts</a></td><td>4</td><td>1</td><td>1</td></tr>
@@ -55,7 +55,7 @@
 	<tr><td>ProgramOptions</td>
 	<td>TSInterfaceDeclaration</td>
 	<td></td>
-	<td>5</td></tr>
+	<td>4</td></tr>
 	<tr><td>runProgram</td>
 	<td>FunctionDeclaration</td>
 	<td>()</td>
@@ -86,8 +86,6 @@
 	<td>ProgramOptions</td></tr>
 	<tr><td><a href="#graphs/ExportGraph.ts">graphs/ExportGraph</a></td>
 	<td>ProgramOptions</td></tr>
-	<tr><td><a href="#graphs/GraphGenerator.ts">graphs/GraphGenerator</a></td>
-	<td>ProgramOptions</td></tr>
 	<tr><td><a href="#index.ts">index</a></td>
 	<td>runProgram</td></tr>
 	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
@@ -113,6 +111,8 @@
 	<td>ProcessedASTData</td></tr>
 	<tr><td>dep-graph</td>
 	<td>ProgramOptions</td></tr>
+	<tr><td>DocumentationProcessor</td>
+	<td>getTypeDocOutputDir</td></tr>
 	<tr><td>generators/DiagramsGenerator</td>
 	<td>DiagramsGenerator</td></tr>
 	<tr><td>generators/HtmlGenerator</td>
@@ -164,6 +164,14 @@
 <h3>DocumentationProcessor.ts Exports</h3>
 <table border=1 cellpadding=5>
 	<tr><th>Exported</th><th>Export Declaration</th><th>Parameters</th><th>Used Count</th></tr>
+	<tr><td>getTypedocConfigPath</td>
+	<td>FunctionDeclaration</td>
+	<td>(baseLoc, typedocConfig)</td>
+	<td>1</td></tr>
+	<tr><td>getTypeDocOutputDir</td>
+	<td>FunctionDeclaration</td>
+	<td>(baseLoc, myConfigPath, defaultOut)</td>
+	<td>2</td></tr>
 	<tr><td>JSDocConfig</td>
 	<td>TSInterfaceDeclaration</td>
 	<td></td>
@@ -186,14 +194,24 @@
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
 	<tr><td>child_process</td>
 	<td>spawn</td></tr>
+	<tr><td>fs</td>
+	<td>fs</td></tr>
+	<tr><td>path</td>
+	<td>path</td></tr>
 </table><br>
 <h3>DocumentationProcessor.ts Used By</h3>
 <table border=1 cellpadding=5>
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
+	<tr><td><a href="#DependencyGraphGenerator.ts">DependencyGraphGenerator</a></td>
+	<td>getTypeDocOutputDir</td></tr>
 	<tr><td><a href="#JsDocGenerator.ts">JsDocGenerator</a></td>
 	<td>JSDocConfig</td></tr>
 	<tr><td><a href="#JsDocGenerator.ts">JsDocGenerator</a></td>
 	<td>spawnDocumentationProcess</td></tr>
+	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
+	<td>getTypedocConfigPath</td></tr>
+	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
+	<td>getTypeDocOutputDir</td></tr>
 	<tr><td><a href="#TypeDocGenerator.ts">TypeDocGenerator</a></td>
 	<td>spawnDocumentationProcess</td></tr>
 </table><br>
@@ -282,6 +300,10 @@
 	<td>ModuleInfo</td></tr>
 	<tr><td>dep-graph</td>
 	<td>ProgramOptions</td></tr>
+	<tr><td>DocumentationProcessor</td>
+	<td>getTypedocConfigPath</td></tr>
+	<tr><td>DocumentationProcessor</td>
+	<td>getTypeDocOutputDir</td></tr>
 	<tr><td>DocumentationProcessor</td>
 	<td>spawnDocumentationProcess</td></tr>
 	<tr><td>utils/file-utils</td>
@@ -846,8 +868,6 @@
 <h3>graphs/GraphGenerator.ts Depends On</h3>
 <table border=1 cellpadding=5>
 	<tr><th>File or <br>Node Module</th><th>Import</th></tr>
-	<tr><td>dep-graph</td>
-	<td>ProgramOptions</td></tr>
 </table><br>
 <h3>GraphGenerator.ts Used By</h3>
 <table border=1 cellpadding=5>

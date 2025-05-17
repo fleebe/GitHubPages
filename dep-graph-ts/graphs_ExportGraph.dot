@@ -1,7 +1,7 @@
 digraph {label="graphs Module Exports";
 labelloc="t";
 "graphs/ClassDiagram" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_ClassDiagram_.html" TARGET="_blank" align="center"><B>graphs/ClassDiagram</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_ClassDiagram.html" TARGET="_blank" align="center"><U><B>graphs/ClassDiagram</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ClassDiagram<BR/>
 </TD></TR>
@@ -24,7 +24,7 @@ ImportInfo<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/ExportGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_ExportGraph_.html" TARGET="_blank" align="center"><B>graphs/ExportGraph</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_ExportGraph.html" TARGET="_blank" align="center"><U><B>graphs/ExportGraph</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ExportGraph<BR/>
 </TD></TR>
@@ -62,7 +62,7 @@ getExportedList<BR/>
 </TABLE>>];
 "graphs/ExportGraph"->"graphs/ExportGraph-node_modules";
 "graphs/GraphBase" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_GraphBase_.html" TARGET="_blank" align="center"><B>graphs/GraphBase</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_GraphBase.html" TARGET="_blank" align="center"><U><B>graphs/GraphBase</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 GraphBase<BR/>
 </TD></TR>
@@ -86,17 +86,13 @@ getNodeModules<BR/>
 </TABLE>>];
 "graphs/GraphBase"->"graphs/GraphBase-node_modules";
 "graphs/GraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_GraphGenerator_.html" TARGET="_blank" align="center"><B>graphs/GraphGenerator</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_GraphGenerator.html" TARGET="_blank" align="center"><U><B>graphs/GraphGenerator</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 IGraphFileGenerator<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
-<font color="red"><I>dep-graph</I></font><BR/>
-ProgramOptions<BR/>
-</TD></TR>
 </TABLE>>];
 "graphs/NodeModulesGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_NodeModulesGraph_.html" TARGET="_blank" align="center"><B>graphs/NodeModulesGraph</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_NodeModulesGraph.html" TARGET="_blank" align="center"><U><B>graphs/NodeModulesGraph</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 NodeModulesGraph<BR/>
 </TD></TR>
@@ -110,7 +106,7 @@ ImportInfo<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/PackageGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_PackageGraph_.html" TARGET="_blank" align="center"><B>graphs/PackageGraph</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_PackageGraph.html" TARGET="_blank" align="center"><U><B>graphs/PackageGraph</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 PackageGraph<BR/>
 </TD></TR>
@@ -125,7 +121,7 @@ ModuleInfo<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/RelationsGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_graphs_RelationsGraph_.html" TARGET="_blank" align="center"><B>graphs/RelationsGraph</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_RelationsGraph.html" TARGET="_blank" align="center"><U><B>graphs/RelationsGraph</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 RelationsGraph<BR/>
 </TD></TR>

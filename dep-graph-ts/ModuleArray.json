@@ -3,22 +3,22 @@
     "dir": "",
     "file": "dep-graph.ts",
     "dependsOnCnt": 4,
-    "usedByCnt": 6,
+    "usedByCnt": 5,
     "exportCnt": 2
   },
   {
     "dir": "",
     "file": "DependencyGraphGenerator.ts",
-    "dependsOnCnt": 18,
+    "dependsOnCnt": 19,
     "usedByCnt": 1,
     "exportCnt": 1
   },
   {
     "dir": "",
     "file": "DocumentationProcessor.ts",
-    "dependsOnCnt": 1,
-    "usedByCnt": 2,
-    "exportCnt": 4
+    "dependsOnCnt": 3,
+    "usedByCnt": 3,
+    "exportCnt": 6
   },
   {
     "dir": "",
@@ -142,7 +142,7 @@
   {
     "dir": "graphs",
     "file": "GraphGenerator.ts",
-    "dependsOnCnt": 1,
+    "dependsOnCnt": 0,
     "usedByCnt": 3,
     "exportCnt": 1
   },

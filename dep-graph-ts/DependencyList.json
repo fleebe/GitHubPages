@@ -210,11 +210,32 @@
     "import": "TypeDocGenerator"
   },
   {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "getTypeDocOutputDir"
+  },
+  {
     "src": "DocumentationProcessor.ts",
     "name": "DocumentationProcessor",
     "importSrc": "child_process",
     "relSrcName": "child_process",
     "import": "spawn"
+  },
+  {
+    "src": "DocumentationProcessor.ts",
+    "name": "DocumentationProcessor",
+    "importSrc": "path",
+    "relSrcName": "path",
+    "import": "path"
+  },
+  {
+    "src": "DocumentationProcessor.ts",
+    "name": "DocumentationProcessor",
+    "importSrc": "fs",
+    "relSrcName": "fs",
+    "import": "fs"
   },
   {
     "src": "GraphvizProcessor.ts",
@@ -327,6 +348,20 @@
     "importSrc": "./dep-graph",
     "relSrcName": "dep-graph",
     "import": "ProgramOptions"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "getTypedocConfigPath"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "getTypeDocOutputDir"
   },
   {
     "src": "TypeDocGenerator.ts",
@@ -929,13 +964,6 @@
     "importSrc": "../utils/list-utils",
     "relSrcName": "utils/list-utils",
     "import": "getNodeModules"
-  },
-  {
-    "src": "graphs/GraphGenerator.ts",
-    "name": "graphs/GraphGenerator",
-    "importSrc": "@/dep-graph",
-    "relSrcName": "dep-graph",
-    "import": "ProgramOptions"
   },
   {
     "src": "graphs/NodeModulesGraph.ts",

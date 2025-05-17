@@ -1,7 +1,7 @@
 digraph {label=" Module Exports";
 labelloc="t";
 "dep-graph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_dep-graph_.html" TARGET="_blank" align="center"><B>dep-graph</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\dep-graph.html" TARGET="_blank" align="center"><U><B>dep-graph</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ProgramOptions<BR/>
 runProgram<BR/>
@@ -23,9 +23,13 @@ DependencyGraphGenerator<BR/>
 </TABLE>>];
 "dep-graph"->"dep-graph-node_modules";
 "DependencyGraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_DependencyGraphGenerator_.html" TARGET="_blank" align="center"><B>DependencyGraphGenerator</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\DependencyGraphGenerator.html" TARGET="_blank" align="center"><U><B>DependencyGraphGenerator</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 DependencyGraphGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left">
+<font color="red"><I>DocumentationProcessor</I></font><BR/>
+getTypeDocOutputDir<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 <font color="red"><I>GraphvizProcessor</I></font><BR/>
@@ -91,8 +95,10 @@ jsonOut<BR/>
 </TABLE>>];
 "DependencyGraphGenerator"->"DependencyGraphGenerator-node_modules";
 "DocumentationProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_DocumentationProcessor_.html" TARGET="_blank" align="center"><B>DocumentationProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\DocumentationProcessor.html" TARGET="_blank" align="center"><U><B>DocumentationProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
+getTypedocConfigPath<BR/>
+getTypeDocOutputDir<BR/>
 JSDocConfig<BR/>
 JSDocOptsConfig<BR/>
 JSDocSourceConfig<BR/>
@@ -103,11 +109,13 @@ spawnDocumentationProcess<BR/>
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
 <TR><TD align="left">
 <font color="red"><I>child_process</I></font> (spawn)<BR/>
+<font color="red"><I>fs</I></font> (fs)<BR/>
+<font color="red"><I>path</I></font> (path)<BR/>
 </TD></TR>
 </TABLE>>];
 "DocumentationProcessor"->"DocumentationProcessor-node_modules";
 "GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_GraphvizProcessor_.html" TARGET="_blank" align="center"><B>GraphvizProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\GraphvizProcessor.html" TARGET="_blank" align="center"><U><B>GraphvizProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 GraphvizProcessor<BR/>
 </TD></TR>
@@ -122,7 +130,7 @@ GraphvizProcessor<BR/>
 </TABLE>>];
 "GraphvizProcessor"->"GraphvizProcessor-node_modules";
 "index" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_index_.html" TARGET="_blank" align="center"><B>index</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\index.html" TARGET="_blank" align="center"><U><B>index</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
@@ -131,7 +139,7 @@ runProgram<BR/>
 </TD></TR>
 </TABLE>>];
 "JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_JsDocGenerator_.html" TARGET="_blank" align="center"><B>JsDocGenerator</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\JsDocGenerator.html" TARGET="_blank" align="center"><U><B>JsDocGenerator</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 JsDocGenerator<BR/>
 </TD></TR>
@@ -154,12 +162,14 @@ ModuleInfo<BR/>
 </TABLE>>];
 "JsDocGenerator"->"JsDocGenerator-node_modules";
 "TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_TypeDocGenerator_.html" TARGET="_blank" align="center"><B>TypeDocGenerator</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\TypeDocGenerator.html" TARGET="_blank" align="center"><U><B>TypeDocGenerator</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 TypeDocGenerator<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 <font color="red"><I>DocumentationProcessor</I></font><BR/>
+getTypedocConfigPath<BR/>
+getTypeDocOutputDir<BR/>
 spawnDocumentationProcess<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
@@ -187,6 +197,7 @@ getFilename<BR/>
 "TypeDocGenerator"->"TypeDocGenerator-node_modules";
 "dep-graph"->"DependencyGraphGenerator";
 "DependencyGraphGenerator"->"dep-graph";
+"DependencyGraphGenerator"->"DocumentationProcessor";
 "DependencyGraphGenerator"->"GraphvizProcessor";
 "DependencyGraphGenerator"->"JsDocGenerator";
 "DependencyGraphGenerator"->"TypeDocGenerator";

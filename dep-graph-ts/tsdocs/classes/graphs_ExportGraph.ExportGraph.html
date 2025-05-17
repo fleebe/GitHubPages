@@ -44,6 +44,7 @@
 <a href="graphs_ExportGraph.ExportGraph.html#diagramsHTML" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>diagramsHTML</span></a>
 <a href="graphs_ExportGraph.ExportGraph.html#exportList" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>export<wbr/>List</span></a>
 <a href="graphs_ExportGraph.ExportGraph.html#moduleArray" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>module<wbr/>Array</span></a>
+<a href="graphs_ExportGraph.ExportGraph.html#typedocPath" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>typedoc<wbr/>Path</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
@@ -69,7 +70,7 @@
 <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_ExportGraph">new <wbr/>Export<wbr/>Graph<span class="tsd-signature-symbol">(</span>dependencyList<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ImportInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImportInfo</a><span class="tsd-signature-symbol">[]</span>, exportList<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ExportInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ExportInfo</a><span class="tsd-signature-symbol">[]</span>, moduleArray<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphs_ExportGraph.ExportGraph.html" class="tsd-signature-type" data-tsd-kind="Class">ExportGraph</a><a href="#constructor.new_ExportGraph" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_ExportGraph">new <wbr/>Export<wbr/>Graph<span class="tsd-signature-symbol">(</span>dependencyList<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ImportInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImportInfo</a><span class="tsd-signature-symbol">[]</span>, exportList<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ExportInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ExportInfo</a><span class="tsd-signature-symbol">[]</span>, moduleArray<span class="tsd-signature-symbol">: </span><a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span>, typedocPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphs_ExportGraph.ExportGraph.html" class="tsd-signature-type" data-tsd-kind="Class">ExportGraph</a><a href="#constructor.new_ExportGraph" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -85,11 +86,13 @@
 <li>
 <h5>moduleArray: <a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span></h5>
 <div class="tsd-comment tsd-typography"><p>List of files to graph</p>
-</div></li></ul></div>
+</div></li>
+<li>
+<h5>typedocPath: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="graphs_ExportGraph.ExportGraph.html" class="tsd-signature-type" data-tsd-kind="Class">ExportGraph</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="graphs_GraphBase.GraphBase.html">GraphBase</a>.<a href="graphs_GraphBase.GraphBase.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L21">graphs/ExportGraph.ts:21</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L22">graphs/ExportGraph.ts:22</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="dependencyList" class="tsd-anchor"></a>
@@ -114,7 +117,12 @@
 <div class="tsd-signature">module<wbr/>Array<span class="tsd-signature-symbol">:</span> <a href="../interfaces/ast_SharedInterfaces.ModuleInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleInfo</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="graphs_GraphBase.GraphBase.html">GraphBase</a>.<a href="graphs_GraphBase.GraphBase.html#moduleArray">moduleArray</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/GraphBase.ts#L13">graphs/GraphBase.ts:13</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/GraphBase.ts#L13">graphs/GraphBase.ts:13</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="typedocPath" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>typedoc<wbr/>Path</span><a href="#typedocPath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">typedoc<wbr/>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L15">graphs/ExportGraph.ts:15</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="cleanDirPath" class="tsd-anchor"></a>
@@ -155,7 +163,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L59">graphs/ExportGraph.ts:59</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L60">graphs/ExportGraph.ts:60</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="createNodeModulesRelations" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>create<wbr/>Node<wbr/>Modules<wbr/>Relations</span><a href="#createNodeModulesRelations" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -223,7 +231,7 @@
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="generate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>generate</span><a href="#generate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="generate.generate-1">generate<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/dep_graph.ProgramOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProgramOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#generate.generate-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="generate.generate-1">generate<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#generate.generate-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Creates a graph file for modules, showing exports and imports</p>
 
@@ -237,15 +245,11 @@
 <li>
 <h5>dir: <span class="tsd-signature-type">string</span></h5>
 <div class="tsd-comment tsd-typography"><p>The directory to generate the graph for.</p>
-</div></li>
-<li>
-<h5>options: <a href="../interfaces/dep_graph.ProgramOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProgramOptions</a></h5>
-<div class="tsd-comment tsd-typography"><p>Options for graph generation.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/graphs_GraphGenerator.IGraphFileGenerator.html">IGraphFileGenerator</a>.<a href="../interfaces/graphs_GraphGenerator.IGraphFileGenerator.html#generate">generate</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L33">graphs/ExportGraph.ts:33</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/fleebe/dep-graph-ts/blob/main/src/graphs/ExportGraph.ts#L34">graphs/ExportGraph.ts:34</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a id="getDependsOnMod" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Depends<wbr/>On<wbr/>Mod</span><a href="#getDependsOnMod" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -463,6 +467,7 @@ Quotes IDs containing special characters or that are keywords.</p>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="graphs_ExportGraph.ExportGraph.html#diagramsHTML" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>diagramsHTML</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="graphs_ExportGraph.ExportGraph.html#exportList" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>export<wbr/>List</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="graphs_ExportGraph.ExportGraph.html#moduleArray" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>module<wbr/>Array</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphs_ExportGraph.ExportGraph.html#typedocPath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>typedoc<wbr/>Path</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="graphs_ExportGraph.ExportGraph.html#cleanDirPath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>clean<wbr/>Dir<wbr/>Path</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="graphs_ExportGraph.ExportGraph.html#createModuleNode" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>create<wbr/>Module<wbr/>Node</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="graphs_ExportGraph.ExportGraph.html#createNodeModulesRelations" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>create<wbr/>Node<wbr/>Modules<wbr/>Relations</a></li>

@@ -35,6 +35,7 @@ config: string<BR/>
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor(baseLocInput, options)<BR/>
+- getTypeDocOutput()<BR/>
 + generate()<BR/>
 - getModuleArray(stats)<BR/>
 - createDirGraph(graphName, dirArray, graphGenerator, svgPromises)<BR/>
@@ -116,20 +117,18 @@ templates: object<BR/>
 - outputDir: string<BR/>
 - defaultTypeDocSubDir<BR/>
 - tsModules: array<BR/>
-+ typeDocIndexRelativePath: string | null<BR/>
+- typeDocOutputPath: string<BR/>
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
-+ constructor(tsModules, baseLoc, outputDir)<BR/>
++ constructor(tsModules, baseLoc, outputDir, typeDocOutputPath)<BR/>
 - buildTypeDocArgs(entryPoints, docName, outDir, optionsPath, tsconfigPath)<BR/>
 - resolveTsConfigPath(baseLoc, typedocConfigPath, tsconfigPath)<BR/>
 - mergeTsConfig(tsConfigPath)<BR/>
 - loadAndResolveTsConfig(tsConfigPath, visited)<BR/>
-- resolveTypeDocOutputDir(configPath, defaultOut)<BR/>
 - canCompileWithTsc(filePath, tsconfigPath)<BR/>
 + generateTypeDoc(options)<BR/>
 + generateTypeDocForEachModule(typedocConfig, tsconfigPath)<BR/>
 - generateTypeDocAt(tsModules, typedocConfig, entryPoint, tsconfigPath)<BR/>
-- getTypeDocOutput(typedocConfig)<BR/>
 + generateTypeDocForEachModule1(tsModules, typedocConfig, tsconfigPath)<BR/>
 + generateTypeDocForModule(module, typedocConfig, tsconfigPath)<BR/>
 </TD></TR>

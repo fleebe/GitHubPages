@@ -3,7 +3,7 @@ labelloc="t";
 "dep-graph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>dep-graph</B></TD></TR>
 <TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
-<B>Used By Count:</B> 6</TD></TR>
+<B>Used By Count:</B> 5</TD></TR>
 <TR><TD ALIGN="left">
 <I>commander</I><BR/>
 <I>fs</I><BR/>
@@ -16,14 +16,13 @@ DependencyGraphGenerator<BR/>
 DependencyGraphGenerator<BR/>
 graphs/ClassDiagram<BR/>
 graphs/ExportGraph<BR/>
-graphs/GraphGenerator<BR/>
 index<BR/>
 TypeDocGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "DependencyGraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>DependencyGraphGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 18<BR/>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 19<BR/>
 <B>Used By Count:</B> 1</TD></TR>
 <TR><TD ALIGN="left">
 <I>fs</I><BR/>
@@ -33,6 +32,7 @@ TypeDocGenerator<BR/>
 ast/ASTProcessor<BR/>
 ast/SharedInterfaces<BR/>
 dep-graph<BR/>
+DocumentationProcessor<BR/>
 generators/DiagramsGenerator<BR/>
 generators/HtmlGenerator<BR/>
 graphs/ClassDiagram<BR/>
@@ -53,14 +53,17 @@ dep-graph<BR/>
 </TABLE>>];
 "DocumentationProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>DocumentationProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 1<BR/>
-<B>Used By Count:</B> 2</TD></TR>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
+<B>Used By Count:</B> 3</TD></TR>
 <TR><TD ALIGN="left">
 <I>child_process</I><BR/>
+<I>fs</I><BR/>
+<I>path</I><BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Depends On:</B><BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Used By:</B><BR/>
+DependencyGraphGenerator<BR/>
 JsDocGenerator<BR/>
 TypeDocGenerator<BR/>
 </TD></TR>
@@ -353,10 +356,9 @@ graphs/RelationsGraph<BR/>
 </TABLE>>];
 "graphs/GraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/GraphGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 1<BR/>
+<TR><TD ALIGN="left"><B>Depends On Count:</B> 0<BR/>
 <B>Used By Count:</B> 3</TD></TR>
 <TR><TD ALIGN="left"><B>Depends On:</B><BR/>
-dep-graph<BR/>
 </TD></TR>
 <TR><TD ALIGN="left"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
@@ -468,6 +470,7 @@ graphs/RelationsGraph<BR/>
 "DependencyGraphGenerator"->"ast/ASTProcessor";
 "DependencyGraphGenerator"->"ast/SharedInterfaces";
 "DependencyGraphGenerator"->"dep-graph";
+"DependencyGraphGenerator"->"DocumentationProcessor";
 "DependencyGraphGenerator"->"generators/DiagramsGenerator";
 "DependencyGraphGenerator"->"generators/HtmlGenerator";
 "DependencyGraphGenerator"->"graphs/ClassDiagram";
@@ -522,7 +525,6 @@ graphs/RelationsGraph<BR/>
 "graphs/GraphBase"->"ast/SharedInterfaces";
 "graphs/GraphBase"->"utils/file-utils";
 "graphs/GraphBase"->"utils/list-utils";
-"graphs/GraphGenerator"->"dep-graph";
 "graphs/NodeModulesGraph"->"ast/SharedInterfaces";
 "graphs/NodeModulesGraph"->"graphs/GraphBase";
 "graphs/PackageGraph"->"ast/SharedInterfaces";

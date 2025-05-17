@@ -12,9 +12,9 @@
 <!-- utils/file&#45;utils -->
 <g id="node1" class="node">
 <title>utils/file&#45;utils</title>
-<g id="a_node1_0"><a xlink:href="docs/tsdocs/modules/_utils_file-utils_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
+<g id="a_node1_0"><a xlink:href="tsdocs\modules\utils_file-utils.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="46,-307 46,-326 185,-326 185,-307 46,-307"/>
-<text text-anchor="start" x="76" y="-313.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">utils/file&#45;utils</text>
+<text text-anchor="start" x="76" y="-313.8" font-family="Times New Roman,serif" font-weight="bold" text-decoration="underline" font-size="14.00">utils/file&#45;utils</text>
 </a>
 </g>
 <polyline fill="none" stroke="black" points="46,-136 185,-136 "/>
@@ -56,9 +56,9 @@
 <!-- utils/globals -->
 <g id="node3" class="node">
 <title>utils/globals</title>
-<g id="a_node3_1"><a xlink:href="docs/tsdocs/modules/_utils_globals_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
+<g id="a_node3_1"><a xlink:href="tsdocs\modules\utils_globals.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="138,-31.5 138,-50.5 215,-50.5 215,-31.5 138,-31.5"/>
-<text text-anchor="start" x="140" y="-38.3" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">utils/globals</text>
+<text text-anchor="start" x="140" y="-38.3" font-family="Times New Roman,serif" font-weight="bold" text-decoration="underline" font-size="14.00">utils/globals</text>
 </a>
 </g>
 <polyline fill="none" stroke="black" points="138,-10.5 215,-10.5 "/>
@@ -75,9 +75,9 @@
 <!-- utils/json -->
 <g id="node4" class="node">
 <title>utils/json</title>
-<g id="a_node4_2"><a xlink:href="docs/tsdocs/modules/_utils_json_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
+<g id="a_node4_2"><a xlink:href="tsdocs\modules\utils_json.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="151,-478 151,-497 231,-497 231,-478 151,-478"/>
-<text text-anchor="start" x="163.5" y="-484.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">utils/json</text>
+<text text-anchor="start" x="163.5" y="-484.8" font-family="Times New Roman,serif" font-weight="bold" text-decoration="underline" font-size="14.00">utils/json</text>
 </a>
 </g>
 <polyline fill="none" stroke="black" points="151,-427 231,-427 "/>
@@ -115,9 +115,9 @@
 <!-- utils/list&#45;utils -->
 <g id="node6" class="node">
 <title>utils/list&#45;utils</title>
-<g id="a_node6_3"><a xlink:href="docs/tsdocs/modules/_utils_list-utils_.html" xlink:title="&lt;TABLE&gt;" target="_blank">
+<g id="a_node6_3"><a xlink:href="tsdocs\modules\utils_list-utils.html" xlink:title="&lt;TABLE&gt;" target="_blank">
 <polygon fill="lightblue" stroke="transparent" points="267,-499 267,-518 409,-518 409,-499 267,-499"/>
-<text text-anchor="start" x="299" y="-505.8" font-family="Times New Roman,serif" font-weight="bold" font-size="14.00">utils/list&#45;utils</text>
+<text text-anchor="start" x="299" y="-505.8" font-family="Times New Roman,serif" font-weight="bold" text-decoration="underline" font-size="14.00">utils/list&#45;utils</text>
 </a>
 </g>
 <polyline fill="none" stroke="black" points="267,-418 409,-418 "/>

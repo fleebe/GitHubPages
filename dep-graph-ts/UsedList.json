@@ -21,13 +21,6 @@
     "import": "ProgramOptions"
   },
   {
-    "src": "graphs/GraphGenerator.ts",
-    "name": "graphs/GraphGenerator",
-    "importSrc": "@/dep-graph",
-    "relSrcName": "dep-graph",
-    "import": "ProgramOptions"
-  },
-  {
     "src": "index.ts",
     "name": "index",
     "importSrc": "./dep-graph",
@@ -49,6 +42,13 @@
     "import": "DependencyGraphGenerator"
   },
   {
+    "src": "DependencyGraphGenerator.ts",
+    "name": "DependencyGraphGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "getTypeDocOutputDir"
+  },
+  {
     "src": "JsDocGenerator.ts",
     "name": "JsDocGenerator",
     "importSrc": "./DocumentationProcessor",
@@ -61,6 +61,20 @@
     "importSrc": "./DocumentationProcessor",
     "relSrcName": "DocumentationProcessor",
     "import": "spawnDocumentationProcess"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "getTypedocConfigPath"
+  },
+  {
+    "src": "TypeDocGenerator.ts",
+    "name": "TypeDocGenerator",
+    "importSrc": "./DocumentationProcessor",
+    "relSrcName": "DocumentationProcessor",
+    "import": "getTypeDocOutputDir"
   },
   {
     "src": "TypeDocGenerator.ts",

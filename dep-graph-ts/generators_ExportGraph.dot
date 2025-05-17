@@ -1,7 +1,7 @@
 digraph {label="generators Module Exports";
 labelloc="t";
 "generators/DiagramsGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_generators_DiagramsGenerator_.html" TARGET="_blank" align="center"><B>generators/DiagramsGenerator</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\generators_DiagramsGenerator.html" TARGET="_blank" align="center"><U><B>generators/DiagramsGenerator</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 DiagramsGenerator<BR/>
 </TD></TR>
@@ -19,7 +19,7 @@ getGraphFilename<BR/>
 </TABLE>>];
 "generators/DiagramsGenerator"->"generators/DiagramsGenerator-node_modules";
 "generators/HtmlGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_generators_HtmlGenerator_.html" TARGET="_blank" align="center"><B>generators/HtmlGenerator</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\generators_HtmlGenerator.html" TARGET="_blank" align="center"><U><B>generators/HtmlGenerator</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 HtmlGenerator<BR/>
 </TD></TR>

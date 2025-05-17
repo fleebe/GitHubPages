@@ -1,7 +1,7 @@
 digraph {label="ast Module Exports";
 labelloc="t";
 "ast/ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_ASTProcessor_.html" TARGET="_blank" align="center"><B>ast/ASTProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ASTProcessor.html" TARGET="_blank" align="center"><U><B>ast/ASTProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ASTProcessor<BR/>
 </TD></TR>
@@ -56,7 +56,7 @@ removeExtension<BR/>
 </TABLE>>];
 "ast/ASTProcessor"->"ast/ASTProcessor-node_modules";
 "ast/BaseProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_BaseProcessor_.html" TARGET="_blank" align="center"><B>ast/BaseProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_BaseProcessor.html" TARGET="_blank" align="center"><U><B>ast/BaseProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 BaseProcessor<BR/>
 </TD></TR>
@@ -75,7 +75,7 @@ BaseProcessor<BR/>
 </TABLE>>];
 "ast/BaseProcessor"->"ast/BaseProcessor-node_modules";
 "ast/ClassProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_ClassProcessor_.html" TARGET="_blank" align="center"><B>ast/ClassProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ClassProcessor.html" TARGET="_blank" align="center"><U><B>ast/ClassProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ClassProcessor<BR/>
 </TD></TR>
@@ -99,7 +99,7 @@ PropertyInfo<BR/>
 </TABLE>>];
 "ast/ClassProcessor"->"ast/ClassProcessor-node_modules";
 "ast/ErrorCollector" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_ErrorCollector_.html" TARGET="_blank" align="center"><B>ast/ErrorCollector</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ErrorCollector.html" TARGET="_blank" align="center"><U><B>ast/ErrorCollector</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ErrorCollector<BR/>
 </TD></TR>
@@ -113,7 +113,7 @@ ErrorInfo<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ExportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_ExportProcessor_.html" TARGET="_blank" align="center"><B>ast/ExportProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ExportProcessor.html" TARGET="_blank" align="center"><U><B>ast/ExportProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 DeclarationDetailsCallback<BR/>
 DeclarationInfo<BR/>
@@ -139,7 +139,7 @@ ModuleInfo<BR/>
 </TABLE>>];
 "ast/ExportProcessor"->"ast/ExportProcessor-node_modules";
 "ast/ImportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_ImportProcessor_.html" TARGET="_blank" align="center"><B>ast/ImportProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ImportProcessor.html" TARGET="_blank" align="center"><U><B>ast/ImportProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ImportProcessor<BR/>
 </TD></TR>
@@ -167,7 +167,7 @@ removeExtension<BR/>
 </TABLE>>];
 "ast/ImportProcessor"->"ast/ImportProcessor-node_modules";
 "ast/SharedInterfaces" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_SharedInterfaces_.html" TARGET="_blank" align="center"><B>ast/SharedInterfaces</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_SharedInterfaces.html" TARGET="_blank" align="center"><U><B>ast/SharedInterfaces</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 ClassDetail<BR/>
 ErrorInfo<BR/>
@@ -180,7 +180,7 @@ PropertyInfo<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/UsageProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="docs/tsdocs/modules/_ast_UsageProcessor_.html" TARGET="_blank" align="center"><B>ast/UsageProcessor</B></TD></TR>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_UsageProcessor.html" TARGET="_blank" align="center"><U><B>ast/UsageProcessor</B></U></TD></TR>
 <TR><TD BORDER="1" SIDES="TB" align="left">
 UsageProcessor<BR/>
 </TD></TR>

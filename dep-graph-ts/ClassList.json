@@ -111,6 +111,13 @@
         "parameters": "(baseLocInput, options)"
       },
       {
+        "name": "getTypeDocOutput",
+        "kind": "method",
+        "isStatic": false,
+        "isPrivate": true,
+        "parameters": "()"
+      },
+      {
         "name": "generate",
         "kind": "method",
         "isStatic": false,
@@ -497,7 +504,7 @@
         "kind": "constructor",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(tsModules, baseLoc, outputDir)"
+        "parameters": "(tsModules, baseLoc, outputDir, typeDocOutputPath)"
       },
       {
         "name": "buildTypeDocArgs",
@@ -528,13 +535,6 @@
         "parameters": "(tsConfigPath, visited)"
       },
       {
-        "name": "resolveTypeDocOutputDir",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": true,
-        "parameters": "(configPath, defaultOut)"
-      },
-      {
         "name": "canCompileWithTsc",
         "kind": "method",
         "isStatic": false,
@@ -561,13 +561,6 @@
         "isStatic": false,
         "isPrivate": true,
         "parameters": "(tsModules, typedocConfig, entryPoint, tsconfigPath)"
-      },
-      {
-        "name": "getTypeDocOutput",
-        "kind": "method",
-        "isStatic": false,
-        "isPrivate": true,
-        "parameters": "(typedocConfig)"
       },
       {
         "name": "generateTypeDocForEachModule1",
@@ -613,11 +606,11 @@
         "type": "array"
       },
       {
-        "name": "typeDocIndexRelativePath",
+        "name": "typeDocOutputPath",
         "isStatic": false,
-        "isPrivate": false,
-        "hasDefaultValue": true,
-        "type": "string | null"
+        "isPrivate": true,
+        "hasDefaultValue": false,
+        "type": "string"
       }
     ],
     "superClass": null,
@@ -1526,7 +1519,7 @@
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(dir, options)"
+        "parameters": "(dir)"
       },
       {
         "name": "createClassNode",
@@ -1568,14 +1561,14 @@
         "kind": "constructor",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(dependencyList, exportList, moduleArray)"
+        "parameters": "(dependencyList, exportList, moduleArray, typedocPath)"
       },
       {
         "name": "generate",
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(dir, options)"
+        "parameters": "(dir)"
       },
       {
         "name": "createModuleNode",
@@ -1606,6 +1599,13 @@
         "isPrivate": false,
         "hasDefaultValue": false,
         "type": "array"
+      },
+      {
+        "name": "typedocPath",
+        "isStatic": false,
+        "isPrivate": false,
+        "hasDefaultValue": false,
+        "type": "string"
       }
     ],
     "superClass": "GraphBase",
@@ -1748,7 +1748,7 @@
         "kind": "method",
         "isStatic": false,
         "isPrivate": false,
-        "parameters": "(dir, options)"
+        "parameters": "(dir)"
       }
     ],
     "properties": [],
