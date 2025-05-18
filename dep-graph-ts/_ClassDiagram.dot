@@ -25,7 +25,7 @@ config: string<BR/>
 
 "DependencyGraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>DependencyGraphGenerator</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 - baseLoc: string<BR/>
 - options: ProgramOptions<BR/>
 - outputDir: string<BR/>
@@ -33,7 +33,7 @@ config: string<BR/>
 - indexHTML: string<BR/>
 - graphvizProcessor: GraphvizProcessor<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLocInput, options)<BR/>
 - getTypeDocOutput()<BR/>
 + generate()<BR/>
@@ -87,7 +87,7 @@ templates: object<BR/>
 
 "GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>GraphvizProcessor</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor()<BR/>
 + generateSvg(dotFilePath, svgFilePath)<BR/>
 </TD></TR>
@@ -95,14 +95,14 @@ templates: object<BR/>
 
 "JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>JsDocGenerator</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 - baseLoc: string<BR/>
 - outputDir: string<BR/>
 - defaultJsDocSubDir<BR/>
 - jsModules: array<BR/>
 + jsDocIndexRelativePath: string | null<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc, outputDir, jsModules)<BR/>
 + generateJsDoc(userConfigPath)<BR/>
 - createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
@@ -112,14 +112,14 @@ templates: object<BR/>
 
 "TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>TypeDocGenerator</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 - baseLoc: string<BR/>
 - outputDir: string<BR/>
 - defaultTypeDocSubDir<BR/>
 - tsModules: array<BR/>
 - typeDocOutputPath: string<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(tsModules, baseLoc, outputDir, typeDocOutputPath)<BR/>
 - buildTypeDocArgs(entryPoints, docName, outDir, optionsPath, tsconfigPath)<BR/>
 - resolveTsConfigPath(baseLoc, typedocConfigPath, tsconfigPath)<BR/>

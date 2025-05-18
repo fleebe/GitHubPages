@@ -2,13 +2,13 @@ digraph {label="ast Class Diagram";
 labelloc="t";
 "ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ASTProcessor : BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 - importProcessor: ImportProcessor<BR/>
 - exportProcessor: ExportProcessor<BR/>
 - classProcessor: ClassProcessor<BR/>
 - errorCollector: ErrorCollector<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 + processModules(moduleMap)<BR/>
 </TD></TR>
@@ -17,10 +17,10 @@ labelloc="t";
 
 "BaseProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 + baseLoc: string<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 + getParentNode(rootNode, targetNode)<BR/>
 + skipNode(nodeType)<BR/>
@@ -34,7 +34,7 @@ labelloc="t";
 
 "ClassProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ClassProcessor : BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 + extractTypeNameFromHeritageClause(clause)<BR/>
 + extractSuperClassName(superClassNode)<BR/>
@@ -55,10 +55,10 @@ labelloc="t";
 
 "ErrorCollector" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ErrorCollector : BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 + errors: array<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 + addError(file, err)<BR/>
 </TD></TR>
@@ -75,7 +75,7 @@ params: string<BR/>
 
 "ExportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ExportProcessor : BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 - extractNamesFromPattern(idPattern, callback)<BR/>
 + processTopLevelDeclaration(ast)<BR/>
@@ -88,7 +88,7 @@ params: string<BR/>
 
 "ImportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ImportProcessor : BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 + processImportDeclaration(node, fullSrcFilePath)<BR/>
 + normalizeDeps(deps)<BR/>
@@ -176,7 +176,7 @@ isExported: boolean<BR/>
 
 "UsageProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>UsageProcessor : BaseProcessor</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(baseLoc)<BR/>
 </TD></TR>
 </TABLE>>];

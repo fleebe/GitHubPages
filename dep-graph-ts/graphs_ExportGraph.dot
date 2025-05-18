@@ -56,7 +56,7 @@ getExportedList<BR/>
 </TABLE>>];
 "graphs/ExportGraph-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>path</I></font> (path)<BR/>
 </TD></TR>
 </TABLE>>];
@@ -80,7 +80,7 @@ getNodeModules<BR/>
 </TABLE>>];
 "graphs/GraphBase-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>path</I></font> (path)<BR/>
 </TD></TR>
 </TABLE>>];

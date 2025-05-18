@@ -43,7 +43,7 @@ removeExtension<BR/>
 </TABLE>>];
 "ast/ASTProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>@typescript-eslint/parser</I></font> (parse)<BR/>
 <font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
 <font color="red"><I>@typescript-eslint/types</I></font> (ParserOptions)<BR/>
@@ -63,7 +63,7 @@ BaseProcessor<BR/>
 </TABLE>>];
 "ast/BaseProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
 <font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
 <font color="red"><I>estraverse</I></font> (estraverse)<BR/>
@@ -92,7 +92,7 @@ PropertyInfo<BR/>
 </TABLE>>];
 "ast/ClassProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
 <font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
 </TD></TR>
@@ -131,7 +131,7 @@ ModuleInfo<BR/>
 </TABLE>>];
 "ast/ExportProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
 <font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
 <font color="red"><I>path</I></font> (path)<BR/>
@@ -159,7 +159,7 @@ removeExtension<BR/>
 </TABLE>>];
 "ast/ImportProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>@typescript-eslint/types</I></font> (TSESTree)<BR/>
 <font color="red"><I>@typescript-eslint/types</I></font> (AST_NODE_TYPES)<BR/>
 <font color="red"><I>path</I></font> (path)<BR/>

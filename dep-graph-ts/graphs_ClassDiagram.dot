@@ -2,10 +2,10 @@ digraph {label="graphs Class Diagram";
 labelloc="t";
 "ClassDiagram" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ClassDiagram : GraphBase</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 + declarationList: array<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(dependencyList, declarationList)<BR/>
 + generate(dir)<BR/>
 + createClassNode(classItem)<BR/>
@@ -17,11 +17,11 @@ labelloc="t";
 
 "ExportGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ExportGraph : GraphBase</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 + exportList: array<BR/>
 + typedocPath: string<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(dependencyList, exportList, moduleArray, typedocPath)<BR/>
 + generate(dir)<BR/>
 + createModuleNode(mod, exportList)<BR/>
@@ -34,12 +34,12 @@ labelloc="t";
 
 "GraphBase" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>GraphBase</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 + dependencyList: array<BR/>
 + moduleArray: array<BR/>
 + diagramsHTML: string<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(depList, moduleArray)<BR/>
 + digraph(title)<BR/>
 + nodeStart(title)<BR/>
@@ -65,7 +65,7 @@ generate(dir)<BR/>
 
 "NodeModulesGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>NodeModulesGraph : GraphBase</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(dependencyList)<BR/>
 + generate()<BR/>
 + createNodeModulesSection()<BR/>
@@ -75,7 +75,7 @@ generate(dir)<BR/>
 
 "PackageGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>PackageGraph : GraphBase</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(moduleArray, dependencyList)<BR/>
 + generate()<BR/>
 - createPackageDependencies()<BR/>
@@ -86,10 +86,10 @@ generate(dir)<BR/>
 
 "RelationsGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>RelationsGraph : GraphBase</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
 + nodeMods: array<BR/>
 </TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
 + constructor(dependencyList, moduleArray)<BR/>
 + generate()<BR/>
 - getUsedBy(mod)<BR/>

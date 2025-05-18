@@ -13,7 +13,7 @@ DependencyGraphGenerator<BR/>
 </TABLE>>];
 "dep-graph-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>commander</I></font> (Command)<BR/>
 <font color="red"><I>commander</I></font> (Option)<BR/>
 <font color="red"><I>commander</I></font> (OptionValues)<BR/>
@@ -88,7 +88,7 @@ jsonOut<BR/>
 </TABLE>>];
 "DependencyGraphGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>fs</I></font> (fs)<BR/>
 <font color="red"><I>path</I></font> (path)<BR/>
 </TD></TR>
@@ -107,7 +107,7 @@ spawnDocumentationProcess<BR/>
 </TABLE>>];
 "DocumentationProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>child_process</I></font> (spawn)<BR/>
 <font color="red"><I>fs</I></font> (fs)<BR/>
 <font color="red"><I>path</I></font> (path)<BR/>
@@ -122,7 +122,7 @@ GraphvizProcessor<BR/>
 </TABLE>>];
 "GraphvizProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>child_process</I></font> (spawn)<BR/>
 <font color="red"><I>child_process</I></font> (ChildProcess)<BR/>
 <font color="red"><I>fs</I></font> (fs)<BR/>
@@ -155,7 +155,7 @@ ModuleInfo<BR/>
 </TABLE>>];
 "JsDocGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>fs</I></font> (fs)<BR/>
 <font color="red"><I>path</I></font> (path)<BR/>
 </TD></TR>
@@ -187,7 +187,7 @@ getFilename<BR/>
 </TABLE>>];
 "TypeDocGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="T" align="left">
 <font color="red"><I>child_process</I></font> (spawn)<BR/>
 <font color="red"><I>deepmerge</I></font> (deepmerge)<BR/>
 <font color="red"><I>fs</I></font> (fs)<BR/>
