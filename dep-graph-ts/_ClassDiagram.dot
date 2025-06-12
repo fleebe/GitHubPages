@@ -2,14 +2,14 @@ digraph {label="Base Class Diagram";
 labelloc="t";
 "PackageConfig" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>PackageConfig</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
 version: string<BR/>
 </TD></TR>
 </TABLE>>];
 
 "ProgramOptions" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ProgramOptions</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
 json: boolean<BR/>
 graph: boolean<BR/>
 class: boolean<BR/>
@@ -25,26 +25,26 @@ config: string<BR/>
 
 "DependencyGraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>DependencyGraphGenerator</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-- baseLoc: string<BR/>
-- options: ProgramOptions<BR/>
-- outputDir: string<BR/>
-- diagramHTML: string<BR/>
-- indexHTML: string<BR/>
-- graphvizProcessor: GraphvizProcessor<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='red'>-</font>  baseLoc: string<BR/>
+<font color='red'>-</font>  diagramHTML: string<BR/>
+<font color='red'>-</font>  graphvizProcessor: GraphvizProcessor<BR/>
+<font color='red'>-</font>  indexHTML: string<BR/>
+<font color='red'>-</font>  options: ProgramOptions<BR/>
+<font color='red'>-</font>  outputDir: string<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(baseLocInput, options)<BR/>
-- getTypeDocOutput()<BR/>
-+ generate()<BR/>
-- getModuleArray(stats)<BR/>
-- createDirGraph(graphName, dirArray, graphGenerator, svgPromises)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLocInput, options)<BR/>
+<font color='blue'>+</font>  generate()<BR/>
+<font color='red'>-</font>  createDirGraph(graphName, dirArray, graphGenerator, svgPromises)<BR/>
+<font color='red'>-</font>  getModuleArray(stats)<BR/>
+<font color='red'>-</font>  getTypeDocOutput()<BR/>
 </TD></TR>
 </TABLE>>];
 
 "JSDocSourceConfig" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>JSDocSourceConfig</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
 include: array<BR/>
 exclude: array<BR/>
 includePattern: string<BR/>
@@ -54,7 +54,7 @@ excludePattern: string<BR/>
 
 "JSDocOptsConfig" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>JSDocOptsConfig</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
 destination: string<BR/>
 encoding: string<BR/>
 private: boolean<BR/>
@@ -73,7 +73,7 @@ package: string<BR/>
 
 "JSDocConfig" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>JSDocConfig</B></TD></TR>
-<TR><TD align="left"><B>properties</B><BR/>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
 tags: object<BR/>
 source: JSDocSourceConfig<BR/>
 sourceType: unknown_type | unknown_type<BR/>
@@ -87,50 +87,50 @@ templates: object<BR/>
 
 "GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>GraphvizProcessor</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor()<BR/>
-+ generateSvg(dotFilePath, svgFilePath)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor()<BR/>
+<font color='blue'>+</font>  generateSvg(dotFilePath, svgFilePath)<BR/>
 </TD></TR>
 </TABLE>>];
 
 "JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>JsDocGenerator</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-- baseLoc: string<BR/>
-- outputDir: string<BR/>
-- defaultJsDocSubDir<BR/>
-- jsModules: array<BR/>
-+ jsDocIndexRelativePath: string | null<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  jsDocIndexRelativePath: string | null<BR/>
+<font color='red'>-</font>  baseLoc: string<BR/>
+<font color='red'>-</font>  defaultJsDocSubDir<BR/>
+<font color='red'>-</font>  jsModules: array<BR/>
+<font color='red'>-</font>  outputDir: string<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(baseLoc, outputDir, jsModules)<BR/>
-+ generateJsDoc(userConfigPath)<BR/>
-- createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
-+ generateJsDoc1(userConfigPath)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLoc, outputDir, jsModules)<BR/>
+<font color='blue'>+</font>  generateJsDoc(userConfigPath)<BR/>
+<font color='blue'>+</font>  generateJsDoc1(userConfigPath)<BR/>
+<font color='red'>-</font>  createTempJsdocConfigObject(jsdocOutputDirAbsolute)<BR/>
 </TD></TR>
 </TABLE>>];
 
 "TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>TypeDocGenerator</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-- baseLoc: string<BR/>
-- outputDir: string<BR/>
-- defaultTypeDocSubDir<BR/>
-- tsModules: array<BR/>
-- typeDocOutputPath: string<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='red'>-</font>  baseLoc: string<BR/>
+<font color='red'>-</font>  defaultTypeDocSubDir<BR/>
+<font color='red'>-</font>  outputDir: string<BR/>
+<font color='red'>-</font>  tsModules: array<BR/>
+<font color='red'>-</font>  typeDocOutputPath: string<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(tsModules, baseLoc, outputDir, typeDocOutputPath)<BR/>
-- buildTypeDocArgs(entryPoints, docName, outDir, optionsPath, tsconfigPath)<BR/>
-- resolveTsConfigPath(baseLoc, typedocConfigPath, tsconfigPath)<BR/>
-- mergeTsConfig(tsConfigPath)<BR/>
-- loadAndResolveTsConfig(tsConfigPath, visited)<BR/>
-- canCompileWithTsc(filePath, tsconfigPath)<BR/>
-+ generateTypeDoc(options)<BR/>
-+ generateTypeDocForEachModule(typedocConfig, tsconfigPath)<BR/>
-- generateTypeDocAt(tsModules, typedocConfig, entryPoint, tsconfigPath)<BR/>
-+ generateTypeDocForEachModule1(tsModules, typedocConfig, tsconfigPath)<BR/>
-+ generateTypeDocForModule(module, typedocConfig, tsconfigPath)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(tsModules, baseLoc, outputDir, typeDocOutputPath)<BR/>
+<font color='blue'>+</font>  generateTypeDoc(options)<BR/>
+<font color='blue'>+</font>  generateTypeDocForEachModule(typedocConfig, tsconfigPath)<BR/>
+<font color='blue'>+</font>  generateTypeDocForEachModule1(tsModules, typedocConfig, tsconfigPath)<BR/>
+<font color='blue'>+</font>  generateTypeDocForModule(module, typedocConfig, tsconfigPath)<BR/>
+<font color='red'>-</font>  buildTypeDocArgs(entryPoints, docName, outDir, optionsPath, tsconfigPath)<BR/>
+<font color='red'>-</font>  canCompileWithTsc(filePath, tsconfigPath)<BR/>
+<font color='red'>-</font>  generateTypeDocAt(tsModules, typedocConfig, entryPoint, tsconfigPath)<BR/>
+<font color='red'>-</font>  loadAndResolveTsConfig(tsConfigPath, visited)<BR/>
+<font color='red'>-</font>  mergeTsConfig(tsConfigPath)<BR/>
+<font color='red'>-</font>  resolveTsConfigPath(baseLoc, typedocConfigPath, tsconfigPath)<BR/>
 </TD></TR>
 </TABLE>>];
 

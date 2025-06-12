@@ -2,14 +2,14 @@ digraph {label="graphs Class Diagram";
 labelloc="t";
 "ClassDiagram" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ClassDiagram : GraphBase</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-+ declarationList: array<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  declarationList: array<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(dependencyList, declarationList)<BR/>
-+ generate(dir)<BR/>
-+ createClassNode(classItem)<BR/>
-+ createInterfaceNode(interfaceItem)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(dependencyList, declarationList)<BR/>
+<font color='blue'>+</font>  createClassNode(classItem)<BR/>
+<font color='blue'>+</font>  createInterfaceNode(interfaceItem)<BR/>
+<font color='blue'>+</font>  generate(dir)<BR/>
 </TD></TR>
 </TABLE>>];
 "ClassDiagram"->"GraphBase" [arrowhead=empty, style=solid];
@@ -17,16 +17,16 @@ labelloc="t";
 
 "ExportGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>ExportGraph : GraphBase</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-+ exportList: array<BR/>
-+ typedocPath: string<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  exportList: array<BR/>
+<font color='blue'>+</font>  typedocPath: string<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(dependencyList, exportList, moduleArray, typedocPath)<BR/>
-+ generate(dir)<BR/>
-+ createModuleNode(mod, exportList)<BR/>
-- createNodeModulesRelations(modName, nodeMods)<BR/>
-- createRelations(modules)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(dependencyList, exportList, moduleArray, typedocPath)<BR/>
+<font color='blue'>+</font>  createModuleNode(mod, exportList)<BR/>
+<font color='blue'>+</font>  generate(dir)<BR/>
+<font color='red'>-</font>  createNodeModulesRelations(modName, nodeMods)<BR/>
+<font color='red'>-</font>  createRelations(modules)<BR/>
 </TD></TR>
 </TABLE>>];
 "ExportGraph"->"GraphBase" [arrowhead=empty, style=solid];
@@ -34,67 +34,67 @@ labelloc="t";
 
 "GraphBase" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>GraphBase</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-+ dependencyList: array<BR/>
-+ moduleArray: array<BR/>
-+ diagramsHTML: string<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  dependencyList: array<BR/>
+<font color='blue'>+</font>  diagramsHTML: string<BR/>
+<font color='blue'>+</font>  moduleArray: array<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(depList, moduleArray)<BR/>
-+ digraph(title)<BR/>
-+ nodeStart(title)<BR/>
-+ makeSafeTitle(title)<BR/>
-+ nodeFinish()<BR/>
-+ recordDigraph(title)<BR/>
-+ getDependsOnMod(mod)<BR/>
-+ getNodeModuleList()<BR/>
-+ filterModulesForDir(dir)<BR/>
-+ uniqueDirs()<BR/>
-+ isNodeModule(dep)<BR/>
-+ inSameDirectory(dep)<BR/>
-+ cleanDirPath(root)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  cleanDirPath(root)<BR/>
+<font color='blue'>+</font>  constructor(depList, moduleArray)<BR/>
+<font color='blue'>+</font>  digraph(title)<BR/>
+<font color='blue'>+</font>  filterModulesForDir(dir)<BR/>
+<font color='blue'>+</font>  getDependsOnMod(mod)<BR/>
+<font color='blue'>+</font>  getNodeModuleList()<BR/>
+<font color='blue'>+</font>  inSameDirectory(dep)<BR/>
+<font color='blue'>+</font>  isNodeModule(dep)<BR/>
+<font color='blue'>+</font>  makeSafeTitle(title)<BR/>
+<font color='blue'>+</font>  nodeFinish()<BR/>
+<font color='blue'>+</font>  nodeStart(title)<BR/>
+<font color='blue'>+</font>  recordDigraph(title)<BR/>
+<font color='blue'>+</font>  uniqueDirs()<BR/>
 </TD></TR>
 </TABLE>>];
 
 "IGraphFileGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>IGraphFileGenerator</B></TD></TR>
-<TR><TD align="left"><B>methods</B><BR/>
+<TR><TD align="left" BALIGN="LEFT"><B>methods</B><BR/>
 generate(dir)<BR/>
 </TD></TR>
 </TABLE>>];
 
 "NodeModulesGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>NodeModulesGraph : GraphBase</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(dependencyList)<BR/>
-+ generate()<BR/>
-+ createNodeModulesSection()<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(dependencyList)<BR/>
+<font color='blue'>+</font>  createNodeModulesSection()<BR/>
+<font color='blue'>+</font>  generate()<BR/>
 </TD></TR>
 </TABLE>>];
 "NodeModulesGraph"->"GraphBase" [arrowhead=empty, style=solid];
 
 "PackageGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>PackageGraph : GraphBase</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(moduleArray, dependencyList)<BR/>
-+ generate()<BR/>
-- createPackageDependencies()<BR/>
-- createPackageNodes()<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(moduleArray, dependencyList)<BR/>
+<font color='blue'>+</font>  generate()<BR/>
+<font color='red'>-</font>  createPackageDependencies()<BR/>
+<font color='red'>-</font>  createPackageNodes()<BR/>
 </TD></TR>
 </TABLE>>];
 "PackageGraph"->"GraphBase" [arrowhead=empty, style=solid];
 
 "RelationsGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD align="left" bgcolor="lightblue"><B>RelationsGraph : GraphBase</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>properties</B><BR/>
-+ nodeMods: array<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  nodeMods: array<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left"><B>methods</B><BR/>
-+ constructor(dependencyList, moduleArray)<BR/>
-+ generate()<BR/>
-- getUsedBy(mod)<BR/>
-- createModuleRelationNode(mod)<BR/>
-- createNodeModulesSection()<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(dependencyList, moduleArray)<BR/>
+<font color='blue'>+</font>  generate()<BR/>
+<font color='red'>-</font>  createModuleRelationNode(mod)<BR/>
+<font color='red'>-</font>  createNodeModulesSection()<BR/>
+<font color='red'>-</font>  getUsedBy(mod)<BR/>
 </TD></TR>
 </TABLE>>];
 "RelationsGraph"->"GraphBase" [arrowhead=empty, style=solid];

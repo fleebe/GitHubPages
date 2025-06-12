@@ -1,68 +1,80 @@
 digraph {label="utils Module Exports";
 labelloc="t";
 "utils/file-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_file-utils.html" TARGET="_blank" align="center"><U><B>utils/file-utils</B></U></TD></TR>
-<TR><TD BORDER="1" SIDES="TB" align="left">
-cleanPath<BR/>
-getDirectoriesRecursive<BR/>
-getFilename<BR/>
-getFiles<BR/>
-getGraphFilename<BR/>
-getModuleName<BR/>
-getRelativePathParts<BR/>
-moduleFileName<BR/>
-ModulePathInfo<BR/>
-removeExtension<BR/>
-safeWriteFile<BR/>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_file-utils.html" TARGET="_blank" align="CENTER"><U><B>utils/file-utils</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='purple'>🧩 [iface]</font>  ModulePathInfo<BR/>
+<font color='green'>ƒ [fn]</font>  cleanPath<BR/>
+<font color='green'>ƒ [fn]</font>  getDirectoriesRecursive<BR/>
+<font color='green'>ƒ [fn]</font>  getFilename<BR/>
+<font color='green'>ƒ [fn]</font>  getFiles<BR/>
+<font color='green'>ƒ [fn]</font>  getGraphFilename<BR/>
+<font color='green'>ƒ [fn]</font>  getModuleName<BR/>
+<font color='green'>ƒ [fn]</font>  getRelativePathParts<BR/>
+<font color='green'>ƒ [fn]</font>  moduleFileName<BR/>
+<font color='green'>ƒ [fn]</font>  safeWriteFile<BR/>
+<font color='teal'>🔸 [var]</font>  removeExtension<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" align="left">
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
 <font color="red"><I>utils/globals</I></font><BR/>
 EXT_LIST<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/file-utils-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left">
-<font color="red"><I>fs</I></font> (fs)<BR/>
-<font color="red"><I>path</I></font> (path)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/file-utils"->"utils/file-utils-node_modules";
 "utils/globals" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_globals.html" TARGET="_blank" align="center"><U><B>utils/globals</B></U></TD></TR>
-<TR><TD BORDER="1" SIDES="TB" align="left">
-EXT_LIST<BR/>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_globals.html" TARGET="_blank" align="CENTER"><U><B>utils/globals</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='teal'>🔸 [var]</font>  EXT_LIST<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
 </TD></TR>
 </TABLE>>];
 "utils/json" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_json.html" TARGET="_blank" align="center"><U><B>utils/json</B></U></TD></TR>
-<TR><TD BORDER="1" SIDES="TB" align="left">
-default<BR/>
-jsonIn<BR/>
-jsonOut<BR/>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_json.html" TARGET="_blank" align="CENTER"><U><B>utils/json</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='green'>ƒ [fn]</font>  jsonIn<BR/>
+<font color='green'>ƒ [fn]</font>  jsonOut<BR/>
+<font color='black'>📦 [exp]</font>  default<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" align="left">
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
 <font color="red"><I>utils/file-utils</I></font><BR/>
 safeWriteFile<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/json-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
-<TR><TD BORDER="1" SIDES="T" align="left">
-<font color="red"><I>fs</I></font> (fs)<BR/>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>fs</I></font>  (fs)<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/json"->"utils/json-node_modules";
 "utils/list-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_list-utils.html" TARGET="_blank" align="center"><U><B>utils/list-utils</B></U></TD></TR>
-<TR><TD BORDER="1" SIDES="TB" align="left">
-getDependsOn<BR/>
-getExportedList<BR/>
-getNodeModules<BR/>
-getUniqueNodeModules<BR/>
-getUsedByList<BR/>
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\utils_list-utils.html" TARGET="_blank" align="CENTER"><U><B>utils/list-utils</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='green'>ƒ [fn]</font>  getDependsOn<BR/>
+<font color='green'>ƒ [fn]</font>  getExportedList<BR/>
+<font color='green'>ƒ [fn]</font>  getNodeModules<BR/>
+<font color='green'>ƒ [fn]</font>  getUniqueNodeModules<BR/>
+<font color='green'>ƒ [fn]</font>  getUsedByList<BR/>
 </TD></TR>
-<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left">
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ImportInfo<BR/>
 ExportInfo<BR/>
