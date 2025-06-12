@@ -1,8 +1,8 @@
 digraph {label="Node Modules Dependencies";
 labelloc="t";
 "node-modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD><B>node-modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="B" BGCOLOR="lightgrey"><B>node-modules</B></TD></TR>
+<TR><TD align="left" BALIGN="LEFT">
 @/dep-graph<BR/>
 @typescript-eslint/parser<BR/>
 @typescript-eslint/types<BR/>
@@ -16,8 +16,8 @@ path<BR/>
 </TD></TR>
 </TABLE>>];
 "modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD><B>modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="B" BGCOLOR="lightgrey"><B>modules</B></TD></TR>
+<TR><TD align="left" BALIGN="LEFT">
 dep-graph.ts<BR/>
 DependencyGraphGenerator.ts<BR/>
 DocumentationProcessor.ts<BR/>

@@ -2,7 +2,7 @@ digraph {label="";
 labelloc="t";
 "" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="center" HREF="diagrams.html#base" TARGET="_top"><U><font color="blue">./</font></U></TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD BORDER="1" SIDES="T" ALIGN="left">
 dep-graph.ts<BR/>
 DependencyGraphGenerator.ts<BR/>
 DocumentationProcessor.ts<BR/>
@@ -14,7 +14,7 @@ TypeDocGenerator.ts<BR/>
 </TABLE>>];
 "ast" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="center" HREF="diagrams.html#ast" TARGET="_top"><U><font color="blue">ast</font></U></TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD BORDER="1" SIDES="T" ALIGN="left">
 ASTProcessor.ts<BR/>
 BaseProcessor.ts<BR/>
 ClassProcessor.ts<BR/>
@@ -27,14 +27,14 @@ UsageProcessor.ts<BR/>
 </TABLE>>];
 "generators" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="center" HREF="diagrams.html#generators" TARGET="_top"><U><font color="blue">generators</font></U></TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD BORDER="1" SIDES="T" ALIGN="left">
 DiagramsGenerator.ts<BR/>
 HtmlGenerator.ts<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="center" HREF="diagrams.html#graphs" TARGET="_top"><U><font color="blue">graphs</font></U></TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD BORDER="1" SIDES="T" ALIGN="left">
 ClassDiagram.ts<BR/>
 ExportGraph.ts<BR/>
 GraphBase.ts<BR/>
@@ -46,7 +46,7 @@ RelationsGraph.ts<BR/>
 </TABLE>>];
 "utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
 <TR><TD ALIGN="center" HREF="diagrams.html#utils" TARGET="_top"><U><font color="blue">utils</font></U></TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD BORDER="1" SIDES="T" ALIGN="left">
 file-utils.ts<BR/>
 globals.ts<BR/>
 json.ts<BR/>

@@ -1,18 +1,18 @@
 digraph {label="Module Relations";
 labelloc="t";
 "dep-graph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>dep-graph</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>dep-graph</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 5</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>commander</I><BR/>
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 graphs/ClassDiagram<BR/>
 graphs/ExportGraph<BR/>
@@ -21,14 +21,14 @@ TypeDocGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "DependencyGraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>DependencyGraphGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 19<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>DependencyGraphGenerator</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 19<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/ASTProcessor<BR/>
 ast/SharedInterfaces<BR/>
 dep-graph<BR/>
@@ -47,92 +47,92 @@ TypeDocGenerator<BR/>
 utils/file-utils<BR/>
 utils/json<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 dep-graph<BR/>
 </TD></TR>
 </TABLE>>];
 "DocumentationProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>DocumentationProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>DocumentationProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 3<BR/>
 <B>Used By Count:</B> 3</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>child_process</I><BR/>
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 JsDocGenerator<BR/>
 TypeDocGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>GraphvizProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 2<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>GraphvizProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 2<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>child_process</I><BR/>
 <I>fs</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "index" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>index</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 1<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>index</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 1<BR/>
 <B>Used By Count:</B> 0</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 dep-graph<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 </TD></TR>
 </TABLE>>];
 "JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>JsDocGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>JsDocGenerator</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 DocumentationProcessor<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>TypeDocGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 8<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>TypeDocGenerator</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 8<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>child_process</I><BR/>
 <I>deepmerge</I><BR/>
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 dep-graph<BR/>
 DocumentationProcessor<BR/>
 utils/file-utils<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/ASTProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 13<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/ASTProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 13<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>@typescript-eslint/parser</I><BR/>
 <I>@typescript-eslint/types</I><BR/>
 <I>estraverse</I><BR/>
@@ -140,7 +140,7 @@ DependencyGraphGenerator<BR/>
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 utils/file-utils<BR/>
 ast/BaseProcessor<BR/>
 ast/ClassProcessor<BR/>
@@ -149,23 +149,23 @@ ast/ExportProcessor<BR/>
 ast/ImportProcessor<BR/>
 ast/SharedInterfaces<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/BaseProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/BaseProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/BaseProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 6</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>@typescript-eslint/types</I><BR/>
 <I>estraverse</I><BR/>
 <I>estree</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 ast/ClassProcessor<BR/>
 ast/ErrorCollector<BR/>
@@ -175,72 +175,72 @@ ast/UsageProcessor<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ClassProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/ClassProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/ClassProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 3<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>@typescript-eslint/types</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/BaseProcessor<BR/>
 ast/SharedInterfaces<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ErrorCollector" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/ErrorCollector</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 2<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/ErrorCollector</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 2<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/BaseProcessor<BR/>
 ast/SharedInterfaces<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ExportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/ExportProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/ExportProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>@typescript-eslint/types</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/BaseProcessor<BR/>
 ast/SharedInterfaces<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/ImportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/ImportProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 5<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/ImportProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 5<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>@typescript-eslint/types</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 utils/file-utils<BR/>
 ast/BaseProcessor<BR/>
 ast/SharedInterfaces<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/SharedInterfaces" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/SharedInterfaces</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 0<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/SharedInterfaces</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 0<BR/>
 <B>Used By Count:</B> 16</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 ast/ClassProcessor<BR/>
 ast/ErrorCollector<BR/>
@@ -260,69 +260,69 @@ utils/list-utils<BR/>
 </TD></TR>
 </TABLE>>];
 "ast/UsageProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>ast/UsageProcessor</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 1<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>ast/UsageProcessor</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 1<BR/>
 <B>Used By Count:</B> 0</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/BaseProcessor<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 </TD></TR>
 </TABLE>>];
 "generators/DiagramsGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>generators/DiagramsGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>generators/DiagramsGenerator</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 3<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 utils/file-utils<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "generators/HtmlGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>generators/HtmlGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 5<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>generators/HtmlGenerator</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 5<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 utils/file-utils<BR/>
 utils/list-utils<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/ClassDiagram" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/ClassDiagram</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/ClassDiagram</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 graphs/GraphBase<BR/>
 graphs/GraphGenerator<BR/>
 dep-graph<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/ExportGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/ExportGraph</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 7<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/ExportGraph</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 7<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 utils/file-utils<BR/>
 utils/list-utils<BR/>
@@ -330,23 +330,23 @@ graphs/GraphBase<BR/>
 graphs/GraphGenerator<BR/>
 dep-graph<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/GraphBase" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/GraphBase</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/GraphBase</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 5</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 utils/file-utils<BR/>
 utils/list-utils<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 graphs/ClassDiagram<BR/>
 graphs/ExportGraph<BR/>
 graphs/NodeModulesGraph<BR/>
@@ -355,67 +355,67 @@ graphs/RelationsGraph<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/GraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/GraphGenerator</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 0<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/GraphGenerator</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 0<BR/>
 <B>Used By Count:</B> 3</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 graphs/ClassDiagram<BR/>
 graphs/ExportGraph<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/NodeModulesGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/NodeModulesGraph</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 2<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/NodeModulesGraph</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 2<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 graphs/GraphBase<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/PackageGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/PackageGraph</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 2<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/PackageGraph</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 2<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 graphs/GraphBase<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "graphs/RelationsGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>graphs/RelationsGraph</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 4<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>graphs/RelationsGraph</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 4<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 utils/file-utils<BR/>
 utils/list-utils<BR/>
 graphs/GraphBase<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/file-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>utils/file-utils</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 3<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>utils/file-utils</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 3<BR/>
 <B>Used By Count:</B> 10</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>fs</I><BR/>
 <I>path</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 utils/globals<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 ast/ASTProcessor<BR/>
 ast/ImportProcessor<BR/>
 DependencyGraphGenerator<BR/>
@@ -429,37 +429,37 @@ utils/json<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/globals" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>utils/globals</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 0<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>utils/globals</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 0<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 utils/file-utils<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/json" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>utils/json</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 2<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>utils/json</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 2<BR/>
 <B>Used By Count:</B> 1</TD></TR>
-<TR><TD ALIGN="left">
+<TR><TD ALIGN="left" BALIGN="LEFT">
 <I>fs</I><BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 utils/file-utils<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 DependencyGraphGenerator<BR/>
 </TD></TR>
 </TABLE>>];
 "utils/list-utils" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD ALIGN="left" BGCOLOR="lightblue"><B>utils/list-utils</B></TD></TR>
-<TR><TD ALIGN="left"><B>Depends On Count:</B> 1<BR/>
+<TR><TD ALIGN="center" BORDER="1" SIDES="B" BGCOLOR="lightblue"><B>utils/list-utils</B></TD></TR>
+<TR><TD ALIGN="left" BORDER="1" SIDES="B" BALIGN="LEFT"><B>Depends On Count:</B> 1<BR/>
 <B>Used By Count:</B> 4</TD></TR>
-<TR><TD ALIGN="left"><B>Depends On:</B><BR/>
+<TR><TD ALIGN="left" BORDER="1" SIDES="TB" BALIGN="LEFT"><B>Depends On:</B><BR/>
 ast/SharedInterfaces<BR/>
 </TD></TR>
-<TR><TD ALIGN="left"><B>Used By:</B><BR/>
+<TR><TD ALIGN="left" BALIGN="LEFT"><B>Used By:</B><BR/>
 generators/HtmlGenerator<BR/>
 graphs/ExportGraph<BR/>
 graphs/GraphBase<BR/>
