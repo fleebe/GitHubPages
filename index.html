@@ -1,40 +1,50 @@
 <html>
+
 <head>
   <title>Projects</title>
   <style>
     body {
       font-family: sans-serif;
     }
+
     table {
       width: 80%;
       margin: 20px auto;
       border-collapse: collapse;
-      box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     }
-    th, td {
+
+    th,
+    td {
       border: 1px solid #ddd;
       padding: 12px;
       text-align: left;
     }
+
     th {
       background-color: #f2f2f2;
       font-weight: bold;
     }
+
     tr:nth-child(even) {
       background-color: #f9f9f9;
     }
+
     tr:hover {
       background-color: #f1f1f1;
     }
+
     a {
       color: #007bff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
   <h1>Projects</h1>
   <table>
@@ -51,11 +61,20 @@
         <td>Dependency Graph</td>
         <td>Active - 2025</td>
         <td><a href="./dep-graph-ts/index.html">dep-graph-ts</a></td>
-        <td>is a command-line tool designed to analyze TypeScript and JavaScript projects. It generates dependency graphs,
-      visualizes module exports and class structures, and integrates with TypeDoc and JSDoc to produce comprehensive
-      documentation and an HTML report.</td>
+        <td>is a command-line tool designed to analyze TypeScript and JavaScript projects. It generates dependency
+          graphs,
+          visualizes module exports and class structures, and integrates with TypeDoc and JSDoc to produce comprehensive
+          documentation and an HTML report.</td>
       </tr>
+      <tr>
+        <td>GDrive RAG PoC</td>
+        <td>Active - 2026</td>
+        <td><a href="./poc-rag/gdrive/poc-rag.ipynb">GDrive RAG PoC</a></td>
+        <td>Demo project that takes google drive documents and puts them into a vector DB for use in a RAG system.</td>
+      </tr>
+
     </tbody>
   </table>
 </body>
+
 </html>
