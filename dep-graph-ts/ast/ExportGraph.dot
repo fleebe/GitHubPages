@@ -34,7 +34,7 @@ ModuleInfo<BR/>
 ProcessedASTData<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<font color="red"><I><U>utils</U></I></font><BR/>
 <font color="red"><I>utils/file-utils</I></font><BR/>
 cleanPath<BR/>
 getModuleName<BR/>
@@ -153,7 +153,7 @@ BaseProcessor<BR/>
 ImportInfo<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<font color="red"><I><U>utils</U></I></font><BR/>
 <font color="red"><I>utils/file-utils</I></font><BR/>
 cleanPath<BR/>
 removeExtension<BR/>

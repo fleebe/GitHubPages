@@ -1,12 +1,14 @@
 digraph {label="Node Modules Dependencies";
 labelloc="t";
 "node-modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD><B>node-modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="B" BGCOLOR="lightgrey"><B>node-modules</B></TD></TR>
+<TR><TD align="left" BALIGN="LEFT">
+@/dep-graph<BR/>
 @typescript-eslint/parser<BR/>
 @typescript-eslint/types<BR/>
 child_process<BR/>
 commander<BR/>
+deepmerge<BR/>
 estraverse<BR/>
 estree<BR/>
 fs<BR/>
@@ -14,12 +16,14 @@ path<BR/>
 </TD></TR>
 </TABLE>>];
 "modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
-<TR><TD><B>modules</B></TD></TR>
-<TR><TD align="left">
+<TR><TD BORDER="1" SIDES="B" BGCOLOR="lightgrey"><B>modules</B></TD></TR>
+<TR><TD align="left" BALIGN="LEFT">
 dep-graph.ts<BR/>
 DependencyGraphGenerator.ts<BR/>
-DocumentationGenerator.ts<BR/>
+DocumentationProcessor.ts<BR/>
 GraphvizProcessor.ts<BR/>
+JsDocGenerator.ts<BR/>
+TypeDocGenerator.ts<BR/>
 ast/ASTProcessor.ts<BR/>
 ast/BaseProcessor.ts<BR/>
 ast/ClassProcessor.ts<BR/>
@@ -27,6 +31,7 @@ ast/ExportProcessor.ts<BR/>
 ast/ImportProcessor.ts<BR/>
 generators/DiagramsGenerator.ts<BR/>
 generators/HtmlGenerator.ts<BR/>
+graphs/ClassDiagram.ts<BR/>
 graphs/ExportGraph.ts<BR/>
 graphs/GraphBase.ts<BR/>
 utils/file-utils.ts<BR/>

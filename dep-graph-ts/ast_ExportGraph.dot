@@ -1,0 +1,231 @@
+digraph {label="ast Module Exports";
+labelloc="t";
+"ast/ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ASTProcessor.html" TARGET="_blank" align="CENTER"><U><B>ast/ASTProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ASTProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/ClassProcessor</I></font><BR/>
+ClassProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/ErrorCollector</I></font><BR/>
+ErrorCollector<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/ExportProcessor</I></font><BR/>
+ExportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/ImportProcessor</I></font><BR/>
+ImportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ClassDetail<BR/>
+ImportInfo<BR/>
+ExportInfo<BR/>
+ModuleInfo<BR/>
+ProcessedASTData<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+cleanPath<BR/>
+getModuleName<BR/>
+moduleFileName<BR/>
+removeExtension<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ASTProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>@typescript-eslint/parser</I></font>  (parse)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (AST_NODE_TYPES)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (ParserOptions)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (TSESTree)<BR/>
+<font color="red"><I>estraverse</I></font>  (estraverse)<BR/>
+<font color="red"><I>estree</I></font>  (Node)<BR/>
+<font color="red"><I>fs</I></font>  (readFileSync)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ASTProcessor"->"ast/ASTProcessor-node_modules";
+"ast/BaseProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_BaseProcessor.html" TARGET="_blank" align="CENTER"><U><B>ast/BaseProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+</TABLE>>];
+"ast/BaseProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>@typescript-eslint/types</I></font>  (AST_NODE_TYPES)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (TSESTree)<BR/>
+<font color="red"><I>estraverse</I></font>  (estraverse)<BR/>
+<font color="red"><I>estraverse</I></font>  (VisitorOption)<BR/>
+<font color="red"><I>estraverse</I></font>  (Controller)<BR/>
+<font color="red"><I>estree</I></font>  (Node)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/BaseProcessor"->"ast/BaseProcessor-node_modules";
+"ast/ClassProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ClassProcessor.html" TARGET="_blank" align="CENTER"><U><B>ast/ClassProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ClassProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ClassDetail<BR/>
+MethodInfo<BR/>
+PropertyInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ClassProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>@typescript-eslint/types</I></font>  (TSESTree)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (AST_NODE_TYPES)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ClassProcessor"->"ast/ClassProcessor-node_modules";
+"ast/ErrorCollector" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ErrorCollector.html" TARGET="_blank" align="CENTER"><U><B>ast/ErrorCollector</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ErrorCollector<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ErrorInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ExportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ExportProcessor.html" TARGET="_blank" align="CENTER"><U><B>ast/ExportProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ExportProcessor<BR/>
+<font color='purple'>🧩 [iface]</font>  DeclarationInfo<BR/>
+<font color='orange'>🏷️ [type]</font>  DeclarationDetailsCallback<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ExportInfo<BR/>
+ModuleInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ExportProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>@typescript-eslint/types</I></font>  (TSESTree)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (AST_NODE_TYPES)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ExportProcessor"->"ast/ExportProcessor-node_modules";
+"ast/ImportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_ImportProcessor.html" TARGET="_blank" align="CENTER"><U><B>ast/ImportProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ImportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+cleanPath<BR/>
+removeExtension<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ImportProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>@typescript-eslint/types</I></font>  (TSESTree)<BR/>
+<font color="red"><I>@typescript-eslint/types</I></font>  (AST_NODE_TYPES)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ImportProcessor"->"ast/ImportProcessor-node_modules";
+"ast/SharedInterfaces" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_SharedInterfaces.html" TARGET="_blank" align="CENTER"><U><B>ast/SharedInterfaces</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='purple'>🧩 [iface]</font>  ClassDetail<BR/>
+<font color='purple'>🧩 [iface]</font>  ErrorInfo<BR/>
+<font color='purple'>🧩 [iface]</font>  ExportInfo<BR/>
+<font color='purple'>🧩 [iface]</font>  ImportInfo<BR/>
+<font color='purple'>🧩 [iface]</font>  MethodInfo<BR/>
+<font color='purple'>🧩 [iface]</font>  ModuleInfo<BR/>
+<font color='purple'>🧩 [iface]</font>  PropertyInfo<BR/>
+<font color='orange'>🏷️ [type]</font>  ProcessedASTData<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+</TABLE>>];
+"ast/UsageProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\ast_UsageProcessor.html" TARGET="_blank" align="CENTER"><U><B>ast/UsageProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  UsageProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/BaseProcessor</I></font><BR/>
+BaseProcessor<BR/>
+</TD></TR>
+</TABLE>>];
+"ast/ASTProcessor"->"ast/BaseProcessor";
+"ast/ASTProcessor"->"ast/ClassProcessor";
+"ast/ASTProcessor"->"ast/ErrorCollector";
+"ast/ASTProcessor"->"ast/ExportProcessor";
+"ast/ASTProcessor"->"ast/ImportProcessor";
+"ast/ASTProcessor"->"ast/SharedInterfaces";
+"ast/ClassProcessor"->"ast/BaseProcessor";
+"ast/ClassProcessor"->"ast/SharedInterfaces";
+"ast/ErrorCollector"->"ast/BaseProcessor";
+"ast/ErrorCollector"->"ast/SharedInterfaces";
+"ast/ExportProcessor"->"ast/BaseProcessor";
+"ast/ExportProcessor"->"ast/SharedInterfaces";
+"ast/ImportProcessor"->"ast/BaseProcessor";
+"ast/ImportProcessor"->"ast/SharedInterfaces";
+"ast/UsageProcessor"->"ast/BaseProcessor";
+}

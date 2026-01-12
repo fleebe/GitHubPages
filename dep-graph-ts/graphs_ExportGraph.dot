@@ -1,0 +1,172 @@
+digraph {label="graphs Module Exports";
+labelloc="t";
+"graphs/ClassDiagram" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_ClassDiagram.html" TARGET="_blank" align="CENTER"><U><B>graphs/ClassDiagram</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ClassDiagram<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphBase</I></font><BR/>
+GraphBase<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphGenerator</I></font><BR/>
+IGraphFileGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>dep-graph</I></font><BR/>
+ProgramOptions<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ClassDetail<BR/>
+ImportInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/ExportGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_ExportGraph.html" TARGET="_blank" align="CENTER"><U><B>graphs/ExportGraph</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  ExportGraph<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphBase</I></font><BR/>
+GraphBase<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphGenerator</I></font><BR/>
+IGraphFileGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>dep-graph</I></font><BR/>
+ProgramOptions<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+ExportInfo<BR/>
+ModuleInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+getModuleName<BR/>
+moduleFileName<BR/>
+<font color="red"><I>utils/list-utils</I></font><BR/>
+getExportedList<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/ExportGraph-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/ExportGraph"->"graphs/ExportGraph-node_modules";
+"graphs/GraphBase" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_GraphBase.html" TARGET="_blank" align="CENTER"><U><B>graphs/GraphBase</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  GraphBase<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+ModuleInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+cleanPath<BR/>
+<font color="red"><I>utils/list-utils</I></font><BR/>
+getNodeModules<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/GraphBase-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/GraphBase"->"graphs/GraphBase-node_modules";
+"graphs/GraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_GraphGenerator.html" TARGET="_blank" align="CENTER"><U><B>graphs/GraphGenerator</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='purple'>🧩 [iface]</font>  IGraphFileGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/NodeModulesGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_NodeModulesGraph.html" TARGET="_blank" align="CENTER"><U><B>graphs/NodeModulesGraph</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  NodeModulesGraph<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphBase</I></font><BR/>
+GraphBase<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/PackageGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_PackageGraph.html" TARGET="_blank" align="CENTER"><U><B>graphs/PackageGraph</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  PackageGraph<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphBase</I></font><BR/>
+GraphBase<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+ModuleInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/RelationsGraph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\graphs_RelationsGraph.html" TARGET="_blank" align="CENTER"><U><B>graphs/RelationsGraph</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  RelationsGraph<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/GraphBase</I></font><BR/>
+GraphBase<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ImportInfo<BR/>
+ModuleInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+getModuleName<BR/>
+<font color="red"><I>utils/list-utils</I></font><BR/>
+getUsedByList<BR/>
+</TD></TR>
+</TABLE>>];
+"graphs/ClassDiagram"->"graphs/GraphBase";
+"graphs/ClassDiagram"->"graphs/GraphGenerator";
+"graphs/ExportGraph"->"graphs/GraphBase";
+"graphs/ExportGraph"->"graphs/GraphGenerator";
+"graphs/NodeModulesGraph"->"graphs/GraphBase";
+"graphs/PackageGraph"->"graphs/GraphBase";
+"graphs/RelationsGraph"->"graphs/GraphBase";
+}

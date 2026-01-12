@@ -1,0 +1,38 @@
+digraph {label="generators Class Diagram";
+labelloc="t";
+"DiagramsGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>DiagramsGenerator</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  indexHTML: string<BR/>
+<font color='red'>-</font>  diagramsHTML: string<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(indexHTML)<BR/>
+<font color='blue'>+</font>  createDiagramsHtml(outDir, dirArray)<BR/>
+<font color='red'>-</font>  generateSvgSection(title, svgFileName, linkText)<BR/>
+</TD></TR>
+</TABLE>>];
+
+"HtmlGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>HtmlGenerator</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  diagramHTML: string<BR/>
+<font color='blue'>+</font>  JSDocHTML: string<BR/>
+<font color='blue'>+</font>  outputDir: string<BR/>
+<font color='blue'>+</font>  TSDocHTML: string<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(outputDir, diagramHTML, JSDocHTML, TSDocHTML)<BR/>
+<font color='blue'>+</font>  createModuleHtml(symbol, moduleArray, dependencyList, exportList)<BR/>
+<font color='red'>-</font>  generateDependsOnTable(dependencyList, mod)<BR/>
+<font color='red'>-</font>  generateExportsTable(exportList, usedList, mod)<BR/>
+<font color='red'>-</font>  generateModuleDetails(moduleArray, dependencyList, exportList)<BR/>
+<font color='red'>-</font>  generateModuleSummaryTable(moduleArray)<BR/>
+<font color='red'>-</font>  generateNodeModulesSection(dependencyList)<BR/>
+<font color='red'>-</font>  generateSummarySection(moduleArray, dependencyList)<BR/>
+<font color='red'>-</font>  generateUnusedModulesTable(unusedModules)<BR/>
+<font color='red'>-</font>  generateUsedByTable(usedList, modName)<BR/>
+</TD></TR>
+</TABLE>>];
+
+}

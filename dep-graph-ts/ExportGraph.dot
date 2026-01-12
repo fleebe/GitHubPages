@@ -36,7 +36,7 @@ DocumentationGenerator<BR/>
 GraphvizProcessor<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#ast" TARGET="_top">
-<font color="red"><I>ast</I></font><BR/>
+<font color="red"><I><U>ast</U></I></font><BR/>
 <font color="red"><I>ast/ASTProcessor</I></font><BR/>
 ASTProcessor<BR/>
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
@@ -44,14 +44,14 @@ ModuleInfo<BR/>
 ProcessedASTData<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#generators" TARGET="_top">
-<font color="red"><I>generators</I></font><BR/>
+<font color="red"><I><U>generators</U></I></font><BR/>
 <font color="red"><I>generators/DiagramsGenerator</I></font><BR/>
 DiagramsGenerator<BR/>
 <font color="red"><I>generators/HtmlGenerator</I></font><BR/>
 HtmlGenerator<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#graphs" TARGET="_top">
-<font color="red"><I>graphs</I></font><BR/>
+<font color="red"><I><U>graphs</U></I></font><BR/>
 <font color="red"><I>graphs/ClassDiagram</I></font><BR/>
 ClassDiagram<BR/>
 <font color="red"><I>graphs/ExportGraph</I></font><BR/>
@@ -66,13 +66,14 @@ PackageGraph<BR/>
 RelationsGraph<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<font color="red"><I><U>utils</U></I></font><BR/>
 <font color="red"><I>utils/file-utils</I></font><BR/>
 safeWriteFile<BR/>
 getRelativePathParts<BR/>
 getDirectoriesRecursive<BR/>
 getFiles<BR/>
 getFilename<BR/>
+getGraphFilename<BR/>
 <font color="red"><I>utils/json</I></font><BR/>
 jsonOut<BR/>
 </TD></TR>
@@ -94,12 +95,12 @@ JSDocOptsConfig<BR/>
 JSDocSourceConfig<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#ast" TARGET="_top">
-<font color="red"><I>ast</I></font><BR/>
+<font color="red"><I><U>ast</U></I></font><BR/>
 <font color="red"><I>ast/SharedInterfaces</I></font><BR/>
 ModuleInfo<BR/>
 </TD></TR>
 <TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" HREF="diagrams.html#utils" TARGET="_top">
-<font color="red"><I>utils</I></font><BR/>
+<font color="red"><I><U>utils</U></I></font><BR/>
 <font color="red"><I>utils/file-utils</I></font><BR/>
 getFilename<BR/>
 </TD></TR>

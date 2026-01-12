@@ -1,0 +1,11 @@
+digraph {label="utils Class Diagram";
+labelloc="t";
+"ModulePathInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ModulePathInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+dir: string<BR/>
+file: string<BR/>
+</TD></TR>
+</TABLE>>];
+
+}

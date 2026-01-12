@@ -1,0 +1,185 @@
+digraph {label="ast Class Diagram";
+labelloc="t";
+"ASTProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>ASTProcessor : BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='red'>-</font>  classProcessor: ClassProcessor<BR/>
+<font color='red'>-</font>  errorCollector: ErrorCollector<BR/>
+<font color='red'>-</font>  exportProcessor: ExportProcessor<BR/>
+<font color='red'>-</font>  importProcessor: ImportProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+<font color='blue'>+</font>  processModules(moduleMap)<BR/>
+</TD></TR>
+</TABLE>>];
+"ASTProcessor"->"BaseProcessor" [arrowhead=empty, style=solid];
+
+"BaseProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  baseLoc: string<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  calRelSrcFile(importingFilePath, importPathValue)<BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+<font color='blue'>+</font>  countSubstrings(str, subStr)<BR/>
+<font color='blue'>+</font>  formatFunctionParams(params)<BR/>
+<font color='blue'>+</font>  getAbsolutePath(currentFilePath, relativePath)<BR/>
+<font color='blue'>+</font>  getParentNode(rootNode, targetNode)<BR/>
+<font color='blue'>+</font>  replaceWithReversedArray(str, subStr, arr, cnt)<BR/>
+<font color='blue'>+</font>  skipNode(nodeType)<BR/>
+</TD></TR>
+</TABLE>>];
+
+"ClassProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>ClassProcessor : BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+<font color='blue'>+</font>  extractMemberExpressionName(node)<BR/>
+<font color='blue'>+</font>  extractMethodInfo(methodNode)<BR/>
+<font color='blue'>+</font>  extractMethodSignatureInfo(methodNode)<BR/>
+<font color='blue'>+</font>  extractPropertyInfo(propertyNode)<BR/>
+<font color='blue'>+</font>  extractPropertySignatureInfo(propertyNode)<BR/>
+<font color='blue'>+</font>  extractSuperClassName(superClassNode)<BR/>
+<font color='blue'>+</font>  extractTypeAnnotation(typeAnnotationNode)<BR/>
+<font color='blue'>+</font>  extractTypeNameFromHeritageClause(clause)<BR/>
+<font color='blue'>+</font>  getMethodName(keyNode)<BR/>
+<font color='blue'>+</font>  getPropertyName(keyNode)<BR/>
+<font color='blue'>+</font>  processClassNode(node, parent, filePath)<BR/>
+<font color='blue'>+</font>  processInterfaceNode(node, parent, filePath)<BR/>
+<font color='red'>-</font>  isNodeExported(parent)<BR/>
+</TD></TR>
+</TABLE>>];
+"ClassProcessor"->"BaseProcessor" [arrowhead=empty, style=solid];
+
+"ErrorCollector" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>ErrorCollector : BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>properties</B><BR/>
+<font color='blue'>+</font>  errors: array<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  addError(file, err)<BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+</TD></TR>
+</TABLE>>];
+"ErrorCollector"->"BaseProcessor" [arrowhead=empty, style=solid];
+
+"DeclarationInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>DeclarationInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+type: AST_NODE_TYPES<BR/>
+params: string<BR/>
+</TD></TR>
+</TABLE>>];
+
+"ExportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>ExportProcessor : BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+<font color='blue'>+</font>  processDeclarationNode(decl, declarationDetailsCallback)<BR/>
+<font color='blue'>+</font>  processExportAllDeclaration(node, srcFile, mod)<BR/>
+<font color='blue'>+</font>  processExportDeclaration(node, srcFile, mod, topLevelDeclarations)<BR/>
+<font color='blue'>+</font>  processTopLevelDeclaration(ast)<BR/>
+<font color='red'>-</font>  extractNamesFromPattern(idPattern, callback)<BR/>
+</TD></TR>
+</TABLE>>];
+"ExportProcessor"->"BaseProcessor" [arrowhead=empty, style=solid];
+
+"ImportProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>ImportProcessor : BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+<font color='blue'>+</font>  normalizeDeps(deps)<BR/>
+<font color='blue'>+</font>  processImportDeclaration(node, fullSrcFilePath)<BR/>
+</TD></TR>
+</TABLE>>];
+"ImportProcessor"->"BaseProcessor" [arrowhead=empty, style=solid];
+
+"ModuleInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ModuleInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+dir: string<BR/>
+file: string<BR/>
+dependsOnCnt: number<BR/>
+usedByCnt: number<BR/>
+exportCnt: number<BR/>
+</TD></TR>
+</TABLE>>];
+
+"ImportInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ImportInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+src: string<BR/>
+name: string<BR/>
+importSrc: string<BR/>
+relSrcName: string<BR/>
+import: string<BR/>
+</TD></TR>
+</TABLE>>];
+
+"ExportInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ExportInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+src: string<BR/>
+exported: string<BR/>
+type: string<BR/>
+params: string<BR/>
+</TD></TR>
+</TABLE>>];
+
+"ErrorInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ErrorInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+file: string<BR/>
+err: Error<BR/>
+msg: string<BR/>
+</TD></TR>
+</TABLE>>];
+
+"MethodInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>MethodInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+name: string<BR/>
+kind: unknown_type | unknown_type | unknown_type | unknown_type<BR/>
+isStatic: boolean<BR/>
+isPrivate: boolean<BR/>
+parameters: string<BR/>
+</TD></TR>
+</TABLE>>];
+
+"PropertyInfo" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>PropertyInfo</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+name: string<BR/>
+isStatic: boolean<BR/>
+isPrivate: boolean<BR/>
+type: string<BR/>
+hasDefaultValue: boolean<BR/>
+</TD></TR>
+</TABLE>>];
+
+"ClassDetail" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="center" bgcolor="lightyellow"><I>&lt;&lt;interface&gt;&gt;</I><BR/><B>ClassDetail</B></TD></TR>
+<TR><TD align="left" BORDER="1" SIDES="T" BALIGN="LEFT"><B>properties</B><BR/>
+name: string<BR/>
+filePath: string<BR/>
+declarationType: unknown_type | unknown_type<BR/>
+methods: array<BR/>
+properties: array<BR/>
+superClass: string | null<BR/>
+implementsInterfaces: array<BR/>
+extendsInterfaces: array<BR/>
+isExported: boolean<BR/>
+</TD></TR>
+</TABLE>>];
+
+"UsageProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD align="left" bgcolor="lightblue"><B>UsageProcessor : BaseProcessor</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT"><B>methods</B><BR/>
+<font color='blue'>+</font>  constructor(baseLoc)<BR/>
+</TD></TR>
+</TABLE>>];
+"UsageProcessor"->"BaseProcessor" [arrowhead=empty, style=solid];
+
+}

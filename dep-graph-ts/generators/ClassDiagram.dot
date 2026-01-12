@@ -4,7 +4,7 @@ labelloc="t";
 <TR><TD align="left" bgcolor="lightblue"><B>DiagramsGenerator</B></TD></TR>
 <TR><TD align="left"><B>properties</B><BR/>
 + indexHTML: string<BR/>
-+ diagramsHTML: string<BR/>
+- diagramsHTML: string<BR/>
 </TD></TR>
 <TR><TD align="left"><B>methods</B><BR/>
 + constructor(indexHTML)<BR/>

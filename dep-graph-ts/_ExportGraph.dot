@@ -1,0 +1,229 @@
+digraph {label=" Module Exports";
+labelloc="t";
+"dep-graph" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\dep-graph.html" TARGET="_blank" align="CENTER"><U><B>dep-graph</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='purple'>🧩 [iface]</font>  ProgramOptions<BR/>
+<font color='green'>ƒ [fn]</font>  runProgram<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>DependencyGraphGenerator</I></font><BR/>
+DependencyGraphGenerator<BR/>
+</TD></TR>
+</TABLE>>];
+"dep-graph-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>commander</I></font>  (Command)<BR/>
+<font color="red"><I>commander</I></font>  (Option)<BR/>
+<font color="red"><I>commander</I></font>  (OptionValues)<BR/>
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"dep-graph"->"dep-graph-node_modules";
+"DependencyGraphGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\DependencyGraphGenerator.html" TARGET="_blank" align="CENTER"><U><B>DependencyGraphGenerator</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  DependencyGraphGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>DocumentationProcessor</I></font><BR/>
+getTypeDocOutputDir<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>GraphvizProcessor</I></font><BR/>
+GraphvizProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>JsDocGenerator</I></font><BR/>
+JsDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>TypeDocGenerator</I></font><BR/>
+TypeDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>dep-graph</I></font><BR/>
+ProgramOptions<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/ASTProcessor</I></font><BR/>
+ASTProcessor<BR/>
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ModuleInfo<BR/>
+ProcessedASTData<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>generators/DiagramsGenerator</I></font><BR/>
+DiagramsGenerator<BR/>
+<font color="red"><I>generators/HtmlGenerator</I></font><BR/>
+HtmlGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>graphs/ClassDiagram</I></font><BR/>
+ClassDiagram<BR/>
+<font color="red"><I>graphs/ExportGraph</I></font><BR/>
+ExportGraph<BR/>
+<font color="red"><I>graphs/GraphGenerator</I></font><BR/>
+IGraphFileGenerator<BR/>
+<font color="red"><I>graphs/NodeModulesGraph</I></font><BR/>
+NodeModulesGraph<BR/>
+<font color="red"><I>graphs/PackageGraph</I></font><BR/>
+PackageGraph<BR/>
+<font color="red"><I>graphs/RelationsGraph</I></font><BR/>
+RelationsGraph<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+safeWriteFile<BR/>
+getRelativePathParts<BR/>
+getDirectoriesRecursive<BR/>
+getFiles<BR/>
+getFilename<BR/>
+getGraphFilename<BR/>
+<font color="red"><I>utils/json</I></font><BR/>
+jsonOut<BR/>
+</TD></TR>
+</TABLE>>];
+"DependencyGraphGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"DependencyGraphGenerator"->"DependencyGraphGenerator-node_modules";
+"DocumentationProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\DocumentationProcessor.html" TARGET="_blank" align="CENTER"><U><B>DocumentationProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='purple'>🧩 [iface]</font>  JSDocConfig<BR/>
+<font color='purple'>🧩 [iface]</font>  JSDocOptsConfig<BR/>
+<font color='purple'>🧩 [iface]</font>  JSDocSourceConfig<BR/>
+<font color='green'>ƒ [fn]</font>  getTypedocConfigPath<BR/>
+<font color='green'>ƒ [fn]</font>  getTypeDocOutputDir<BR/>
+<font color='green'>ƒ [fn]</font>  spawnDocumentationProcess<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+</TABLE>>];
+"DocumentationProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>child_process</I></font>  (spawn)<BR/>
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"DocumentationProcessor"->"DocumentationProcessor-node_modules";
+"GraphvizProcessor" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\GraphvizProcessor.html" TARGET="_blank" align="CENTER"><U><B>GraphvizProcessor</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  GraphvizProcessor<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+</TABLE>>];
+"GraphvizProcessor-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>child_process</I></font>  (spawn)<BR/>
+<font color="red"><I>child_process</I></font>  (ChildProcess)<BR/>
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+</TD></TR>
+</TABLE>>];
+"GraphvizProcessor"->"GraphvizProcessor-node_modules";
+"index" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\index.html" TARGET="_blank" align="CENTER"><U><B>index</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>dep-graph</I></font><BR/>
+runProgram<BR/>
+</TD></TR>
+</TABLE>>];
+"JsDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\JsDocGenerator.html" TARGET="_blank" align="CENTER"><U><B>JsDocGenerator</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  JsDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>DocumentationProcessor</I></font><BR/>
+JSDocConfig<BR/>
+spawnDocumentationProcess<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ModuleInfo<BR/>
+</TD></TR>
+</TABLE>>];
+"JsDocGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"JsDocGenerator"->"JsDocGenerator-node_modules";
+"TypeDocGenerator" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightblue" HREF="tsdocs\modules\TypeDocGenerator.html" TARGET="_blank" align="CENTER"><U><B>TypeDocGenerator</B></U></TD></TR>
+<TR><TD BORDER="1" SIDES="TB" ALIGN="LEFT" BALIGN="LEFT">
+<font color='blue'>🏛️ [class]</font>  TypeDocGenerator<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="LEFT">
+<font color="red"><I>IMPORTS</I></font><BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>DocumentationProcessor</I></font><BR/>
+getTypedocConfigPath<BR/>
+getTypeDocOutputDir<BR/>
+spawnDocumentationProcess<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" align="left" BALIGN="LEFT">
+<font color="red"><I>dep-graph</I></font><BR/>
+ProgramOptions<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>ast/SharedInterfaces</I></font><BR/>
+ModuleInfo<BR/>
+</TD></TR>
+<TR><TD BORDER="1" SIDES="TB" cellpadding="1" align="left" BALIGN="LEFT">
+<font color="red"><I>utils/file-utils</I></font><BR/>
+getFilename<BR/>
+</TD></TR>
+</TABLE>>];
+"TypeDocGenerator-node_modules" [shape=none, label=<<TABLE cellspacing="0" cellborder="0" align="left">
+<TR><TD bgcolor="lightgrey" align="center"><B>node_modules</B></TD></TR>
+<TR><TD BORDER="1" SIDES="T" align="left" BALIGN="LEFT">
+<font color="red"><I>child_process</I></font>  (spawn)<BR/>
+<font color="red"><I>deepmerge</I></font>  (deepmerge)<BR/>
+<font color="red"><I>fs</I></font>  (fs)<BR/>
+<font color="red"><I>path</I></font>  (path)<BR/>
+</TD></TR>
+</TABLE>>];
+"TypeDocGenerator"->"TypeDocGenerator-node_modules";
+"dep-graph"->"DependencyGraphGenerator";
+"DependencyGraphGenerator"->"dep-graph";
+"DependencyGraphGenerator"->"DocumentationProcessor";
+"DependencyGraphGenerator"->"GraphvizProcessor";
+"DependencyGraphGenerator"->"JsDocGenerator";
+"DependencyGraphGenerator"->"TypeDocGenerator";
+"index"->"dep-graph";
+"JsDocGenerator"->"DocumentationProcessor";
+"TypeDocGenerator"->"dep-graph";
+"TypeDocGenerator"->"DocumentationProcessor";
+}

@@ -48,7 +48,7 @@
 <g id="a_node1_0"><a xlink:href="diagrams.html#utils" xlink:title="&lt;TABLE&gt;" target="_top">
 <polyline fill="none" stroke="black" points="624,-577 748,-577 "/>
 <polyline fill="none" stroke="black" points="748,-665 624,-665 "/>
-<text text-anchor="start" x="662" y="-652.8" font-family="Times New Roman,serif" font-style="italic" font-size="14.00" fill="red">utils</text>
+<text text-anchor="start" x="662" y="-652.8" font-family="Times New Roman,serif" font-style="italic" text-decoration="underline" font-size="14.00" fill="red">utils</text>
 <text text-anchor="start" x="637.5" y="-638.8" font-family="Times New Roman,serif" font-style="italic" font-size="14.00" fill="red">utils/file&#45;utils</text>
 <text text-anchor="start" x="647.5" y="-624.8" font-family="Times New Roman,serif" font-size="14.00">cleanPath</text>
 <text text-anchor="start" x="628.5" y="-610.8" font-family="Times New Roman,serif" font-size="14.00">getModuleName</text>
@@ -199,7 +199,7 @@
 <g id="a_node10_1"><a xlink:href="diagrams.html#utils" xlink:title="&lt;TABLE&gt;" target="_top">
 <polyline fill="none" stroke="black" points="82,-363 212,-363 "/>
 <polyline fill="none" stroke="black" points="212,-423 82,-423 "/>
-<text text-anchor="start" x="120" y="-410.8" font-family="Times New Roman,serif" font-style="italic" font-size="14.00" fill="red">utils</text>
+<text text-anchor="start" x="120" y="-410.8" font-family="Times New Roman,serif" font-style="italic" text-decoration="underline" font-size="14.00" fill="red">utils</text>
 <text text-anchor="start" x="95.5" y="-396.8" font-family="Times New Roman,serif" font-style="italic" font-size="14.00" fill="red">utils/file&#45;utils</text>
 <text text-anchor="start" x="105.5" y="-382.8" font-family="Times New Roman,serif" font-size="14.00">cleanPath</text>
 <text text-anchor="start" x="84" y="-368.8" font-family="Times New Roman,serif" font-size="14.00">removeExtension</text>
