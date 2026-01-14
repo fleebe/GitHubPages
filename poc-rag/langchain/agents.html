@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>poc-rag</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>agents</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7511,102 +7511,36 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=24b5a3b4-9701-48c7-bb4d-11cc5da28bb2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=06b54d4d-3fa0-4c52-a32d-e8e4d93897f9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Creating-a-tool">Creating a tool<a class="anchor-link" href="#Creating-a-tool">¶</a></h1><p>My experiences in using AI models and tools. The aim is to build a system that enables the searching of information in google docs from google drive using RAG (Retrieval Augmented Generation). This could be extended to include searching for information in images, pdfs, spreadsheets, and microsoft documents. I want to create summaries and keywords for the documents which can be used to classify documents.</p>
-<p>The steps to do this are</p>
+<h1 id="Langchain-Agents">Langchain Agents<a class="anchor-link" href="#Langchain-Agents">¶</a></h1><p><a href="https://docs.langchain.com/oss/python/langchain/agents">LangChain Agent</a></p>
+<p>Combine LLM with tools to create systems that can reason about tasks decide which tools to use and iteratively work toward solutions. Basically achieve intelligent responses to requests.</p>
+<p>A flow (multi-step) that is controlled/defined by calls to an LLM. Allows tools (web access, DB access, humans) to be called before and after LLM.</p>
+<p>Kinds of agent</p>
 <ul>
-<li>access the google drive documents and for each document</li>
-<li>generate a summary and list of keywords the for the document using an LLM</li>
-<li>chunk the document to create embeddings.</li>
-<li>store this information in a vector database.</li>
-<li>create a simple tool to use the database to find information from it for a user query.</li>
+<li>routers (simple) low control from LLM</li>
+<li>fully autonomous or select based on reasoning a step, can generate its own next move. Reliability drops.</li>
 </ul>
-<p>It will use Langgraph for agentic workflow, ollama:nomic-embed-text for embedding and ollama:llama3.2 as the tool model. The embeddings will be into a Chroma vector database. It will be in python.</p>
-<p><a href="../../model_info.html">Model Info</a></p>
-<p><strong>Example of Metadata from a folder in gdrive</strong></p>
-<div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"19.."</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Coaching"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"parents"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"14...."</span><span class="p">]</span>
-<span class="p">}</span>
-</pre></div>
-<p><strong>Example of Metadata from a file in gdrive</strong></p>
-<div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">"createdTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-07-18T19:50:24.713Z"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1..."</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"mimeType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/vnd.google-apps.document"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"modifiedTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-07-18T21:26:16.372Z"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Coaching Notes"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"owners"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">"displayName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Phillip Lee"</span><span class="p">,</span>
-<span class="w">               </span><span class="nt">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phlee0@gmail.com"</span><span class="p">,</span>
-<span class="w">               </span><span class="nt">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"drive#user"</span><span class="p">,</span>
-<span class="w">               </span><span class="nt">"me"</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
-<span class="w">               </span><span class="nt">"permissionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"166..."</span><span class="p">,</span>
-<span class="w">               </span><span class="nt">"photoLink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="p">}],</span>
-<span class="w">    </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"267115"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"webViewLink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://docs.google.com/document/d/..."</span>
-<span class="p">}</span>
-</pre></div>
-<h2 id="Gdrive/gdrive2.py">Gdrive/gdrive2.py<a class="anchor-link" href="#Gdrive/gdrive2.py">¶</a></h2><p>It chunks documents and creates embeddings of summary and chunks for the docs in google drive. It ignores them if they exist already in the vector database. It creates metadata for the summary and chunks. The vector database uses the folder name as a collection ID. This enables the searching of a particular folder only.</p>
-<h3 id="Summary-Metadata">Summary Metadata<a class="anchor-link" href="#Summary-Metadata">¶</a></h3><div class="highlight"><pre><span></span>        <span class="n">page_content</span><span class="o">=</span><span class="n">summary</span><span class="p">,</span>   <span class="c1"># text</span>
-        <span class="nb">id</span><span class="o">=</span><span class="sa">f</span><span class="s2">"doc_</span><span class="si">{</span><span class="n">file</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
-        <span class="n">metadata</span><span class="o">=</span><span class="p">{</span>
-            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
-            <span class="s2">"source"</span><span class="p">:</span> <span class="n">file</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span>
-            <span class="s2">"keywords"</span><span class="p">:</span> <span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">keywords</span><span class="p">),</span>
-            <span class="s2">"update_time"</span><span class="p">:</span> <span class="n">now_str</span><span class="p">,</span>
-            <span class="s2">"num_chunks"</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">summary_chunks</span><span class="p">),</span>
-            <span class="s2">"id"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"id"</span><span class="p">),</span>
-            <span class="s2">"name"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">),</span>
-            <span class="s2">"mimeType"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"mimeType"</span><span class="p">),</span>
-            <span class="s2">"webViewLink"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"webViewLink"</span><span class="p">),</span>
-            <span class="s2">"modifiedTime"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"modifiedTime"</span><span class="p">),</span>
-            <span class="s2">"createdTime"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"createdTime"</span><span class="p">),</span>
-            <span class="s2">"size"</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"size"</span><span class="p">),</span>
-            <span class="s2">"owner_email"</span> <span class="o">=</span> <span class="n">owners</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"emailAddress"</span><span class="p">),</span>
-            <span class="s2">"owner_name"</span> <span class="o">=</span> <span class="n">owners</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"displayName"</span><span class="p">),</span>
-        <span class="p">},</span>
-</pre></div>
-<h3 id="Chunk-Metadata">Chunk Metadata<a class="anchor-link" href="#Chunk-Metadata">¶</a></h3><div class="highlight"><pre><span></span>            <span class="n">page_content</span><span class="o">=</span><span class="n">chunk</span><span class="p">,</span>  <span class="c1"># text</span>
-            <span class="nb">id</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">file</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
-            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span>
-                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"chunk"</span><span class="p">,</span>
-                <span class="s2">"source"</span><span class="p">:</span> <span class="n">file</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span>
-                <span class="s2">"update_time"</span><span class="p">:</span> <span class="n">now_str</span><span class="p">,</span>
-                <span class="s2">"chunk_size"</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">split</span><span class="p">()),</span>
-                <span class="s2">"chunk_index"</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
-            <span class="p">},</span>
-</pre></div>
-<h3 id="Folder-Metadata">Folder Metadata<a class="anchor-link" href="#Folder-Metadata">¶</a></h3><p>Summary is a summary of the summaries of the files in the directory.
-The folder documents are stored in a collection "My Drive Summary"</p>
-<div class="highlight"><pre><span></span>            <span class="n">page_content</span><span class="o">=</span><span class="n">fldr_summary</span><span class="p">,</span>  <span class="c1"># text</span>
-            <span class="nb">id</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">fldr</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
-            <span class="n">metadata</span><span class="o">=</span><span class="p">{</span>
-                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"folder"</span><span class="p">,</span>
-                <span class="s2">"source"</span><span class="p">:</span> <span class="n">fldr</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span>
-                <span class="s2">"update_time"</span><span class="p">:</span> <span class="n">now_str</span><span class="p">,</span>
-                <span class="s2">"file_count"</span> <span class="p">:</span> <span class="n">fldr</span><span class="p">[</span><span class="s2">"file_count"</span><span class="p">],</span>
-                <span class="s2">"files_updated"</span> <span class="p">:</span> <span class="n">fldr</span><span class="p">[</span><span class="s2">"files_updated"</span><span class="p">]</span>
-            <span class="p">},</span>
-</pre></div>
-<p>A simple rag query was used to ask questions of the documents. Will return it does not know if cannot find the information.</p>
-<h1 id="Other-Thoughts.">Other Thoughts.<a class="anchor-link" href="#Other-Thoughts.">¶</a></h1><p>Work that could be done as well.</p>
-<ul>
-<li>related documents are located together in the folder structure.</li>
-<li>that folder path contains the document is one of the keywords?</li>
-<li>that duplicates files do not exist?</li>
-<li>update the vector database with documents that have changed since they were loaded.</li>
-<li>Merge related documents into one.</li>
+<p><img alt="Agent Control Level" src="./AgentControlLevel.png"/></p>
+<p>Agents run in a loop to achieve a goal until a stop condition is met, a final output is emitted or iteration limit reached.</p>
+<p><img alt="Agent Loop" src="./AgentLoop.png"/></p>
+<h2 id="Features">Features<a class="anchor-link" href="#Features">¶</a></h2><ul>
+<li><a href="#Dynamic-Model-Selection">Dynamic Model Selection</a></li>
+<li><a href="#tool-calling">Tool Calling</a></li>
+<li><a href="#middleware">Middleware</a> - used to</li>
+<li>Dynamic Prompts</li>
+<li>Structured Outputs</li>
+<li>Memory</li>
+<li></li>
 </ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=efdcea88-3533-4003-8e5f-4bec14243d86">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=687212c5-1c40-423d-b8b9-7767fa1ffe4f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7614,13 +7548,54 @@ The folder documents are stored in a collection "My Drive Summary"</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span><span class="p">,</span> <span class="n">OllamaEmbeddings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.chat_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">init_chat_model</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_lib.settings</span><span class="w"> </span><span class="kn">import</span> <span class="n">settings</span>  <span class="c1"># library that reads settings from a json settings file</span>
+
+<span class="n">load_dotenv</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_chat</span><span class="p">(</span><span class="n">model_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseChatModel</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Return the chat model.</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        model_name: Name of the model to use. If None, use default from settings.json</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">model_name</span><span class="p">:</span>
+        <span class="n">llm_model</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">llm_settings</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'model'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">init_chat_model</span><span class="p">(</span>
+            <span class="n">model</span><span class="o">=</span><span class="sa">f</span><span class="s2">"ollama:</span><span class="si">{</span><span class="n">llm_model</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'ollama:'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+            <span class="n">temperature</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+            <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">init_chat_model</span><span class="p">(</span>
+            <span class="n">model</span><span class="o">=</span><span class="n">model_name</span><span class="p">,</span>
+            <span class="n">temperature</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+            <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span>
+        <span class="p">)</span>
+
+<span class="c1"># using model instance</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">get_chat</span><span class="p">(</span><span class="s2">"ollama:qwen3-coder:30b"</span><span class="p">)</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">create_agent</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0d11ca23-62d0-4b2e-99ce-4ddba53a8505">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6344d175-abb2-4582-956b-1085551cf147">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Dynamic-Model-Selection">Dynamic Model Selection<a class="anchor-link" href="#Dynamic-Model-Selection">¶</a></h2><p>Some models might be good for functionality like tool calling and others good for reasoning or summarization.</p>
+<h3 id="Method">Method<a class="anchor-link" href="#Method">¶</a></h3><p>This is done in middleware from <code>import langchain.agents.middleware</code> using a <code>@wrap_model_call</code> decorator. When the model is created the middleware function is massed. <code>middleware=[dynamic_model_selection]</code></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e15a6600-aa74-41b7-b420-dd71ef21992e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7628,9 +7603,123 @@ The folder documents are stored in a collection "My Drive Summary"</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.agents.middleware</span><span class="w"> </span><span class="kn">import</span> <span class="n">wrap_model_call</span><span class="p">,</span> <span class="n">ModelRequest</span><span class="p">,</span> <span class="n">ModelResponse</span>
+
+
+<span class="n">basic_model</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">)</span>
+<span class="n">advanced_model</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o"</span><span class="p">)</span>
+
+<span class="nd">@wrap_model_call</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">dynamic_model_selection</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">ModelRequest</span><span class="p">,</span> <span class="n">handler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModelResponse</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Choose model based on conversation complexity."""</span>
+    <span class="n">message_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">state</span><span class="p">[</span><span class="s2">"messages"</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">message_count</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="c1"># Use an advanced model for longer conversations</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">advanced_model</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">basic_model</span>
+
+    <span class="k">return</span> <span class="n">handler</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">))</span>
+
+<span class="n">agent</span> <span class="o">=</span> <span class="n">create_agent</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">basic_model</span><span class="p">,</span>  <span class="c1"># Default model</span>
+    <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span>
+    <span class="n">middleware</span><span class="o">=</span><span class="p">[</span><span class="n">dynamic_model_selection</span><span class="p">]</span>
+<span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=73b38b29-e423-462d-b7cf-c0eb33489335">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Tool-Calling">Tool Calling<a class="anchor-link" href="#Tool-Calling">¶</a></h2><p>These give the agent the ability to take actions like:</p>
+<ul>
+<li>access a database</li>
+<li>do a web search</li>
+<li>access an API</li>
+</ul>
+<h3 id="Method">Method<a class="anchor-link" href="#Method">¶</a></h3><p>A function list is passed to <code>create_agent</code> function. The functions are decoorated with the <code>@tool</code> decorator from <code>import langchain.tools import tool</code>.</p>
+<p>Error handling is done by middleware and <code>@wrap_tool_call</code> decorator</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7e76a28a-dabf-4c7b-a2ce-5891367ca273">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">tool</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_agent</span>
+
+
+<span class="nd">@tool</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Search for information."""</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Results for: </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="nd">@tool</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_weather</span><span class="p">(</span><span class="n">location</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Get weather information for a location."""</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Weather in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">: Sunny, 72°F"</span>
+
+<span class="nd">@wrap_tool_call</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">handle_tool_errors</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">handler</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Handle tool execution errors with custom messages."""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">handler</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="c1"># Return a custom error message to the model</span>
+        <span class="k">return</span> <span class="n">ToolMessage</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="sa">f</span><span class="s2">"Tool error: Please check your input and try again. (</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span>
+            <span class="n">tool_call_id</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">tool_call</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span>
+        <span class="p">)</span>
+
+<span class="n">agent</span> <span class="o">=</span> <span class="n">create_agent</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="c1"># can be the name of a model or an instance</span>
+    <span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="n">search</span><span class="p">,</span> <span class="n">get_weather</span><span class="p">],</span>
+    <span class="n">middleware</span><span class="o">=</span><span class="p">[</span><span class="n">handle_tool_errors</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7973b099-4e5f-46bf-abf5-0c78f40e3f38">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Middleware">Middleware<a class="anchor-link" href="#Middleware">¶</a></h2><p>Enables the customization of agent behaviour. Used to</p>
+<ul>
+<li>Process state before the model is called (e.g., message trimming, context injection)</li>
+<li>Modify or validate the model’s response (e.g., guardrails, content filtering)</li>
+<li>Handle tool execution errors with custom logic</li>
+<li>Implement dynamic model selection based on state or context</li>
+<li>Add custom logging, monitoring, or analytics</li>
+</ul>
+<h3 id="Hooks">Hooks<a class="anchor-link" href="#Hooks">¶</a></h3><p>Specified with a decorator at specific execution points.</p>
+<ul>
+<li><code>before_agent</code> (once per invocation)</li>
+<li><code>after_agent</code></li>
+<li><code>before_model</code></li>
+<li><code>after_model</code> (once per invocation)</li>
+</ul>
+<ul>
+<li><code>wrap_model_call</code> - Around each model call</li>
+<li><code>wrap_tool_call</code> - Around each tool call</li>
+</ul>
 </div>
 </div>
 </div>
